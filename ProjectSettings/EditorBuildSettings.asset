@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ginger/mainmenu.unity
+    guid: fc8f47562d3f4c841a3fe72671edeb4e
+  - enabled: 1
+    path: Assets/Outliers.unity
+    guid: 7c3841e677f747543a9868c94ebf89a2
