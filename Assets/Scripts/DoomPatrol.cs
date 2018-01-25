@@ -9,8 +9,12 @@ public class DoomPatrol : MonoBehaviour {
     private int destPoint = 0;
     private NavMeshAgent agent;
 
-    void Start()
+        void Start()
     {
+        // Dot product gives a number from -1 to 1 describing how similar directions are.
+        // If your direction to the player is in the proper range, you can raycast to check line of sight.
+        // If there's sight, then follow or whatever
+        float result = Vector3.Dot(new Vector3(1, 1, 1).normalized, new Vector3(1, 2, 1).normalized);
         agent = GetComponent<NavMeshAgent>();
        
         agent.autoBraking = false;
