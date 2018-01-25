@@ -4,25 +4,30 @@ using UnityEngine;
 
 public class camera : MonoBehaviour
 {
-    public GameObject player;
+    public float mouseSensitivity = 100.0f;
+    public float clampAngle = 80.0f;
 
-    private Vector3 offset;
-    float sensitivity = 3;
+    private float rotY = 0.0f; // rotation around the up/y axis
+    private float rotX = 0.0f; // rotation around the right/x axis
 
-    Camera cam;
-
-	void Start ()
+    void Start()
     {
-        offset = transform.position - player.transform.position;
-	}
-	
-	
-	void LateUpdate ()
+        Vector3 rot = transform.localRotation.eulerAngles;
+        rotY = rot.y;
+        rotX = rot.x;
+    }
+
+    void Update()
     {
-        if (Time.timeScale == 1)
-        {
-            transform.position = player.transform.position + offset;
-            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * sensitivity, 0));
-        }
-	}
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = -Input.GetAxis("Mouse Y");
+
+        rotY += mouseX * mouseSensitivity * Time.deltaTime;
+        rotX += mouseY * mouseSensitivity * Time.deltaTime;
+
+        rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
+
+        Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
+        transform.rotation = localRotation;
+    }
 }

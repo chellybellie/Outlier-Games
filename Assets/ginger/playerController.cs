@@ -48,7 +48,7 @@ public class playerController : MonoBehaviour
             pos.x += speed * Time.deltaTime;
         }
         transform.position = pos;
-         transform.rotation = cam.transform.rotation;
+        transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y, 0);
 
         if (Input.GetKeyDown(KeyCode.P))
             {
