@@ -1500,6 +1500,7 @@ GameObject:
   - component: {fileID: 1741438506}
   - component: {fileID: 1741438505}
   - component: {fileID: 1741438504}
+  - component: {fileID: 1741438508}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1567,12 +1568,29 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741438503}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.01, z: 0}
+  m_LocalPosition: {x: 0, y: -1.01, z: -0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741438508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1741438503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6b2e3f9e286e949be7477786998099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChargeBar_UI: {fileID: 0}
+  EMPTester: {fileID: 0}
+  power: 1
+  radius: 10
+  upforce: 0.5
+  FreezeTimer: 5
 --- !u!1 &1780620061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,6 +1847,52 @@ MonoBehaviour:
   gun: {fileID: 1986661850}
   wrench: {fileID: 627515953}
   mop: {fileID: 966674930}
+--- !u!1 &1873155276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1873155278}
+  - component: {fileID: 1873155277}
+  m_Layer: 0
+  m_Name: EMPTester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1873155277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873155276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6b2e3f9e286e949be7477786998099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChargeBar_UI: {fileID: 420464620}
+  EMPTester: {fileID: 1601829556}
+  power: 10
+  radius: 20
+  upforce: 0.5
+  FreezeTimer: 5
+--- !u!4 &1873155278
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873155276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.68996, y: -0.37229, z: -8.0731}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986661848
 GameObject:
   m_ObjectHideFlags: 0

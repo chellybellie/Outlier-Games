@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class powerScript : MonoBehaviour
-{
+{   
+    
     public Text amount;
     public Image bar;
     public Image pipOne, pipTwo, pipThree;
@@ -13,18 +14,22 @@ public class powerScript : MonoBehaviour
     public float power;
     public float charge;
     public int uses;
+  
+
     void Start()
     {
+
         power = 0;
         charge = 10;
         pipOne.enabled = false;
         pipTwo.enabled = false;
         pipThree.enabled = false;
     }
-
+      
     // Update is called once per frame
     void Update()
     {
+       
         bar.fillAmount = (power / 100);
         if (power < 100)
         {
@@ -43,7 +48,7 @@ public class powerScript : MonoBehaviour
             }
             
         }
-        if(power == 100 && uses <3)
+        if(power == 100 && uses < 3)
         {
             uses++;
             power = 0;
@@ -56,6 +61,7 @@ public class powerScript : MonoBehaviour
                 note.text = "! SURGE !";
                 noteTime = 0;
                 uses--;
+              
             }
             else
             {
