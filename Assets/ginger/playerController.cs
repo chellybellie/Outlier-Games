@@ -9,11 +9,7 @@ public class playerController : MonoBehaviour
     public float speed = 20f;
     public Camera cam;
 
-    public GameObject bulletPrefab;
-    public Transform bulletSpawn;
-    public GameObject gun;
-    public GameObject wrench;
-    public GameObject mop;
+    
 
     Rigidbody rb;
     void Start()
@@ -26,12 +22,12 @@ public class playerController : MonoBehaviour
         buttonpanel.SetActive(true);
         Time.timeScale = 0;
     }
-   
-    void Update ()
+
+    void Update()
     {
         Vector3 pos = transform.position;
 
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             pos.z += speed * Time.deltaTime;
         }
@@ -51,45 +47,9 @@ public class playerController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y, 0);
 
         if (Input.GetKeyDown(KeyCode.P))
-            {
-                Pause();
-            }
-        
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf )
-                   {
-                       Fire();
-                   }
-
-        if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            gun.SetActive(true);
-            wrench.SetActive(false);
-            mop.SetActive(false);
-            
+            Pause();
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            gun.SetActive(false);
-            wrench.SetActive(true);
-            mop.SetActive(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            gun.SetActive(false);
-            wrench.SetActive(false);
-            mop.SetActive(true);
-        }
-    }
-
-    void Fire()
-    {
-        var bullet = (GameObject)Instantiate(bulletPrefab, 
-            bulletSpawn.position, bulletSpawn.rotation);
-
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
-
-        Destroy(bullet, 2.0f);
     }
 }

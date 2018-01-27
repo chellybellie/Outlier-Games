@@ -4,16 +4,59 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
+    public GameObject bulletPrefab;
+    public Transform bulletSpawn;
+    public GameObject gun;
+    public GameObject wrench;
+    public GameObject mop;
 
-	// Use this for initialization
-	void Start ()
+    public Animator anim;
+
+    void Update()
     {
-		
-	}
+
+
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf)
+            {
+                Fire();
+
+            }
+
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
+        {
+            anim.SetTrigger("hit");
+        }
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                 gun.SetActive(true);
+                 wrench.SetActive(false);
+                 mop.SetActive(false);
+            }    
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                 gun.SetActive(false);
+                 wrench.SetActive(true);
+                 mop.SetActive(false);
+            }
+
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+           {
+                 gun.SetActive(false);
+                 wrench.SetActive(false);
+                 mop.SetActive(true);
+           }
+         
+    }
 	
-	// Update is called once per frame
-	void Update ()
+	void Fire()
     {
-		
-	}
+            var bullet = (GameObject)Instantiate(bulletPrefab,
+                bulletSpawn.position, bulletSpawn.rotation);
+
+            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
+
+            Destroy(bullet, 2.0f);
+    }
 }
