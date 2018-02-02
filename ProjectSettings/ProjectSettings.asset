@@ -588,9 +588,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: f520ea46-b1ef-4491-9408-4e7a1379ff87
-  projectName: Outlier-Games
-  organizationId: sergei_j_lyle
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

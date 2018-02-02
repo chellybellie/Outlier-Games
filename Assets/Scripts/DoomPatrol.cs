@@ -8,12 +8,13 @@ public class DoomPatrol : MonoBehaviour {
     public Transform[] points;
     private int destPoint = 0;
     private NavMeshAgent agent;
+    public  Transform Target;
+    public bool isChasingPlayer = false;
+   
 
-        void Start()
+    void Start()
     {
-        // Dot product gives a number from -1 to 1 describing how similar directions are.
-        // If your direction to the player is in the proper range, you can raycast to check line of sight.
-        // If there's sight, then follow or whatever
+       
         float result = Vector3.Dot(new Vector3(1, 1, 1).normalized, new Vector3(1, 2, 1).normalized);
         agent = GetComponent<NavMeshAgent>();
        
@@ -27,14 +28,47 @@ public class DoomPatrol : MonoBehaviour {
         if (points.Length == 0)
             return;
         
-        agent.destination = points[destPoint].position;
+        Target  = points[destPoint];
         destPoint = (destPoint + 1) % points.Length;
     }
 
 
     void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (!agent.pathPending && agent.remainingDistance < 0.5f && !isChasingPlayer)
             GotoNextPoint();
+
+        if(Target != null)
+        {
+            agent.SetDestination(Target.transform.position);
+        }
+
+        if(Target == null)
+        {
+            GotoNextPoint();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.tag == "Player")
+        {
+            Target = other.gameObject.transform;
+            isChasingPlayer = true;
+        }
+        Debug.Log("Target Locked");
+     
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        //Resume Predetermined Path
+        if (other.tag == "Player")
+        {
+            GotoNextPoint();
+            isChasingPlayer = false;
+        }
+    Debug.Log("TargetLost");
     }
 }
