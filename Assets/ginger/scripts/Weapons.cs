@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+[System.Serializable]
 public class Weapons : MonoBehaviour
 {
     public GameObject bulletPrefab;
@@ -9,17 +9,21 @@ public class Weapons : MonoBehaviour
     public GameObject gun;
     public GameObject wrench;
     public GameObject mop;
+    public GameObject scope;
 
+    public Camera cam;
+
+    float damage;
+    
     public Animator anim;
 
     void Update()
     {
-
+        
 
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf)
             {
-                Fire();
-
+                Fire();              
             }
 
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
@@ -48,6 +52,17 @@ public class Weapons : MonoBehaviour
                  mop.SetActive(true);
            }
          
+        if(Input.GetMouseButton(3) && gun.activeSelf)
+        {
+            scope.SetActive(true);
+            cam.fieldOfView = 40;              
+        }
+        else
+        {
+            scope.SetActive(false);
+            cam.fieldOfView = 60;            
+        }
+            
     }
 	
 	void Fire()
@@ -56,7 +71,7 @@ public class Weapons : MonoBehaviour
                 bulletSpawn.position, bulletSpawn.rotation);
 
             bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
-
+            
             Destroy(bullet, 2.0f);
     }
 }

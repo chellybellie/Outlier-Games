@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class camera : MonoBehaviour
 {
     public float mouseSensitivity = 100.0f;

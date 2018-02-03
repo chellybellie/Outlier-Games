@@ -1,21 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
+
+[System.Serializable]
 public class playerController : MonoBehaviour
 {
+    
     public GameObject pausemenu;
     public GameObject buttonpanel;
     public float speed = 20f;
     public Camera cam;
 
-    
+    public int health = 100;
 
-    Rigidbody rb;
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+    
     public void Pause()
     {
         pausemenu.SetActive(true);
@@ -23,6 +23,7 @@ public class playerController : MonoBehaviour
         Time.timeScale = 0;
     }
 
+    
     void Update()
     {
         Vector3 pos = transform.position;
@@ -46,10 +47,19 @@ public class playerController : MonoBehaviour
         transform.position = pos;
         transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y, 0);
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
         }
 
+    }
+    void OnTriggerEnter(Collider col)
+    {
+        health -= 10;
+        if(health < 10)
+        {
+            SceneManager.LoadScene(2);
+        }
+        
     }
 }
