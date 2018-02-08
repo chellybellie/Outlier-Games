@@ -22,12 +22,12 @@ public class HPScript : MonoBehaviour {
         hit = 0;
         HP = 100;
         bleedHP = 100;
-        bleedState = "Stable";
+        bleedState = "OK";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        hpText.text = ((int)HP).ToString() + " - " + bleedState;
+        hpText.text = bleedState + " - " + ((int)HP).ToString();
         hpBar.fillAmount = (HP / 100);
         bleedBar.fillAmount = (bleedHP / 100);
         if(hit > 0||bleed > 0)
@@ -40,7 +40,7 @@ public class HPScript : MonoBehaviour {
         }
         else
         {
-            bleedState = "Stable"; 
+            bleedState = "OK"; 
         }
 
         if(Input.GetKeyDown(KeyCode.Keypad1))
@@ -52,21 +52,21 @@ public class HPScript : MonoBehaviour {
             hit = 10;
             bleed = 10;
             bleedSeverity = 1;
-            bleedState = "Bleed";
+            bleedState = "Bleed 1";
         }
         if (Input.GetKeyDown(KeyCode.Keypad3))
         {
             hit = 0;
             bleed = 20;
             bleedSeverity = 3;
-            bleedState = "Severe Bleed";
+            bleedState = "Bleed 2";
         }
         if (Input.GetKeyDown(KeyCode.Keypad4))
         {
             hit = 0;
             bleed = 40;
             bleedSeverity = 5;
-            bleedState = "Extreme Bleed";
+            bleedState = "Bleed 3";
         }
         if (Input.GetKeyDown(KeyCode.Keypad0))
         {
@@ -75,7 +75,7 @@ public class HPScript : MonoBehaviour {
             bleedSeverity = 1;
             HP = 100;
             bleedHP = 100;
-            bleedState = "Stable";
+            bleedState = "OK";
         }
     }
 

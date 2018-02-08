@@ -21,13 +21,11 @@ public class scanScript : MonoBehaviour {
 	void Update () {
         scanHPImage.fillAmount = scanHP / 100;
         scanNameText.text = scanName;
-
-
 	}
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("ding");
+       // Debug.Log("ding");
 
         if(other.gameObject.tag == "scan")
         {
