@@ -10,44 +10,40 @@ public class EMP : MonoBehaviour
     public float radius = 10.0f;
     public float upforce = .5f;
     public float FreezeTimer = 5f;
+    private bool Light = true;
     //bool pressed = false;
     void Start()
     {
-  
+
     }
     // Update is called once per frame
-
     void Update()
     {
-       
         if (Input.GetKeyDown(KeyCode.E) && ChargeBar_UI.uses >= 1)
         {
             EMPDetonate();
         }
     }
-    
-   public void EMPDetonate()
+    public void EMPDetonate()
     {
-       
-                powerScript EMP_UI = GetComponent<powerScript>();
-                // gets emps position
-                Vector3 ExplosionPosition = EMPTester.transform.position;
-                Collider[] colliders = Physics.OverlapSphere(ExplosionPosition, radius);
+        powerScript EMP_UI = GetComponent<powerScript>();
+        // gets emps position
+        Vector3 ExplosionPosition = EMPTester.transform.position;
+        Collider[] colliders = Physics.OverlapSphere(ExplosionPosition, radius);
 
-                foreach (Collider hit in colliders)
-                {
-                    Rigidbody rb = hit.GetComponent<Rigidbody>();
-                    if (rb != null)
-                    {
-                        // makes physics weaker father away from center radius vertex.
-                        float distance = Vector3.Distance(rb.transform.position, EMPTester.transform.position);
-                        float powerModifier = 1 - (distance / radius);
-                        // equation for explosion physics
-                        rb.AddExplosionForce(power * powerModifier, ExplosionPosition, radius, upforce * powerModifier, ForceMode.Impulse);
-                        StartCoroutine(FreezeObjects(rb));
-                    }
-                }
-        //}
+        foreach (Collider hit in colliders)
+        {
+            Rigidbody rb = hit.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                // makes physics weaker father away from center radius vertex.
+                float distance = Vector3.Distance(rb.transform.position, EMPTester.transform.position);
+                float powerModifier = 1 - (distance / radius);
+                // equation for explosion physics
+                rb.AddExplosionForce(power * powerModifier, ExplosionPosition, radius, upforce * powerModifier, ForceMode.Impulse);
+                StartCoroutine(FreezeObjects(rb));
+            }
+        }
     }
     ////// Example of Coroutines//////
     // https://docs.unity3d.com/Manual/Coroutines.html //
@@ -86,4 +82,25 @@ public class EMP : MonoBehaviour
         rb.angularDrag = originalAngularDrag;
         rb.drag = originalDrag;
     }
+
+    //void LightShutdown()
+    //{
+
+    //    Collider[] LightsInRange = Physics.OverlapSphere(transform.position, radius);
+    //    foreach (Collider col in LightsInRange)
+    //    {
+    //        if (col.tag == "Light")
+    //        {
+
+
+    //        }
+
+    //    }
+    //}
 }
+
+
+
+
+
+

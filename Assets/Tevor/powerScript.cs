@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class powerScript : MonoBehaviour
 {   
-    
     public Text amount;
     public Image bar;
     public Image pipOne, pipTwo, pipThree;
@@ -14,18 +13,15 @@ public class powerScript : MonoBehaviour
     public float power;
     public float charge;
     public int uses;
-  
 
     void Start()
     {
-
         power = 0;
         charge = 10;
         pipOne.enabled = false;
         pipTwo.enabled = false;
         pipThree.enabled = false;
-    }
-      
+    }  
     // Update is called once per frame
     void Update()
     {
@@ -72,7 +68,7 @@ public class powerScript : MonoBehaviour
 
         if (noteTime > 3)
         {
-            note.text = "";
+            note.text = "";    
         }
         else
         {
