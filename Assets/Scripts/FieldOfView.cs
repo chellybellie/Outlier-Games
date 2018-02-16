@@ -20,6 +20,7 @@ public class FieldOfView : MonoBehaviour
     public float edgeDstThreshold;
 
     public MeshFilter viewMeshFilter;
+    MeshCollider viewCollider;
     Mesh viewMesh;
 
     void Start()
@@ -27,6 +28,8 @@ public class FieldOfView : MonoBehaviour
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
+        viewCollider = viewMeshFilter.GetComponent<MeshCollider>();
+        viewCollider.sharedMesh = viewMesh;
 
         StartCoroutine("FindTargetsWithDelay", .2f);
     }
@@ -121,6 +124,8 @@ public class FieldOfView : MonoBehaviour
 
         viewMesh.vertices = vertices;
         viewMesh.triangles = triangles;
+        viewCollider.sharedMesh = viewMesh;
+
         viewMesh.RecalculateNormals();
     }
 
