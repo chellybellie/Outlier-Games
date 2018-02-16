@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[System.Serializable]
+
 public class Weapons : MonoBehaviour
 {
     public GameObject bulletPrefab;
@@ -10,7 +10,8 @@ public class Weapons : MonoBehaviour
     public GameObject wrench;
     public GameObject mop;
     public GameObject scope;
-
+    public GameObject needle;
+    playerController player;
     public Camera cam;
 
     float damage;
@@ -27,41 +28,55 @@ public class Weapons : MonoBehaviour
             }
 
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
-        {
-            anim.SetTrigger("hit");
-        }
-
-            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                 gun.SetActive(true);
+                anim.SetTrigger("hit");
+            }
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && needle.activeSelf)
+        {
+            player.health -= 10;
+
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+         {
+                 gun.SetActive(false);
                  wrench.SetActive(false);
                  mop.SetActive(false);
-            }    
+                 needle.SetActive(true);
+         }    
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                  gun.SetActive(false);
-                 wrench.SetActive(true);
+                 wrench.SetActive(false);
                  mop.SetActive(false);
+                 needle.SetActive(false);
             }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
-           {
-                 gun.SetActive(false);
-                 wrench.SetActive(false);
-                 mop.SetActive(true);
-           }
-         
-        if(Input.GetMouseButton(3) && gun.activeSelf)
-        {
-            scope.SetActive(true);
-            cam.fieldOfView = 40;              
-        }
+            {
+                     gun.SetActive(false);
+                     wrench.SetActive(false);
+                     mop.SetActive(false);
+                     needle.SetActive(false);
+            }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                gun.SetActive(false);
+                wrench.SetActive(false);
+                mop.SetActive(false);
+                needle.SetActive(false);
+            }
+
+        if (Input.GetMouseButton(3) && gun.activeSelf)
+            {
+                scope.SetActive(true);
+                cam.fieldOfView = 40;              
+            }
         else
-        {
-            scope.SetActive(false);
-            cam.fieldOfView = 60;            
-        }
+            {
+                scope.SetActive(false);
+                cam.fieldOfView = 60;            
+            }
             
     }
 	

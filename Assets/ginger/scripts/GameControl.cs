@@ -6,6 +6,7 @@ using System;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
+
 public class GameControl : MonoBehaviour
 {
     public static GameControl control;
@@ -28,7 +29,7 @@ public class GameControl : MonoBehaviour
         FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
 
         playerController data = new playerController();
-        data.health = health;
+        health = data.health;
 
         bf.Serialize(file, data);
         file.Close();
@@ -43,7 +44,7 @@ public class GameControl : MonoBehaviour
             playerController data = (playerController)bf.Deserialize(file);
             file.Close();
 
-            health = data.health;
+            data.health = health;
         }
     }
 }

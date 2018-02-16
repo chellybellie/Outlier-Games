@@ -1,20 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-[System.Serializable]
+[Serializable]
 public class playerController : MonoBehaviour
 {
     
     public GameObject pausemenu;
     public GameObject buttonpanel;
-    public float speed = 20f;
+    float speed = 4f;
     public Camera cam;
+    public Vector2 move;
+    public GameObject healthpk;
 
     public int health = 100;
-
+    void Start()
+    {
+        move = Vector2.zero;
+    }
     
     public void Pause()
     {
@@ -23,43 +29,54 @@ public class playerController : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    
+   
     void Update()
     {
-        Vector3 pos = transform.position;
 
-        if (Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.W))
         {
-            pos.z += speed * Time.deltaTime;
+            move.y += Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            pos.x -= speed * Time.deltaTime;
+            move.x -= Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            pos.z -= speed * Time.deltaTime;
+            move.y -= Time.deltaTime * speed;
+
         }
         if (Input.GetKey(KeyCode.D))
         {
-            pos.x += speed * Time.deltaTime;
+            move.x += Time.deltaTime * speed;
         }
-        transform.position = pos;
-        transform.rotation = Quaternion.Euler(0, cam.transform.rotation.eulerAngles.y, 0);
+
+      
+        transform.Translate(move.x, 0, move.y);
+       
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
         }
+        move *= .7f;
 
-    }
-    void OnTriggerEnter(Collider col)
-    {
-        health -= 10;
-        if(health < 10)
+        if (health < 10)
         {
             SceneManager.LoadScene(2);
         }
+    }
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.CompareTag("enemy"))
+        {
+            health -= 10;
+        }
+        if(col.gameObject.CompareTag("health") && health < 100)
+        {
+            health += 10;
+            Destroy(healthpk);
+        }     
         
     }
 }

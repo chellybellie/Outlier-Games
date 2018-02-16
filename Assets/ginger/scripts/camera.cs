@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+
 public class camera : MonoBehaviour
 {
+
+    playerController player;
     public float mouseSensitivity = 100.0f;
     public float clampAngle = 80.0f;
 
@@ -30,5 +32,6 @@ public class camera : MonoBehaviour
 
         Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
         transform.rotation = localRotation;
+        //player.transform.rotation = transform.rotation;
     }
 }
