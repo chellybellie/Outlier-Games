@@ -4,17 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - Points
-=======
-  - enemy
-  - health
->>>>>>> ginger
-=======
-  - scan
   - inv
->>>>>>> trevor
+  - Points
+  - health
+  - enemy
   layers:
   - Default
   - TransparentFX
@@ -24,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - targets
-  - Cubes
+  - Target
   - Level
-  - Player
+  - 
+  - 
   - 
   - 
   - 
