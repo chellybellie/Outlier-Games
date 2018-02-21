@@ -26,7 +26,6 @@ public class Weapons : MonoBehaviour
             {
                 Fire();              
             }
-
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
             {
                 anim.SetTrigger("hit");

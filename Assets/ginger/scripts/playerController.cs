@@ -13,8 +13,9 @@ public class playerController : MonoBehaviour
     public GameObject buttonpanel;
     float speed = 4f;
     public Camera cam;
-    public Vector2 move;
     public GameObject healthpk;
+    public Vector2 move;
+   
 
     public int health = 100;
     void Start()
