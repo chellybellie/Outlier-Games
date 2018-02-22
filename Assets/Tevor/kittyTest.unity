@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d039e9e0fd4354b8c804d231b30974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EMPController: {fileID: 1873155277}
   amount: {fileID: 1804759816}
   bar: {fileID: 420464621}
   pipOne: {fileID: 1511887711}
@@ -1591,6 +1592,7 @@ MonoBehaviour:
   radius: 10
   upforce: 0.5
   FreezeTimer: 5
+  Ability: 0
 --- !u!1 &1780620061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,10 +1878,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChargeBar_UI: {fileID: 420464620}
   EMPTester: {fileID: 1601829556}
-  power: 10
-  radius: 20
+  power: 1
+  radius: 10
   upforce: 0.5
   FreezeTimer: 5
+  Ability: 0
 --- !u!4 &1873155278
 Transform:
   m_ObjectHideFlags: 0

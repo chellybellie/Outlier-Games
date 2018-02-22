@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class powerScript : MonoBehaviour
-{   
+{
+    public EMP EMPController;
     public Text amount;
     public Image bar;
     public Image pipOne, pipTwo, pipThree;
@@ -52,18 +53,14 @@ public class powerScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (uses > 0)
-            {
+           
                 note.text = "! SURGE !";
                 noteTime = 0;
-                uses--;
+                
+                EMPController.RunThrough();
+                uses = 0;
               
-            }
-            else
-            {
-                note.text = "! No Charges !";
-                noteTime = 0;
-            }
+           
         }
 
         if (noteTime > 3)
