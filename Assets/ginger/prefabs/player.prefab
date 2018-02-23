@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 114626027287565844}
   - component: {fileID: 114673175133446518}
   m_Layer: 8
-  m_Name: Player
+  m_Name: player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1314,8 +1314,8 @@ MonoBehaviour:
   pausemenu: {fileID: 0}
   buttonpanel: {fileID: 0}
   cam: {fileID: 20207857141043818}
-  move: {x: 0, y: 0}
   healthpk: {fileID: 0}
+  move: {x: 0, y: 0}
   health: 100
 --- !u!114 &114641707757734482
 MonoBehaviour:
