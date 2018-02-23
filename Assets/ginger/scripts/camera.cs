@@ -32,6 +32,6 @@ public class camera : MonoBehaviour
 
         Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
         transform.rotation = localRotation;
-        //player.transform.rotation = transform.rotation;
+
     }
 }
