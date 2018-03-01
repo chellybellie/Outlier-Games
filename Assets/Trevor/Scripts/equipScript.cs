@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class equipScript : MonoBehaviour
 {
-    enum Weapons { WRENCH, PISTOL, EMPTY, MOP};
+    enum Weapons { WRENCH, PISTOL, EMPTY, MOP, SYRINGE};
     Weapons held;
 
     public Image gun;
     public Image wrench;
     public Image mop;
+    public Image syringe;
 
 	void Start () {
         held = Weapons.EMPTY;
@@ -25,21 +26,31 @@ public class equipScript : MonoBehaviour
                 gun.enabled = false;
                 wrench.enabled = false;
                 mop.enabled = false;
+                syringe.enabled = false;
                 break;
             case Weapons.WRENCH:
                 gun.enabled = false;
                 wrench.enabled = true;
                 mop.enabled = false;
+                syringe.enabled = false;
                 break;
             case Weapons.PISTOL:
                 gun.enabled = true;
                 wrench.enabled = false;
                 mop.enabled = false;
+                syringe.enabled = false;
                 break;
             case Weapons.MOP:
                 gun.enabled = false;
                 wrench.enabled = false;
                 mop.enabled = true;
+                syringe.enabled = false;
+                break;
+            case Weapons.SYRINGE:
+                gun.enabled = false;
+                wrench.enabled = false;
+                mop.enabled = false;
+                syringe.enabled = true;
                 break;
             default:
                 break;
@@ -60,6 +71,10 @@ public class equipScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             held = Weapons.MOP;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            held = Weapons.SYRINGE;
         }
     }
 }

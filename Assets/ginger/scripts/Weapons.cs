@@ -10,7 +10,7 @@ public class Weapons : MonoBehaviour
     public GameObject wrench;
     public GameObject mop;
     public GameObject scope;
-    public GameObject needle;
+    public GameObject syringe;
     playerController player;
     public Camera cam;
 
@@ -30,7 +30,7 @@ public class Weapons : MonoBehaviour
             {
                 anim.SetTrigger("hit");
             }
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && needle.activeSelf)
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && syringe.activeSelf)
         {
             player.health -= 10;
 
@@ -40,31 +40,38 @@ public class Weapons : MonoBehaviour
                  gun.SetActive(false);
                  wrench.SetActive(false);
                  mop.SetActive(false);
-                 needle.SetActive(true);
+                 syringe.SetActive(false);
          }    
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
             {
                  gun.SetActive(false);
-                 wrench.SetActive(false);
+                 wrench.SetActive(true);
                  mop.SetActive(false);
-                 needle.SetActive(false);
+                 syringe.SetActive(false);
             }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                     gun.SetActive(false);
+                     gun.SetActive(true);
                      wrench.SetActive(false);
                      mop.SetActive(false);
-                     needle.SetActive(false);
+                     syringe.SetActive(false);
             }
         if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 gun.SetActive(false);
                 wrench.SetActive(false);
-                mop.SetActive(false);
-                needle.SetActive(false);
+                mop.SetActive(true);
+                syringe.SetActive(false);
             }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            gun.SetActive(false);
+            wrench.SetActive(false);
+            mop.SetActive(false);
+            syringe.SetActive(true);
+        }
 
         if (Input.GetMouseButton(3) && gun.activeSelf)
             {

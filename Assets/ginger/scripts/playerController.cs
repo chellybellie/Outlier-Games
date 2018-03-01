@@ -8,28 +8,21 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-    
+   
     public GameObject pausemenu;
-    public GameObject buttonpanel;
     float speed = 4f;
     public Camera cam;
     public GameObject healthpk;
     public Vector2 move;
+     public float health = 100;
+
    
 
-    public int health = 100;
     void Start()
     {
         move = Vector2.zero;
     }
     
-    public void Pause()
-    {
-        pausemenu.SetActive(true);
-        buttonpanel.SetActive(true);
-        Time.timeScale = 0;
-    }
-
    
     void Update()
     {
@@ -58,7 +51,8 @@ public class playerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Pause();
+            pausemenu.SetActive(true);
+        Time.timeScale = 0;
         }
         move *= .7f;
 
@@ -67,6 +61,7 @@ public class playerController : MonoBehaviour
             SceneManager.LoadScene(2);
         }
     }
+   
     void OnTriggerEnter(Collider col)
     {
         if(col.gameObject.CompareTag("enemy"))
