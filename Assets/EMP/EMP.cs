@@ -70,10 +70,6 @@ public class EMP : MonoBehaviour
         rb.angularDrag = originalAngularDrag;
         rb.drag = originalDrag;
     }
-    ////// Example of Coroutines//////
-    // https://docs.unity3d.com/Manual/Coroutines.html //
-    // https://unity3d.com/learn/tutorials/topics/scripting/coroutines //
-    // https://stackoverflow.com/questions/12932306/how-does-startcoroutine-yield-return-pattern-really-work-in-unity //
 
      void EMPController()
     {

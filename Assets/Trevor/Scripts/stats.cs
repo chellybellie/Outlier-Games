@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public class stats : MonoBehaviour {
+public class stats : MonoBehaviour
+{
 
     public float hp;
     public string crewName;
