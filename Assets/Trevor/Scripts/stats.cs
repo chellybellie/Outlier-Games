@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class stats : MonoBehaviour {
+public class stats : MonoBehaviour
+{
 
     public float hp;
     public string crewName;
