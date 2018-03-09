@@ -81,7 +81,7 @@ public class playerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pausemenu.SetActive(true);
-        Time.timeScale = 0;
+            Time.timeScale = 0;
         }
         move *= .7f;
 
