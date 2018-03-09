@@ -35,24 +35,38 @@ public class playerController : MonoBehaviour
         rotX = rot.x;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 
     public void Pause()
     {
         pausemenu.SetActive(true);
+<<<<<<< HEAD
 
         Time.timeScale = 0;
     
 
 
         
+=======
+
+        Time.timeScale = 0;
+    }    
+>>>>>>> master
         Time.timeScale = 0;
     }
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     void Update()
     {
-        mouseRotate();
+        Rotate();
 
         if (Input.GetKey(KeyCode.W))
         {
