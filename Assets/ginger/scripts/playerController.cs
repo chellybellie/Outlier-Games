@@ -34,26 +34,22 @@ public class playerController : MonoBehaviour
         rotY = rot.y;
         rotX = rot.x;
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> ginger
 
     public void Pause()
     {
         pausemenu.SetActive(true);
-<<<<<<< HEAD
-        Time.timeScale = 0;
-    }
 
-=======
+        Time.timeScale = 0;
+    
+
+
         
         Time.timeScale = 0;
     }
 
 
 
->>>>>>> ginger
     void Update()
     {
         mouseRotate();
