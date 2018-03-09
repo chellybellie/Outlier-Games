@@ -43,15 +43,14 @@ public class playerController : MonoBehaviour
 
         Time.timeScale = 0;
     }    
-        Time.timeScale = 0;
-    }
+        
 
 
 
 
     void Update()
     {
-        Rotate();
+        mouseRotate();
 
         if (Input.GetKey(KeyCode.W))
         {
