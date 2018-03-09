@@ -10,7 +10,7 @@ public class stats : MonoBehaviour
     public Text crewname;
     public Image health;
 
-   
+ 
     public float hp;
     public string crewName;
     public int scanType;
