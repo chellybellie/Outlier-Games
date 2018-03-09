@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+using UnityEngine.UI;
+using UnityEngine.AI;
 
 public class stats : MonoBehaviour
 {
+<<<<<<< HEAD
+    public Text crewname;
+    public Image health;
+=======
+>>>>>>> chelsey
 
+   
     public float hp;
     public string crewName;
     public int scanType;
@@ -122,10 +129,8 @@ public class stats : MonoBehaviour
 
     void Start () {
         hp = 100;
+
         
-
-       
-
         switch(scanType)
         {
             case 0:
@@ -144,9 +149,33 @@ public class stats : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update ()
+    {
+        health.fillAmount = (hp / 100);
+        crewname.text = crewName;
 
+        if (hp <= 0)
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+            foreach (GameObject enemy in enemies)
+            {
+                NavMeshAgent agent = enemy.GetComponent<NavMeshAgent>();
+                if (!agent)
+                    continue;
+                agent.isStopped = true;
+
+            }
+        }
+        
+        
+	}
+    void OnTriggerEnter(Collider col)
+    {
+
+        if (col.gameObject.CompareTag("bullet"))
+        {
+            hp -= 10;
+        }
+    }
 
 }
