@@ -8,20 +8,16 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-<<<<<<< HEAD
-   
-=======
 
->>>>>>> master
     public GameObject pausemenu;
     float speed = 4f;
     public Camera cam;
     public Vector2 move;
-<<<<<<< HEAD
+
      public float health = 100;
 
    
-=======
+
     public GameObject healthpk;
 
     public float mouseSensitivity = 100.0f;
@@ -29,7 +25,7 @@ public class playerController : MonoBehaviour
 
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
->>>>>>> master
+
 
     void Start()
     {
@@ -38,20 +34,13 @@ public class playerController : MonoBehaviour
         rotY = rot.y;
         rotX = rot.x;
     }
-<<<<<<< HEAD
-    
-   
-=======
 
     public void Pause()
     {
         pausemenu.SetActive(true);
-        buttonpanel.SetActive(true);
         Time.timeScale = 0;
     }
 
-
->>>>>>> master
     void Update()
     {
         mouseRotate();
