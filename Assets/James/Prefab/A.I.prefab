@@ -46,11 +46,11 @@ GameObject:
   - component: {fileID: 54322794119408848}
   - component: {fileID: 114053094148588972}
   - component: {fileID: 114033675821374206}
-  - component: {fileID: 114864013400058760}
   - component: {fileID: 135276593372253052}
+  - component: {fileID: 114405196515750114}
   m_Layer: 0
   m_Name: A.I
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1889705834799610}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.03, y: -0.59, z: 32.89}
+  m_LocalPosition: {x: 14.306288, y: -22.896284, z: 33.63}
   m_LocalScale: {x: 1.5037162, y: 1.5037162, z: 1.5037162}
   m_Children:
   - {fileID: 4650563489925632}
@@ -245,10 +245,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   Target: {fileID: 0}
   isChasingPlayer: 0
 --- !u!114 &114061304072664962
@@ -262,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e2de87a54d49f46b880ca834ffb8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114864013400058760
+--- !u!114 &114405196515750114
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -270,9 +266,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1889705834799610}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c84db73bace9a8468d7a5fc61fddd62, type: 3}
+  m_Script: {fileID: 11500000, guid: 355990c01d8d2e742b044934233fff4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crewname: {fileID: 0}
+  health: {fileID: 0}
   hp: 100
   crewName: 
   scanType: 0
@@ -287,7 +285,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 3.87
   m_Center: {x: 0, y: 0.22000001, z: 0}
 --- !u!136 &136902373430064558
 CapsuleCollider:
