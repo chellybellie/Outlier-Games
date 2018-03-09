@@ -42,10 +42,6 @@ public class playerController : MonoBehaviour
 
         Time.timeScale = 0;
     
-
-
-        
-        Time.timeScale = 0;
     }
 
 
