@@ -6,11 +6,9 @@ using UnityEngine.AI;
 
 public class stats : MonoBehaviour
 {
-<<<<<<< HEAD
+
     public Text crewname;
     public Image health;
-=======
->>>>>>> chelsey
 
    
     public float hp;
