@@ -9,7 +9,7 @@ public class HPScript : MonoBehaviour {
     public Image bleedBar;
     public Text hpText;
 
-    public float HP;
+    public playerController player;
     public float bleedHP;
     public float hit;
     public float bleed;
@@ -20,21 +20,21 @@ public class HPScript : MonoBehaviour {
         bleedSeverity = 1;
         bleed = 0;
         hit = 0;
-        HP = 100;
+        player.health = 100;
         bleedHP = 100;
         bleedState = "OK";
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        hpText.text = bleedState + " - " + ((int)HP).ToString();
-        hpBar.fillAmount = (HP / 100);
+        hpText.text = bleedState + " - " + ((int)player.health).ToString();
+        hpBar.fillAmount = (player.health / 100);
         bleedBar.fillAmount = (bleedHP / 100);
         if(hit > 0||bleed > 0)
         {
             TakeHit(hit, bleed, bleedSeverity);
         }
-        if(bleedHP < HP)
+        if(bleedHP < player.health)
         {
             Bleed();
         }
@@ -73,7 +73,7 @@ public class HPScript : MonoBehaviour {
             hit = 0;
             bleed = 0;
             bleedSeverity = 1;
-            HP = 100;
+            player.health = 100;
             bleedHP = 100;
             bleedState = "OK";
         }
@@ -81,7 +81,7 @@ public class HPScript : MonoBehaviour {
 
     void TakeHit(float h, float b, float s)
     {
-        HP -= h;
+        player.health -= h;
         bleedHP -= h;
         bleedHP -= b;
         bleedSeverity = s;
@@ -91,6 +91,6 @@ public class HPScript : MonoBehaviour {
 
     void Bleed()
     {
-        HP -= (bleedSeverity * Time.deltaTime);
+        player.health -= (bleedSeverity * Time.deltaTime);
     }
 }
