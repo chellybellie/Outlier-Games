@@ -35,11 +35,15 @@ public class playerController : MonoBehaviour
         rotX = rot.x;
     }
 
+
+
     public void Pause()
     {
         pausemenu.SetActive(true);
+
         Time.timeScale = 0;
-    }  
+    } 
+
 
 
 
