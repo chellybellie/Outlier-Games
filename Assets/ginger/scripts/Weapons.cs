@@ -12,9 +12,10 @@ public class Weapons : MonoBehaviour
     public GameObject scope;
     public GameObject syringe;
     playerController player;
+
     public Camera cam;
 
-    float damage;
+    public int ammo = 10;
     
     public Animator anim;
 
@@ -24,7 +25,11 @@ public class Weapons : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf)
             {
-                Fire();              
+                if (ammo > 0 )
+                {
+                    Fire();
+                }
+                              
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
             {
@@ -88,11 +93,11 @@ public class Weapons : MonoBehaviour
 	
 	void Fire()
     {
-            var bullet = (GameObject)Instantiate(bulletPrefab,
-                bulletSpawn.position, bulletSpawn.rotation);
+        var bullet = (GameObject)Instantiate(bulletPrefab,
+            bulletSpawn.position, bulletSpawn.rotation);
 
-            bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
-            
-            Destroy(bullet, 2.0f);
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 8;
+        ammo--;
+        Destroy(bullet, 2.0f);
     }
 }
