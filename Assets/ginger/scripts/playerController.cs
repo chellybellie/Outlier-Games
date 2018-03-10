@@ -42,13 +42,7 @@ public class playerController : MonoBehaviour
         pausemenu.SetActive(true);
 
         Time.timeScale = 0;
-<<<<<<< HEAD
-    }    
-        
-=======
-    } 
->>>>>>> master
-
+    }
 
 
 
