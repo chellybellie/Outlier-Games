@@ -4347,6 +4347,15 @@ Prefab:
       propertyPath: musicSource
       value: 
       objectReference: {fileID: 378400772}
+    - target: {fileID: 114359604808478360, guid: 6455412e649b2a249a5cc364e877eede,
+        type: 2}
+      propertyPath: scan
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1260443023566026, guid: 6455412e649b2a249a5cc364e877eede, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6455412e649b2a249a5cc364e877eede, type: 2}
   m_IsPrefabParent: 0
