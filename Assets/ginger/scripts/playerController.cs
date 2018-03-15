@@ -60,8 +60,20 @@ public class playerController : MonoBehaviour
         {
             move.x += Time.deltaTime * speed;
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if(move.y > 0)
+            {
+                move.y += Time.deltaTime * (speed / 2);
+            }
+            else
+            {
+                move.y -= Time.deltaTime * (speed / 2);
+            }
+            
+        }
 
-      
+
         transform.Translate(move.x, 0, move.y);
        
 

@@ -1067,6 +1067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1457307127}
   isHit: 0
+  resetCam: {x: 0, y: 0, z: 0}
 --- !u!1 &432864025 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 10ba9ce6ff44524479e7ff2bb400c6b9, type: 3}
@@ -1081,7 +1082,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 10ba9ce6ff44524479e7ff2bb400c6b9, type: 3}
@@ -2715,6 +2716,7 @@ GameObject:
   - component: {fileID: 1558426144}
   - component: {fileID: 1558426143}
   - component: {fileID: 1558426142}
+  - component: {fileID: 1558426150}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -2729,7 +2731,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1558426141}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05ab7c46078a5044c893af5c0e8773e0, type: 3}
   m_Name: 
@@ -2871,6 +2873,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1558426150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1558426141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df9918b6be025c439a59a15953e7718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1457307127}
+  isMoving: 0
+  resetCam: {x: 0, y: 0, z: 0}
 --- !u!1 &1585850649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,6 +3014,7 @@ GameObject:
   - component: {fileID: 1609273131}
   - component: {fileID: 1609273126}
   - component: {fileID: 1609273133}
+  - component: {fileID: 1609273134}
   m_Layer: 0
   m_Name: AI
   m_TagString: Untagged
@@ -3154,6 +3171,21 @@ MonoBehaviour:
   edgeResolveIterations: 4
   edgeDstThreshold: 0.5
   viewMeshFilter: {fileID: 1585850651}
+--- !u!114 &1609273134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609273125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c84db73bace9a8468d7a5fc61fddd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 0
+  crewName: 
+  scanType: 0
+  itemType: 0
 --- !u!1 &1628125706
 GameObject:
   m_ObjectHideFlags: 0
