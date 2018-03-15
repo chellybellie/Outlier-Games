@@ -149,8 +149,8 @@ public class stats : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        health.fillAmount = (hp / 100);
-        crewname.text = crewName;
+       // health.fillAmount = (hp / 100);
+        //crewname.text = crewName;
 
         if (hp <= 0)
         {
