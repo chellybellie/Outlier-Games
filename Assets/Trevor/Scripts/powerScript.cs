@@ -9,6 +9,8 @@ public class powerScript : MonoBehaviour
     public Image bar;
     public Image pipOne, pipTwo, pipThree;
     public Text note;
+    //AudioSource zap;
+    //public AudioClip zappity;
     public float noteTime;
     public float power;
     public float charge;
@@ -53,6 +55,7 @@ public class powerScript : MonoBehaviour
         {
             if (uses > 0)
             {
+                //zap.PlayOneShot(zappity, 1f);
                 note.text = "! SURGE !";
                 noteTime = 0;
                 uses--;

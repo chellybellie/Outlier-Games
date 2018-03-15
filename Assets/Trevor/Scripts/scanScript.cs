@@ -25,7 +25,7 @@ public class scanScript : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-       // Debug.Log("ding");
+        //Debug.Log("ding");
 
         if(other.gameObject.tag == "scan")
         {

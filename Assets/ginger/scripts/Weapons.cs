@@ -12,12 +12,18 @@ public class Weapons : MonoBehaviour
     public GameObject scope;
     public GameObject syringe;
     playerController player;
-
+    AudioSource shoot;
+    public AudioClip gunshot;
     public Camera cam;
 
     public int ammo = 10;
     
     public Animator anim;
+
+     void Start()
+    {
+        shoot = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -27,8 +33,9 @@ public class Weapons : MonoBehaviour
             {
                 if (ammo > 0 )
                 {
+                shoot.PlayOneShot(gunshot, 1f);
                     Fire();
-                }
+            }
                               
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
@@ -95,7 +102,7 @@ public class Weapons : MonoBehaviour
     {
         var bullet = (GameObject)Instantiate(bulletPrefab,
             bulletSpawn.position, bulletSpawn.rotation);
-
+            
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 100;
         ammo--;
         Destroy(bullet, 2.0f);
