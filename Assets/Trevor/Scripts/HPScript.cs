@@ -79,7 +79,7 @@ public class HPScript : MonoBehaviour {
         }
     }
 
-    void TakeHit(float h, float b, float s)
+    public void TakeHit(float h, float b, float s)
     {
         player.health -= h;
         bleedHP -= h;

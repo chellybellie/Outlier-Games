@@ -9,6 +9,7 @@ TagManager:
   - health
   - enemy
   - bullet
+  - scan
   layers:
   - Default
   - TransparentFX

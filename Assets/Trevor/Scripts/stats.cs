@@ -173,6 +173,7 @@ public class stats : MonoBehaviour
         if (col.gameObject.CompareTag("bullet"))
         {
             hp -= 10;
+            Destroy(col.gameObject);
         }
     }
 

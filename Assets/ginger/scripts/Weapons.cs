@@ -96,7 +96,7 @@ public class Weapons : MonoBehaviour
         var bullet = (GameObject)Instantiate(bulletPrefab,
             bulletSpawn.position, bulletSpawn.rotation);
 
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 8;
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 100;
         ammo--;
         Destroy(bullet, 2.0f);
     }

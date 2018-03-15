@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-
+    public HPScript hpscript;
     public GameObject pausemenu;
-    float speed = 4f;
+    float speed = 2f;
     public Camera cam;
     public Vector2 move;
 
@@ -89,7 +89,7 @@ public class playerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("enemy"))
         {
-            health -= 10;
+            hpscript.TakeHit(1,5,1);
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
