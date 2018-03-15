@@ -14,13 +14,13 @@ public class DoorController : MonoBehaviour
         {
             Door.transform.Translate(Vector3.up * Time.deltaTime * 5);
         }
-        if (Door.transform.position.y > 7f)
+        if (Door.transform.position.y > 2.5f)
         {
             doorIsOpening = false;
         }
-       // void OnMouseDown()
+        if (Input.GetKeyDown(KeyCode.F))
         {
-            //doorIsOpening == true;
+            doorIsOpening = true;
         }
     }
 }
