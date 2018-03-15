@@ -89,7 +89,7 @@ public class playerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("enemy"))
         {
-            hpscript.TakeHit(1,5,1);
+            hpscript.TakeHit(0,0,1);
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
