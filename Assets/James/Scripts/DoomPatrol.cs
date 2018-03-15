@@ -57,7 +57,7 @@ public class DoomPatrol : MonoBehaviour {
             Target = other.gameObject.transform;
             isChasingPlayer = true;
         }
-        //Debug.Log("Target Locked");
+        
      
     }
 
@@ -69,6 +69,6 @@ public class DoomPatrol : MonoBehaviour {
             GotoNextPoint();
             isChasingPlayer = false;
         }
-        //Debug.Log("TargetLost");
+    
     }
 }

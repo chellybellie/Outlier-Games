@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9c2b8865d86bea84ab2370ea26866c54
 timeCreated: 1521061320
+=======
+guid: fd10cfc6d2432454c97ad654a5d812b6
+timeCreated: 1521067942
+>>>>>>> ginger
 licenseType: Pro
 NativeFormatImporter:
   userData: 
