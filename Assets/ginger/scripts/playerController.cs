@@ -22,7 +22,7 @@ public class playerController : MonoBehaviour
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
 
-    public int health = 100;
+    public float health = 100;
     void Start()
     {
         move = Vector2.zero;
