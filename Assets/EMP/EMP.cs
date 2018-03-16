@@ -25,7 +25,7 @@ public class EMP : MonoBehaviour
     }
     public void EMPDetonate()
     {
-        powerScript EMP_UI = GetComponent<powerScript>();
+        //powerScript EMP_UI = GetComponent<powerScript>();
         // gets emps position
         Vector3 ExplosionPosition = EMPTester.transform.position;
         Collider[] colliders = Physics.OverlapSphere(ExplosionPosition, radius);
