@@ -8,16 +8,12 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-    public HPScript hpscript;
+    
     public GameObject pausemenu;
-    float speed = 2f;
+    public GameObject buttonpanel;
+    float speed = 4f;
     public Camera cam;
     public Vector2 move;
-
-     public float health = 100;
-
-   
-
     public GameObject healthpk;
 
     public float mouseSensitivity = 100.0f;
@@ -26,7 +22,7 @@ public class playerController : MonoBehaviour
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
 
-
+    public int health = 100;
     void Start()
     {
         move = Vector2.zero;
@@ -34,24 +30,20 @@ public class playerController : MonoBehaviour
         rotY = rot.y;
         rotX = rot.x;
     }
-
-
-
+    
     public void Pause()
     {
         pausemenu.SetActive(true);
+        buttonpanel.SetActive(true);
+        Time.timeScale = 0;
+    }
 
-        Time.timeScale = 0; 
-
-    } 
-
-
-
+   
     void Update()
     {
         mouseRotate();
 
-        if (Input.GetKey(KeyCode.W))
+        if(Input.GetKey(KeyCode.W))
         {
             move.y += Time.deltaTime * speed;
         }
@@ -68,15 +60,26 @@ public class playerController : MonoBehaviour
         {
             move.x += Time.deltaTime * speed;
         }
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if(move.y > 0)
+            {
+                move.y += Time.deltaTime * (speed / 2);
+            }
+            else
+            {
+                move.y -= Time.deltaTime * (speed / 2);
+            }
+            
+        }
 
 
         transform.Translate(move.x, 0, move.y);
-
+       
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            pausemenu.SetActive(true);
-            Time.timeScale = 0;
+            Pause();
         }
         move *= .7f;
 
@@ -85,19 +88,18 @@ public class playerController : MonoBehaviour
             SceneManager.LoadScene(2);
         }
     }
-   
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("enemy"))
+        if(col.gameObject.CompareTag("enemy"))
         {
-            hpscript.TakeHit(0,0,1);
+            health -= 10;
         }
-        if (col.gameObject.CompareTag("health") && health < 100)
+        if(col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
             Destroy(healthpk);
-        }
-
+        }     
+        
     }
 
     public void mouseRotate()
