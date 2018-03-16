@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: aab33f1a3b2e712498aa4d82d5859325
-timeCreated: 1516385420
+timeCreated: 1519934263
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - pausemenu: {fileID: 1887078193119656, guid: 36fc4b9c649d1d340a87e517b23ef121,
+      type: 2}
+  - cam: {instanceID: 0}
+  - healthpk: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
