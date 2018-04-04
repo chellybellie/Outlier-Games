@@ -1523,7 +1523,7 @@ GameObject:
   - component: {fileID: 488291498}
   m_Layer: 8
   m_Name: wrench
-  m_TagString: Untagged
+  m_TagString: wrench
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1969,7 +1969,7 @@ GameObject:
   - component: {fileID: 808209772}
   m_Layer: 8
   m_Name: mop
-  m_TagString: Untagged
+  m_TagString: mop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2917,7 +2917,7 @@ GameObject:
   - component: {fileID: 1358859400}
   m_Layer: 8
   m_Name: syringe
-  m_TagString: Untagged
+  m_TagString: syringe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

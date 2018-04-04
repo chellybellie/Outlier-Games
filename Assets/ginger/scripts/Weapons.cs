@@ -34,6 +34,7 @@ public class Weapons : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
             {
                 anim.SetTrigger("hit");
+            
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && syringe.activeSelf)
         {

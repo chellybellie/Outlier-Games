@@ -172,8 +172,23 @@ public class stats : MonoBehaviour
 
         if (col.gameObject.CompareTag("bullet"))
         {
-            hp -= 10;
+            hp -= 30;
             Destroy(col.gameObject);
+        }
+        if (col.gameObject.CompareTag("wrench"))
+        {
+            hp -= 10;
+           
+        }
+        if (col.gameObject.CompareTag("syringe"))
+        {
+            
+            
+        }
+        if (col.gameObject.CompareTag("mop"))
+        {
+            hp -= 10;
+            
         }
     }
 
