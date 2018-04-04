@@ -11,7 +11,7 @@ public class playerController : MonoBehaviour
     
     public GameObject pausemenu;
     public GameObject buttonpanel;
-    float speed = 4f;
+    float speed = 2f;
     public Camera cam;
     public Vector2 move;
     public GameObject healthpk;
