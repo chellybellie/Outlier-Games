@@ -4,11 +4,11 @@ using System.Collections;
 public class Doors : MonoBehaviour {
 
 	Animator animator;
-	bool doorOpen;
+	bool Open;
 
 	void Start()
 	{
-		doorOpen = false;
+		Open = false;
 		animator = GetComponent<Animator>();
 	}
 
@@ -16,24 +16,26 @@ public class Doors : MonoBehaviour {
 	{
 		if(col.gameObject.tag == "Player")
 		{
-			doorOpen = true;
-			DoorControl ("Open");
-		}
+			Open = true;
+			DoorControl (true);
+            Debug.Log("Open");
+        }
 	}
 
 	void OnTriggerExit(Collider col)
 	{
-		if(doorOpen)
+		if(col.gameObject.tag == "Player")
 		{
-			doorOpen = false;
-			DoorControl ("Close");
+			Open = false;
+			DoorControl (false);
+            Debug.Log("Close");
 		}
 	}
 
-	void DoorControl(string direction)
+	void DoorControl(bool open)
 	{
-		animator.SetTrigger(direction);
-			}
+		animator.SetBool("Open", open);
+	}
 
 }
 
