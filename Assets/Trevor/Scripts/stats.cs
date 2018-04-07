@@ -167,29 +167,10 @@ public class stats : MonoBehaviour
         
         
 	}
-    void OnTriggerEnter(Collider col)
+    public void Damage (int damageAmount)
     {
-
-        if (col.gameObject.CompareTag("bullet"))
-        {
-            hp -= 30;
-            Destroy(col.gameObject);
-        }
-        if (col.gameObject.CompareTag("wrench"))
-        {
-            hp -= 10;
-           
-        }
-        if (col.gameObject.CompareTag("syringe"))
-        {
-            
-            
-        }
-        if (col.gameObject.CompareTag("mop"))
-        {
-            hp -= 10;
-            
-        }
+        hp -= damageAmount;
+       
     }
 
 }
