@@ -9,6 +9,8 @@ TagManager:
   - health
   - enemy
   - bullet
+  - Light
+  - PostEffect
   layers:
   - Default
   - TransparentFX
