@@ -11,6 +11,7 @@ public class Weapons : MonoBehaviour
     public GameObject mop;
     public GameObject scope;
     public GameObject syringe;
+    public ammoCount ammoCT;
     playerController player;
     AudioSource shoot;
     public AudioClip gunshot;
@@ -27,7 +28,7 @@ public class Weapons : MonoBehaviour
 
     void Update()
     {
-        
+        ammoCT.count = ammo;
 
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf)
             {

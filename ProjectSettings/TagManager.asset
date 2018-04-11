@@ -9,6 +9,8 @@ TagManager:
   - health
   - enemy
   - scan
+  - bullet
+  - ammo
   layers:
   - Default
   - TransparentFX
