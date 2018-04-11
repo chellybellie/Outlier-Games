@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EMP : MonoBehaviour
 {
+    public testAbilityScript tas;
     public powerScript ChargeBar_UI;
     public GameObject EMPTester;
     public float power = 1f;          
@@ -21,7 +23,7 @@ public class EMP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EMPController();
+        //EMPController();
     }
     public void EMPDetonate()
     {
@@ -59,16 +61,35 @@ public class EMP : MonoBehaviour
         // DEbug console screen///////////////////////////////
         while (time > 0)
         {
-            time -= 1;
+
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+            foreach (GameObject enemy in enemies)
+            {
+                NavMeshAgent agent = enemy.GetComponent<NavMeshAgent>();
+                if (!agent)
+                    continue;
+                agent.isStopped = true;
+            }
+
+                time -= 1;
 
             Debug.Log(time);
 
             yield return new WaitForSeconds(1);
         }
+        GameObject[] enemiestwo = GameObject.FindGameObjectsWithTag("enemy");
+        foreach (GameObject enemytwo in enemiestwo)
+        {
+            NavMeshAgent agent = enemytwo.GetComponent<NavMeshAgent>();
+            if (!agent)
+                continue;
+            agent.isStopped = false;
+        }
         //////////////////////////////////////////////////////
         rb.constraints = RigidbodyConstraints.None;
         rb.angularDrag = originalAngularDrag;
         rb.drag = originalDrag;
+        
     }
 
      void EMPController()
@@ -93,7 +114,7 @@ public class EMP : MonoBehaviour
 
        public void RunThrough()
     {
-        if (Ability == 0 && ChargeBar_UI.uses < 1 && ChargeBar_UI.power < 99 && ChargeBar_UI.power > 25) 
+        if (tas.abilitySelect == 0 && ChargeBar_UI.uses < 1 && ChargeBar_UI.power < 99 && ChargeBar_UI.power > 25) 
         {
             FreezeTimer = 1;
             EMPDetonate();
@@ -101,44 +122,47 @@ public class EMP : MonoBehaviour
             ChargeBar_UI.power -= 25;
         }
 
-        if ( Ability ==0 && ChargeBar_UI.uses == 1)
+        if (tas.abilitySelect == 1 && ChargeBar_UI.uses == 1)
         {
             FreezeTimer = 5;
             EMPDetonate();
             // LightShutdown();
+            ChargeBar_UI.uses -= 1;
         }
-        if (Ability == 1 && ChargeBar_UI.uses == 2 )
+        if (tas.abilitySelect == 2 && ChargeBar_UI.uses == 2 )
         {
             FreezeTimer = 10;
             EMPDetonate();
             // LightShutdown();
+            ChargeBar_UI.uses -= 2;
         }
-        if (Ability == 2 && ChargeBar_UI.uses == 3)
+        if (tas.abilitySelect == 3 && ChargeBar_UI.uses == 3)
         {
             FreezeTimer = 15;
             EMPDetonate();
             // LightShutdown();
+            ChargeBar_UI.uses -= 3;
         }
 
     }
 
-    void AbilitySelect()
-    {
-        if( Selector >=0 && Selector <= .99f )
-        {
-            Ability = 0;
-        }
+    //void AbilitySelect()
+    //{
+    //    if( Selector >=0 && Selector <= .99f )
+    //    {
+    //        Ability = 0;
+    //    }
 
-        if (Selector >= 1 && Selector <= 1.99f)
-        {
-            Ability = 1;
-        }
-        if (Selector >= 2 && Selector <= 2.99f)
-        {
-            Ability = 2;
-        }
+    //    if (Selector >= 1 && Selector <= 1.99f)
+    //    {
+    //        Ability = 1;
+    //    }
+    //    if (Selector >= 2 && Selector <= 2.99f)
+    //    {
+    //        Ability = 2;
+    //    }
 
-    }
+    //}
 
 
 

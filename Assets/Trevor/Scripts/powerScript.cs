@@ -15,6 +15,7 @@ public class powerScript : MonoBehaviour
     public float power;
     public float charge;
     public int uses;
+    EMP empScript;
     void Start()
     {
         power = 0;
@@ -22,6 +23,7 @@ public class powerScript : MonoBehaviour
         pipOne.enabled = false;
         pipTwo.enabled = false;
         pipThree.enabled = false;
+        empScript = gameObject.GetComponent<EMP>();
     }
 
     // Update is called once per frame
@@ -58,7 +60,7 @@ public class powerScript : MonoBehaviour
                 //zap.PlayOneShot(zappity, 1f);
                 note.text = "! SURGE !";
                 noteTime = 0;
-                uses--;
+                empScript.RunThrough();
             }
             else
             {
