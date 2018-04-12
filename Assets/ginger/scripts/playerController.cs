@@ -29,7 +29,13 @@ public class playerController : MonoBehaviour
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
+<<<<<<< HEAD
         wep = gameObject.GetComponent<Weapons>();
+=======
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+       
+>>>>>>> ginger
     }
     
     public void Pause()
@@ -40,6 +46,7 @@ public class playerController : MonoBehaviour
     }
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 
 =======
 >>>>>>> master
@@ -50,6 +57,13 @@ public class playerController : MonoBehaviour
         mouseRotate();
 
         if(Input.GetKey(KeyCode.W))
+=======
+    void Update()
+    {
+        mouseRotate();
+       
+        if (Input.GetKey(KeyCode.W))
+>>>>>>> ginger
         {
             move.y -= Time.deltaTime * speed;
         }
@@ -81,11 +95,22 @@ public class playerController : MonoBehaviour
 
 
         transform.Translate(move.x, 0, move.y);
+<<<<<<< HEAD
        
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
+=======
+
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pausemenu.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+>>>>>>> ginger
         }
         move *= .7f;
 

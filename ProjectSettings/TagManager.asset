@@ -9,6 +9,7 @@ TagManager:
   - health
   - enemy
   - scan
+<<<<<<< HEAD
   - bullet
 <<<<<<< HEAD
   - Light
@@ -16,6 +17,11 @@ TagManager:
 =======
   - ammo
 >>>>>>> master
+=======
+  - wrench
+  - syringe
+  - mop
+>>>>>>> ginger
   layers:
   - Default
   - TransparentFX

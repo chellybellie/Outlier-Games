@@ -9,8 +9,10 @@ public class stats : MonoBehaviour
 
     public Text crewname;
     public Image health;
+    public Animator anim;
 
- 
+    private AudioSource sound;
+    public AudioClip wrenchHit;
     public float hp;
     public string crewName;
     public int scanType;
@@ -127,9 +129,9 @@ public class stats : MonoBehaviour
 
     void Start () {
         hp = 100;
+        sound = GetComponent<AudioSource>();
 
-        
-        switch(scanType)
+        switch (scanType)
         {
             case 0:
                 crewName = GenerateName();
@@ -165,14 +167,24 @@ public class stats : MonoBehaviour
         
         
 	}
-    void OnTriggerEnter(Collider col)
+    public void Damage (int damageAmount)
     {
-
-        if (col.gameObject.CompareTag("bullet"))
-        {
-            hp -= 10;
-            Destroy(col.gameObject);
-        }
+        hp -= damageAmount;
+       
     }
 
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.CompareTag("syringe"))
+        {
+            anim.Play("syringe hit");
+            hp -= 10;
+        }
+        if (col.gameObject.CompareTag("wrench"))
+        {
+            anim.Play("wrench hit");
+            sound.PlayOneShot(wrenchHit);
+            hp -= 10;
+        }
+    }
 }

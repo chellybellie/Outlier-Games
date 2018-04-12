@@ -4,51 +4,96 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
-    public GameObject bulletPrefab;
-    public Transform bulletSpawn;
+    public Transform raySpawn;
     public GameObject gun;
     public GameObject wrench;
     public GameObject mop;
     public GameObject scope;
     public GameObject syringe;
+<<<<<<< HEAD
     public ammoCount ammoCT;
+=======
+<<<<<<< HEAD
+>>>>>>> ginger
     playerController player;
     AudioSource shoot;
     public AudioClip gunshot;
+=======
+    public playerController player;
+
+    public AudioClip wrenchSwing;
+    public AudioClip syringeSound;
+    public AudioClip mopSound;
+
+>>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
     public Camera cam;
 
+    private WaitForSeconds shotDuration = new WaitForSeconds(.07f);
+    private LineRenderer laserLine;
+    private float nextFire;
+    private AudioSource Audio;
+
     public int ammo = 10;
-    
+    public int gunDamage = 30;
+    public float fireRate = .2f;
+    public float weaponRange = 50f;
+    public float hitForce = 100f;
     public Animator anim;
 
+<<<<<<< HEAD
      void Start()
     {
         shoot = GetComponent<AudioSource>();
+=======
+    void Start()
+    {
+        laserLine = GetComponent<LineRenderer>();
+        Audio = GetComponent<AudioSource>();
+>>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
     }
 
     void Update()
     {
+<<<<<<< HEAD
         ammoCT.count = ammo;
+=======
+>>>>>>> ginger
 
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf)
+        
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf && Time.time > nextFire)
             {
                 if (ammo > 0 )
                 {
                 shoot.PlayOneShot(gunshot, 1f);
                     Fire();
+<<<<<<< HEAD
             }
                               
+=======
+                }
+                             
+>>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
             {
-                anim.SetTrigger("hit");
+                anim.Play("wrench swing");
+                Audio.PlayOneShot(wrenchSwing);
+            
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && syringe.activeSelf)
         {
+            anim.Play("syringe attack");
             player.health -= 10;
+            Audio.PlayOneShot(syringeSound);
 
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && mop.activeSelf)
+        {
+            Audio.PlayOneShot(mopSound);
+        }
+
+            if (Input.GetKeyDown(KeyCode.Alpha1))
          {
                  gun.SetActive(false);
                  wrench.SetActive(false);
@@ -86,7 +131,7 @@ public class Weapons : MonoBehaviour
             syringe.SetActive(true);
         }
 
-        if (Input.GetMouseButton(3) && gun.activeSelf)
+        if (Input.GetMouseButton(1) && gun.activeSelf)
             {
                 scope.SetActive(true);
                 cam.fieldOfView = 40;              
@@ -99,13 +144,54 @@ public class Weapons : MonoBehaviour
             
     }
 	
+
+
 	void Fire()
     {
+<<<<<<< HEAD
         var bullet = (GameObject)Instantiate(bulletPrefab,
             bulletSpawn.position, bulletSpawn.rotation);
             
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 100;
+=======
+        anim.Play("gun shoot");
+        nextFire = Time.time + fireRate;
+        Vector3 rayOrigin = cam.ViewportToWorldPoint(new Vector3(.5f, .5f, .0f));
+        Vector3 lineOrigin = cam.ViewportToWorldPoint(new Vector3(.5f, .5f, .0f));
+        Debug.DrawRay(lineOrigin, cam.transform.forward * weaponRange, Color.gray);
+        RaycastHit hit;
+        laserLine.SetPosition(0, raySpawn.position);
+>>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
         ammo--;
-        Destroy(bullet, 2.0f);
+        StartCoroutine(ShotEffect());
+       if(Physics.Raycast(rayOrigin,cam.transform.forward,out hit,weaponRange))
+        {
+            laserLine.SetPosition(1, hit.point);
+            stats hp = hit.collider.GetComponent<stats>();
+            if(hp != null)
+            {
+                hp.Damage(gunDamage);
+                anim.Play("gun hit");
+            }
+            if(hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(-hit.normal * hitForce);
+            }
+        }
+       else
+        {
+            laserLine.SetPosition(1, rayOrigin + (cam.transform.forward * weaponRange));
+        }
+    }
+
+    private IEnumerator ShotEffect()
+    {
+        Audio.Play();
+        laserLine.enabled = true;
+        yield return shotDuration;
+        laserLine.enabled = false;
+        
     }
 }
+
+
