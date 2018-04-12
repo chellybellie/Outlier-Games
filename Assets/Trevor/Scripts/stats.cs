@@ -10,7 +10,9 @@ public class stats : MonoBehaviour
     public Text crewname;
     public Image health;
     public Animator anim;
- 
+
+    private AudioSource sound;
+    public AudioClip wrenchHit;
     public float hp;
     public string crewName;
     public int scanType;
@@ -127,9 +129,9 @@ public class stats : MonoBehaviour
 
     void Start () {
         hp = 100;
+        sound = GetComponent<AudioSource>();
 
-        
-        switch(scanType)
+        switch (scanType)
         {
             case 0:
                 crewName = GenerateName();
@@ -183,6 +185,7 @@ public class stats : MonoBehaviour
         if (col.gameObject.CompareTag("wrench"))
         {
             anim.Play("wrench hit");
+            sound.PlayOneShot(wrenchHit);
             hp -= 10;
         }
     }

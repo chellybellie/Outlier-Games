@@ -428,7 +428,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crewname: {fileID: 0}
   health: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 1558426152}
+  wrenchHit: {fileID: 0}
   hp: 100
   crewName: 
   scanType: 0
@@ -2828,7 +2829,6 @@ MonoBehaviour:
   syringe: {fileID: 84132040}
   player: {fileID: 1558426143}
   wrenchSwing: {fileID: 8300000, guid: 2cd33efb898d01541a19e0810c1e0e2c, type: 3}
-  wrenchHit: {fileID: 8300000, guid: 6b31b2eea83863044a8ed36f34e1ced2, type: 3}
   syringeSound: {fileID: 8300000, guid: 21aac910a84775844b33b6aad87921fb, type: 3}
   mopSound: {fileID: 8300000, guid: 537565b37def1d04f9fe4ff66f8de14e, type: 3}
   cam: {fileID: 1457307127}
@@ -3633,6 +3633,10 @@ Prefab:
     - target: {fileID: 224154476924202030, guid: db4d65c0d6fcdcf408df80fcf133fd3d,
         type: 2}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364236120054262, guid: db4d65c0d6fcdcf408df80fcf133fd3d, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

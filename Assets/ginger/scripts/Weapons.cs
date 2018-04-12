@@ -13,7 +13,6 @@ public class Weapons : MonoBehaviour
     public playerController player;
 
     public AudioClip wrenchSwing;
-    public AudioClip wrenchHit;
     public AudioClip syringeSound;
     public AudioClip mopSound;
 

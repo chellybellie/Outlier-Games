@@ -33,7 +33,9 @@ public class playerController : MonoBehaviour
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+       
     }
 
 
@@ -71,12 +73,13 @@ public class playerController : MonoBehaviour
 
         transform.Translate(move.x, 0, move.y);
 
-
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pausemenu.SetActive(true);
             Time.timeScale = 0;
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
         move *= .7f;
 
