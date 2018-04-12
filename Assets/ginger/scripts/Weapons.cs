@@ -39,25 +39,25 @@ public class Weapons : MonoBehaviour
 
     void Update()
     {
-        
 
+        
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf && Time.time > nextFire)
             {
                 if (ammo > 0 )
                 {
                     Fire();
                 }
-               
-                
+                             
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
             {
-                anim.SetTrigger("hit");
+                anim.Play("wrench swing");
                 Audio.PlayOneShot(wrenchSwing);
             
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && syringe.activeSelf)
         {
+            anim.Play("syringe attack");
             player.health -= 10;
             Audio.PlayOneShot(syringeSound);
 
@@ -123,6 +123,7 @@ public class Weapons : MonoBehaviour
 
 	void Fire()
     {
+        anim.Play("gun shoot");
         nextFire = Time.time + fireRate;
         Vector3 rayOrigin = cam.ViewportToWorldPoint(new Vector3(.5f, .5f, .0f));
         Vector3 lineOrigin = cam.ViewportToWorldPoint(new Vector3(.5f, .5f, .0f));
@@ -138,6 +139,7 @@ public class Weapons : MonoBehaviour
             if(hp != null)
             {
                 hp.Damage(gunDamage);
+                anim.Play("gun hit");
             }
             if(hit.rigidbody != null)
             {

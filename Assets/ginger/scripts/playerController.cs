@@ -33,6 +33,7 @@ public class playerController : MonoBehaviour
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
+        Cursor.visible = false;
     }
 
 
@@ -45,12 +46,10 @@ public class playerController : MonoBehaviour
 
     } 
 
-
-
     void Update()
     {
         mouseRotate();
-
+       
         if (Input.GetKey(KeyCode.W))
         {
             move.y += Time.deltaTime * speed;
@@ -77,6 +76,7 @@ public class playerController : MonoBehaviour
         {
             pausemenu.SetActive(true);
             Time.timeScale = 0;
+            Cursor.visible = true;
         }
         move *= .7f;
 

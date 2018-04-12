@@ -9,7 +9,7 @@ public class stats : MonoBehaviour
 
     public Text crewname;
     public Image health;
-
+    public Animator anim;
  
     public float hp;
     public string crewName;
@@ -173,4 +173,17 @@ public class stats : MonoBehaviour
        
     }
 
+    void OnTriggerEnter(Collider col)
+    {
+        if(col.gameObject.CompareTag("syringe"))
+        {
+            anim.Play("syringe hit");
+            hp -= 10;
+        }
+        if (col.gameObject.CompareTag("wrench"))
+        {
+            anim.Play("wrench hit");
+            hp -= 10;
+        }
+    }
 }
