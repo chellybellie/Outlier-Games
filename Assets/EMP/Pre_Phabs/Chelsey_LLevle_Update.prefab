@@ -368,6 +368,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
 --- !u!1 &1111374466151708
 GameObject:
   m_ObjectHideFlags: 1
@@ -387,6 +388,9 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1114176815161412
+=======
+--- !u!1 &1205356373154398
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1285,6 +1289,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4964025299149394}
@@ -1300,6 +1305,31 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1359225781812290
 GameObject:
+=======
+  m_GameObject: {fileID: 1347858484010190}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2.5561452, y: -1.943703, z: 7.2738867}
+  m_LocalScale: {x: 0.005, y: 0.39000046, z: 0.010000008}
+  m_Children:
+  - {fileID: 4297133223627576}
+  - {fileID: 4466753166810656}
+  - {fileID: 4214867618386744}
+  - {fileID: 4366104711318508}
+  - {fileID: 4490329822062566}
+  - {fileID: 4477128559481002}
+  - {fileID: 4757292132743948}
+  - {fileID: 4336567602944398}
+  - {fileID: 4370268538645624}
+  - {fileID: 4580226137684184}
+  - {fileID: 4431467642107448}
+  - {fileID: 4527427747453852}
+  - {fileID: 4029414452707848}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &4025579968733176
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1339,6 +1369,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4086342384267606}
@@ -1372,6 +1403,31 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1383788213678986
 GameObject:
+=======
+  m_GameObject: {fileID: 1792534388836076}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.4111451, y: -0.2397039, z: 19.034885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4045733367780782
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1202565390210028}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.66114515, y: -0.62970304, z: 24.224886}
+  m_LocalScale: {x: 10, y: 4.1462965, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4072053208004684
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1464,6 +1520,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4366932848612918}
@@ -1497,6 +1554,31 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1405910102851640
 GameObject:
+=======
+  m_GameObject: {fileID: 1006897741389114}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 1.0248549, y: 0.16329694, z: 2.2838862}
+  m_LocalScale: {x: 0.030000014, y: 0.03, z: 0.023000007}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!4 &4195576749788946
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1158513267667564}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.7418548, y: -0.15970302, z: 13.946886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4214867618386744
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1518,6 +1600,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4671166250097188}
@@ -1568,6 +1651,31 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1449889975344586
 GameObject:
+=======
+  m_GameObject: {fileID: 1268045080722746}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.5011451, y: 0.330297, z: 14.464887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &4273716622014740
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1923599910218286}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.73885477, y: -0.37970293, z: 16.604885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4274581694916020
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1587,6 +1695,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4932887142221072}
@@ -1602,6 +1711,19 @@ GameObject:
 --- !u!1 &1454570239851810
 GameObject:
   m_ObjectHideFlags: 0
+=======
+  m_GameObject: {fileID: 1908811622531808}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.3588549, y: -2.829703, z: 25.034885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4297133223627576
+Transform:
+  m_ObjectHideFlags: 1
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -1622,6 +1744,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4461735921959100}
@@ -1636,6 +1759,18 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1462805178013278
 GameObject:
+=======
+  m_GameObject: {fileID: 1134329486903478}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1778549, y: -1.889703, z: 14.688886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4316725027672532
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1796,6 +1931,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4735806986614270}
@@ -1826,6 +1962,31 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1529485809716336
 GameObject:
+=======
+  m_GameObject: {fileID: 1114176815161412}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.4111451, y: 1.3202965, z: 18.254883}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4459876153447760
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1639019979786396}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -2.761145, y: -0.909703, z: 2.7248862}
+  m_LocalScale: {x: 0.030995147, y: 0.013049715, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!4 &4466753166810656
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1847,6 +2008,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4799399197410040}
@@ -1879,6 +2041,32 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1547808367855742
 GameObject:
+=======
+  m_GameObject: {fileID: 1529485809716336}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 1.0248549, y: -0.55570304, z: 2.2838862}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.023}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 90}
+--- !u!4 &4471823877280216
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1243688358723692}
+  m_LocalRotation: {x: 0.0005190731, y: 0.0000055370037, z: 0.2756372, w: 0.96126163}
+  m_LocalPosition: {x: -4.1711445, y: 0.17029715, z: 20.394886}
+  m_LocalScale: {x: 0.3000946, y: 0.021079522, z: 0.5}
+  m_Children:
+  - {fileID: 4099368045363582}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0.057000004, y: 0.017, z: 32}
+--- !u!4 &4477128559481002
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1900,6 +2088,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4100008091092554}
@@ -1915,6 +2104,19 @@ GameObject:
 --- !u!1 &1565578578189902
 GameObject:
   m_ObjectHideFlags: 0
+=======
+  m_GameObject: {fileID: 1846987185502590}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.6281458, y: -0.34970307, z: 13.946886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4490329822062566
+Transform:
+  m_ObjectHideFlags: 1
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -1954,6 +2156,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4464593872888584}
@@ -1969,6 +2172,19 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1570483712582414
 GameObject:
+=======
+  m_GameObject: {fileID: 1249807753108592}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.45705485, y: 0.21289706, z: 14.877887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4568514522363352}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4508851806391394
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -1988,6 +2204,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4608635089717552}
@@ -2004,6 +2221,23 @@ GameObject:
 --- !u!1 &1576627103761964
 GameObject:
   m_ObjectHideFlags: 0
+=======
+  m_GameObject: {fileID: 1842760126164238}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2.521145, y: -0.021703005, z: 0.10888624}
+  m_LocalScale: {x: 0.05, y: 0.50000024, z: 0.05000003}
+  m_Children:
+  - {fileID: 4917325164204202}
+  - {fileID: 4125093263525862}
+  - {fileID: 4415588091772558}
+  - {fileID: 4025579968733176}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &4527427747453852
+Transform:
+  m_ObjectHideFlags: 1
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
@@ -2057,6 +2291,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4139120277860256}
@@ -2072,6 +2307,21 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1589944359969884
 GameObject:
+=======
+  m_GameObject: {fileID: 1565578578189902}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -3.9311452, y: -1.4677031, z: 19.089886}
+  m_LocalScale: {x: 0.004, y: 0.004, z: 0.004}
+  m_Children:
+  - {fileID: 4894002983272394}
+  - {fileID: 4980237760751848}
+  - {fileID: 4539697913387654}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!4 &4568514522363352
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2126,6 +2376,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4963865175368414}
@@ -2245,6 +2496,113 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1640474683168920
 GameObject:
+=======
+  m_GameObject: {fileID: 1739920902497926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5588548, y: -0.567703, z: 7.801917}
+  m_LocalScale: {x: 0.04734079, y: 0.0473408, z: 0.0473408}
+  m_Children:
+  - {fileID: 4363984351280824}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4623674933139510
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1402026289935934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4968551, y: 0.20489693, z: 21.558886}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4316725027672532}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4627186106522420
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190889902901072}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.6311456, y: 0.13029695, z: 19.624887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4671166250097188
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1411014015224844}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.4111451, y: -0.22970462, z: 13.274885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4693755183094088
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1886206349143360}
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
+  m_LocalPosition: {x: 1.2568549, y: -0.909703, z: 2.7248862}
+  m_LocalScale: {x: 0.030995147, y: 0.013049715, z: 0.010000011}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: -90}
+--- !u!4 &4704389282627522
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1056176907044756}
+  m_LocalRotation: {x: 0.00051909685, y: 0.000005543232, z: 0.2756372, w: 0.96126163}
+  m_LocalPosition: {x: -4.1711454, y: 0.18029904, z: 12.0748825}
+  m_LocalScale: {x: 0.3000946, y: 0.021079531, z: 0.50000024}
+  m_Children:
+  - {fileID: 4508851806391394}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0.057000004, y: 0.017, z: 32}
+--- !u!4 &4731019696010460
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1656508452084972}
+  m_LocalRotation: {x: 0.00043661855, y: 0.00028480694, z: -0.28937736, w: 0.95721495}
+  m_LocalPosition: {x: 2.7688549, y: 0.09029698, z: 20.394888}
+  m_LocalScale: {x: 0.16080353, y: 0.011295301, z: 0.5}
+  m_Children:
+  - {fileID: 4113107365230932}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0.057000004, y: 0.017, z: -33.641003}
+--- !u!4 &4731474422206732
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1185348717244582}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: -1.9911462, y: 0.055297017, z: 3.7148855}
+  m_LocalScale: {x: 0.39008334, y: 0.667138, z: 0.6662857}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &4739163918066952
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2281,6 +2639,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4084429522192110}
@@ -2363,6 +2722,75 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1680782565048996
 GameObject:
+=======
+  m_GameObject: {fileID: 1787910782210346}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.80114514, y: 0.53029704, z: 1.2548862}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4797718634510662
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1911196490323090}
+  m_LocalRotation: {x: 0.00042132844, y: 0.00030697408, z: -0.33842227, w: 0.9409942}
+  m_LocalPosition: {x: 2.7918072, y: 0.087581396, z: 12.242859}
+  m_LocalScale: {x: 0.14236315, y: 0.009999998, z: 0.5}
+  m_Children:
+  - {fileID: 4924745760078074}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0.057000004, y: 0.017, z: -39.562}
+--- !u!4 &4800628013167132
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1736469809854962}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.738855, y: 0.320297, z: 19.624887}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4832804129716246
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1165429204926686}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4.341145, y: -0.899703, z: 13.308887}
+  m_LocalScale: {x: 0.005, y: 0.0050000018, z: 0.0012248855}
+  m_Children:
+  - {fileID: 4325818379056810}
+  - {fileID: 4324140589808880}
+  - {fileID: 4939177526396988}
+  - {fileID: 4072053208004684}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!4 &4877245723112150
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756306508834562}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -1.6311458, y: -0.569703, z: 16.604885}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4894002983272394
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2384,6 +2812,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4615440650373786}
@@ -2399,6 +2828,51 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1687830728164980
 GameObject:
+=======
+  m_GameObject: {fileID: 1744775188000624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.745, y: 1.88, z: 1.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4459876153447760}
+  - {fileID: 4620682489059988}
+  - {fileID: 4305932616337022}
+  - {fileID: 4503830460465858}
+  - {fileID: 4623674933139510}
+  - {fileID: 4221523257855390}
+  - {fileID: 4731474422206732}
+  - {fileID: 4288488212942560}
+  - {fileID: 4671166250097188}
+  - {fileID: 4443863616514700}
+  - {fileID: 4043028737655546}
+  - {fileID: 4797718634510662}
+  - {fileID: 4704389282627522}
+  - {fileID: 4471823877280216}
+  - {fileID: 4731019696010460}
+  - {fileID: 4273716622014740}
+  - {fileID: 4800628013167132}
+  - {fileID: 4479523741640026}
+  - {fileID: 4877245723112150}
+  - {fileID: 4627186106522420}
+  - {fileID: 4195576749788946}
+  - {fileID: 4045733367780782}
+  - {fileID: 4932518325991250}
+  - {fileID: 4832804129716246}
+  - {fileID: 4012747713457880}
+  - {fileID: 4515277073057920}
+  - {fileID: 4769793469786000}
+  - {fileID: 4547317986551288}
+  - {fileID: 4693755183094088}
+  - {fileID: 4991568832355636}
+  - {fileID: 4958944459682296}
+  - {fileID: 4176078927921290}
+  - {fileID: 4467380658238674}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4917325164204202
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2438,6 +2912,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4811190334214332}
@@ -2453,6 +2928,19 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1703343938826350
 GameObject:
+=======
+  m_GameObject: {fileID: 1765575394403000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.928855, y: 0.1702969, z: 16.154886}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.00933578}
+  m_Children:
+  - {fileID: 4142120191235096}
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4939177526396988
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2474,6 +2962,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4407324043496926}
@@ -2489,6 +2978,18 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1707638356417884
 GameObject:
+=======
+  m_GameObject: {fileID: 1444201382391286}
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
+  m_LocalPosition: {x: 1.2568549, y: -0.909703, z: 4.804886}
+  m_LocalScale: {x: 0.030995147, y: 0.013049715, z: 0.010000011}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: -90}
+--- !u!4 &4980237760751848
+Transform:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -2511,6 +3012,7 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4110405433188776}
@@ -2544,6 +3046,18 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &1713787458196844
 GameObject:
+=======
+  m_GameObject: {fileID: 1346589315440590}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -2.761145, y: -0.909703, z: 4.804886}
+  m_LocalScale: {x: 0.030995147, y: 0.013049715, z: 0.01}
+  m_Children: []
+  m_Father: {fileID: 4905303263745538}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!23 &23008927210404966
+MeshRenderer:
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -14854,20 +15368,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!81 &81208295007093404
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1203953785520518}
-  m_Enabled: 1
---- !u!92 &92902599155808002
-Behaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1203953785520518}
-  m_Enabled: 1
 --- !u!95 &95039116919011308
 Animator:
   serializedVersion: 3
@@ -16384,6 +16884,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+<<<<<<< HEAD:Assets/EMP/Pre_Phabs/Chelsey_LLevle_Update.prefab
 --- !u!114 &114285979351748614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16403,6 +16904,8 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1203953785520518}
   m_Enabled: 1
+=======
+>>>>>>> master:Assets/EMP/Chelsey_LLevle_Update.prefab
 --- !u!198 &198068117340368462
 ParticleSystem:
   m_ObjectHideFlags: 1
