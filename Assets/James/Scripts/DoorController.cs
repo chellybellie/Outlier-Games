@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
+    Animator Animator;
     public GameObject Door;
-    public bool doorIsOpening;
+    public bool Open;
+
+    void Start()
+    {
+        Open = false;
+        Animator = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (doorIsOpening == true)
-        {
-            Door.transform.Translate(Vector3.up * Time.deltaTime * 5);
-        }
-        if (Door.transform.position.y > 2.5f)
-        {
-            doorIsOpening = false;
-        }
         if (Input.GetKeyDown(KeyCode.F))
         {
-            doorIsOpening = true;
+            Open = true;
+        }
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            Open = false;
         }
     }
 }
