@@ -15,6 +15,7 @@ public class powerScript : MonoBehaviour
     public float power;
     public float charge;
     public int uses;
+    EMP empScript;
     void Start()
     {
         power = 0;
@@ -22,6 +23,7 @@ public class powerScript : MonoBehaviour
         pipOne.enabled = false;
         pipTwo.enabled = false;
         pipThree.enabled = false;
+        empScript = gameObject.GetComponent<EMP>();
     }
 
     // Update is called once per frame
@@ -33,19 +35,19 @@ public class powerScript : MonoBehaviour
             power += (charge * Time.deltaTime);
             if (power >= 100)
             {
-                if(uses < 3)
+                if (uses < 3)
                 {
                     power = 0;
                     uses++;
                 }
-                else if(uses >= 3)
+                else if (uses >= 3)
                 {
                     power = 100;
                 }
             }
-            
+
         }
-        if(power == 100 && uses <3)
+        if (power == 100 && uses < 3)
         {
             uses++;
             power = 0;
@@ -53,12 +55,12 @@ public class powerScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (uses > 0)
+            if (uses > 0 || power > 25)
             {
                 //zap.PlayOneShot(zappity, 1f);
                 note.text = "! SURGE !";
                 noteTime = 0;
-                uses--;
+                empScript.RunThrough();
             }
             else
             {
@@ -78,7 +80,7 @@ public class powerScript : MonoBehaviour
 
         amount.text = ((int)power).ToString();
 
-        switch(uses)
+        switch (uses)
         {
             case 0:
                 pipOne.enabled = false;

@@ -2,32 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LIghts : MonoBehaviour
+public class Lights : MonoBehaviour
 {
-    private int lights;
 
-    void Start()
-    {
-    }
 
     public void LightShutdown()
     {
-        GameObject[] LightSource = new GameObject[lights];
-
-        for (int i = 0; i < lights; ++i)
-        {
-            LightSource[i] = GameObject.FindWithTag("Light" + i);
-            LightSource[i].GetComponent<Light>().enabled = false;
-            
-           
-        }
+        GameObject[] LightSource = GameObject.FindGameObjectsWithTag("Light");
+        foreach (GameObject tgo in LightSource)
+            tgo.GetComponent<Light>().enabled = false;
     }
 
-    void Update()
+
+    public void LightSwitchOn()
     {
-        LightShutdown();
+        GameObject[] LightSource = GameObject.FindGameObjectsWithTag("Light");
+        foreach (GameObject tgo in LightSource)
+            tgo.GetComponent<Light>().enabled = true;
     }
+
+
 }
 
 
-  
