@@ -4,7 +4,9 @@ using System.Collections;
 public class Doors : MonoBehaviour {
 
 	Animator animator;
-	bool Open;
+    bool Open;
+    private float volLowRange = .5f;
+    private float volHighRange = 1.0f;
 
 	void Start()
 	{
@@ -14,21 +16,21 @@ public class Doors : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
 	{
-		if(col.gameObject.tag == "Player")
+		if(col.gameObject.tag == "Player" || col.gameObject.tag == "enemy")
 		{
 			Open = true;
 			DoorControl (true);
-            Debug.Log("Open");
+            //Debug.Log("Open");
         }
 	}
 
 	void OnTriggerExit(Collider col)
 	{
-		if(col.gameObject.tag == "Player")
+		if(col.gameObject.tag == "Player" || col.gameObject.tag == "enemy")
 		{
-			Open = false;
+            Open = false;
 			DoorControl (false);
-            Debug.Log("Close");
+            //Debug.Log("Close");
 		}
 	}
 
