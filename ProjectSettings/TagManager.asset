@@ -10,6 +10,9 @@ TagManager:
   - enemy
   - bullet
   - scan
+  - wrench
+  - syringe
+  - mop
   layers:
   - Default
   - TransparentFX
