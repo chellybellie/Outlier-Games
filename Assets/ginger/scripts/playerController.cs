@@ -86,6 +86,8 @@ public class playerController : MonoBehaviour
         if (health < 10)
         {
             SceneManager.LoadScene(2);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
    
