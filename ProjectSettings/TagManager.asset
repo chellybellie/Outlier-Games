@@ -9,10 +9,15 @@ TagManager:
   - health
   - enemy
   - bullet
+<<<<<<< HEAD
   - scan
   - wrench
   - syringe
   - mop
+=======
+  - Light
+  - PostEffect
+>>>>>>> chelsey
   layers:
   - Default
   - TransparentFX
@@ -24,7 +29,7 @@ TagManager:
   - 
   - Target
   - Level
-  - 
+  - Effects
   - 
   - 
   - 
