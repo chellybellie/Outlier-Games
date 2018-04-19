@@ -29,27 +29,52 @@ public class playerController : MonoBehaviour
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
+<<<<<<< HEAD
         wep = gameObject.GetComponent<Weapons>();
+=======
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+       
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
     }
     
     public void Pause()
     {
         pausemenu.SetActive(true);
+<<<<<<< HEAD
         buttonpanel.SetActive(true);
         Time.timeScale = 0;
     }
 <<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
+        Time.timeScale = 0; 
+=======
+        Time.timeScale = 0;
+    }
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
 
+>>>>>>> chelsey
+
+<<<<<<< HEAD
 =======
 >>>>>>> master
+=======
+    } 
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
 
    
     void Update()
     {
         mouseRotate();
+<<<<<<< HEAD
 
         if(Input.GetKey(KeyCode.W))
+=======
+       
+        if (Input.GetKey(KeyCode.W))
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
         {
             move.y -= Time.deltaTime * speed;
         }
@@ -81,17 +106,30 @@ public class playerController : MonoBehaviour
 
 
         transform.Translate(move.x, 0, move.y);
+<<<<<<< HEAD
        
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
+=======
+
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            pausemenu.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
         }
         move *= .7f;
 
         if (health < 10)
         {
             SceneManager.LoadScene(2);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
     void OnTriggerEnter(Collider col)

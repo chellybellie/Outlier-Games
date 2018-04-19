@@ -4,18 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - inv
-  - Points
-  - health
-  - enemy
-  - scan
-  - bullet
-<<<<<<< HEAD
   - Light
-  - PostEffect
-=======
-  - ammo
->>>>>>> master
   layers:
   - Default
   - TransparentFX
@@ -25,8 +14,8 @@ TagManager:
   - UI
   - 
   - 
-  - Target
-  - Level
+  - 
+  - 
   - 
   - 
   - 

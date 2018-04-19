@@ -5,24 +5,28 @@ using UnityEngine.AI;
 
 public class EMP : MonoBehaviour
 {
+    public Emp_Effect empe;
+    LightRandomFlicker LFT;
     public testAbilityScript tas;
     public powerScript ChargeBar_UI;
     public GameObject EMPTester;
     public float power = 1f;
-    public float radius = 10.0f;
+    public float radius = 10;
     public float upforce = .5f;
     public float FreezeTimer;
-    private bool Light = true;
     public Lights Mylight;
+    public Animator anim;
+
+    
 
     void Start()
     {
-       
+
     }
 
     void Update()
     {
-
+      
     }
     public void EMPDetonate()
     {
@@ -63,17 +67,21 @@ public class EMP : MonoBehaviour
         {
 
             //GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-            //foreach (GameObject enemy in enemies)
+            //if (Vector3.Distance(EMPTester.transform.position, transform.position) < radius)
             //{
-            //    NavMeshAgent agent = enemy.GetComponent<NavMeshAgent>();
-            //    if (!agent)
-            //        continue;
-            //    agent.isStopped = true;
+            //    foreach (GameObject enemy in enemies)
+            //    {
+            //        NavMeshAgent agent = enemy.GetComponent<NavMeshAgent>();
+            //        if (!agent)
+            //            continue;
+            //        agent.isStopped = true;
+            //        agent.Stop();
+            //    }
             //}
 
             time -= 1;
 
-            Debug.Log(time);
+            Debug.Log(" freez chk " + time);
 
             yield return new WaitForSeconds(1);
         }
@@ -89,6 +97,13 @@ public class EMP : MonoBehaviour
         rb.constraints = RigidbodyConstraints.None;
         rb.angularDrag = originalAngularDrag;
         rb.drag = originalDrag;
+        if (time <= 1)
+        {
+            Mylight.LightSwitchOn();
+            
+
+        }
+
 
     }
 
@@ -96,28 +111,33 @@ public class EMP : MonoBehaviour
     {
         if (tas.abilitySelect == 0 && ChargeBar_UI.power < 99 && ChargeBar_UI.power > 25)
         {
-            FreezeTimer = 1;
-            if(FreezeTimer == 1)
+            FreezeTimer = 2;
+            if (FreezeTimer == 2)
             {
                 Mylight.LightShutdown();
                 EMPDetonate();
                 ChargeBar_UI.power -= 25;
+                empe.EMPparticalStart();
+                anim.Play("emp part");
+               
 
             }
-        
         }
 
         if (tas.abilitySelect == 1 && ChargeBar_UI.uses >= 1)
         {
             FreezeTimer = 5;
-            if(FreezeTimer == 5)
+            if (FreezeTimer == 5)
             {
-               EMPDetonate();
+                EMPDetonate();
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 1;
+                empe.EMPparticalStart();
+                anim.Play("emp 1");
+
+
 
             }
-     
         }
         if (tas.abilitySelect == 2 && ChargeBar_UI.uses >= 2)
         {
@@ -127,21 +147,29 @@ public class EMP : MonoBehaviour
                 EMPDetonate();
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 2;
-            }
+                empe.EMPparticalStart();
+                anim.Play("emp2");
 
+
+
+            }
         }
         if (tas.abilitySelect == 3 && ChargeBar_UI.uses == 3)
         {
             FreezeTimer = 15;
-            if(FreezeTimer == 15)
+            if (FreezeTimer == 15)
             {
                 EMPDetonate();
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 3;
+                empe.EMPparticalStart();
+                anim.Play("emp3");
+
 
             }
 
         }
 
     }
+
 }

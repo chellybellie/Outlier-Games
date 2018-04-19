@@ -9,8 +9,10 @@ public class stats : MonoBehaviour
 
     public Text crewname;
     public Image health;
+    public Animator anim;
 
- 
+    private AudioSource sound;
+    public AudioClip wrenchHit;
     public float hp;
     public string crewName;
     public int scanType;
@@ -127,9 +129,9 @@ public class stats : MonoBehaviour
 
     void Start () {
         hp = 100;
+        sound = GetComponent<AudioSource>();
 
-        
-        switch(scanType)
+        switch (scanType)
         {
             case 0:
                 crewName = GenerateName();
@@ -149,7 +151,13 @@ public class stats : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+<<<<<<< HEAD:Assets/Trevor/Scripts/stats.cs
+        // health.fillAmount = (hp / 100);
+        //crewname.text = crewName;
+        anim.Play("walking");
+=======
        
+>>>>>>> chelsey:Assets/EMP/Trevor/Scripts/stats.cs
         if (hp <= 0)
         {
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
@@ -165,14 +173,25 @@ public class stats : MonoBehaviour
         
         
 	}
+    public void Damage (int damageAmount)
+    {
+        hp -= damageAmount;
+       
+    }
+
     void OnTriggerEnter(Collider col)
     {
-
-        if (col.gameObject.CompareTag("bullet"))
+        if(col.gameObject.CompareTag("syringe"))
         {
+            anim.Play("syringe hit");
+            hp -= 10;
+        }
+        if (col.gameObject.CompareTag("wrench"))
+        {
+            anim.Play("wrench hit");
+            sound.PlayOneShot(wrenchHit);
             hp -= 10;
             Destroy(col.gameObject);
         }
     }
-
 }

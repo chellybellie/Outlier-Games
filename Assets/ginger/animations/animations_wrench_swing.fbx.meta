@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: dc98d7e3fc225e64e87a2862758d7bff
+timeCreated: 1523481938
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: controller_master_locator
+    100004: controller_pc_elbow_l
+    100006: controller_pc_forearm_l
+    100008: controller_pc_master
+    100010: controller_pc_shoulder_l
+    100012: controller_pc_wrist_l
+    100014: joint_char_pc_elbow_l
+    100016: joint_char_pc_elbow_r
+    100018: joint_char_pc_forearm_l
+    100020: joint_char_pc_forearm_r
+    100022: joint_char_pc_mid_1_l
+    100024: joint_char_pc_mid_1_r
+    100026: joint_char_pc_mid_2_l
+    100028: joint_char_pc_mid_2_r
+    100030: joint_char_pc_mid_3_l
+    100032: joint_char_pc_mid_3_r
+    100034: joint_char_pc_mid_end_l
+    100036: joint_char_pc_pinky_1_l
+    100038: joint_char_pc_pinky_1_r
+    100040: joint_char_pc_pinky_2_l
+    100042: joint_char_pc_pinky_2_r
+    100044: joint_char_pc_pinky_3_l
+    100046: joint_char_pc_pinky_3_r
+    100048: joint_char_pc_pinky_end_l
+    100050: joint_char_pc_pointer_1_l
+    100052: joint_char_pc_pointer_1_r
+    100054: joint_char_pc_pointer_2_l
+    100056: joint_char_pc_pointer_2_r
+    100058: joint_char_pc_pointer_3_l
+    100060: joint_char_pc_pointer_3_r
+    100062: joint_char_pc_ring_1_l
+    100064: joint_char_pc_ring_1_r
+    100066: joint_char_pc_ring_2_l
+    100068: joint_char_pc_ring_2_r
+    100070: joint_char_pc_ring_3_l
+    100072: joint_char_pc_ring_3_r
+    100074: joint_char_pc_ring_end_l
+    100076: joint_char_pc_root
+    100078: joint_char_pc_shoulder_l
+    100080: joint_char_pc_shoulder_r
+    100082: joint_char_pc_thumb_1_l
+    100084: joint_char_pc_thumb_1_r
+    100086: joint_char_pc_thumb_2_l
+    100088: joint_char_pc_thumb_2_r
+    100090: joint_char_pc_thumb_3_l
+    100092: joint_char_pc_thumb_3_r
+    100094: joint_char_pc_wrist_l
+    100096: joint_char_pc_wrist_r
+    100098: obj_pc_gloved
+    100100: prop_weapons_wrench2
+    100102: set_pc_elbow_l
+    100104: set_pc_forearm_l
+    100106: set_pc_shoulder_l
+    100108: set_pc_wrist_l
+    400000: //RootNode
+    400002: controller_master_locator
+    400004: controller_pc_elbow_l
+    400006: controller_pc_forearm_l
+    400008: controller_pc_master
+    400010: controller_pc_shoulder_l
+    400012: controller_pc_wrist_l
+    400014: joint_char_pc_elbow_l
+    400016: joint_char_pc_elbow_r
+    400018: joint_char_pc_forearm_l
+    400020: joint_char_pc_forearm_r
+    400022: joint_char_pc_mid_1_l
+    400024: joint_char_pc_mid_1_r
+    400026: joint_char_pc_mid_2_l
+    400028: joint_char_pc_mid_2_r
+    400030: joint_char_pc_mid_3_l
+    400032: joint_char_pc_mid_3_r
+    400034: joint_char_pc_mid_end_l
+    400036: joint_char_pc_pinky_1_l
+    400038: joint_char_pc_pinky_1_r
+    400040: joint_char_pc_pinky_2_l
+    400042: joint_char_pc_pinky_2_r
+    400044: joint_char_pc_pinky_3_l
+    400046: joint_char_pc_pinky_3_r
+    400048: joint_char_pc_pinky_end_l
+    400050: joint_char_pc_pointer_1_l
+    400052: joint_char_pc_pointer_1_r
+    400054: joint_char_pc_pointer_2_l
+    400056: joint_char_pc_pointer_2_r
+    400058: joint_char_pc_pointer_3_l
+    400060: joint_char_pc_pointer_3_r
+    400062: joint_char_pc_ring_1_l
+    400064: joint_char_pc_ring_1_r
+    400066: joint_char_pc_ring_2_l
+    400068: joint_char_pc_ring_2_r
+    400070: joint_char_pc_ring_3_l
+    400072: joint_char_pc_ring_3_r
+    400074: joint_char_pc_ring_end_l
+    400076: joint_char_pc_root
+    400078: joint_char_pc_shoulder_l
+    400080: joint_char_pc_shoulder_r
+    400082: joint_char_pc_thumb_1_l
+    400084: joint_char_pc_thumb_1_r
+    400086: joint_char_pc_thumb_2_l
+    400088: joint_char_pc_thumb_2_r
+    400090: joint_char_pc_thumb_3_l
+    400092: joint_char_pc_thumb_3_r
+    400094: joint_char_pc_wrist_l
+    400096: joint_char_pc_wrist_r
+    400098: obj_pc_gloved
+    400100: prop_weapons_wrench2
+    400102: set_pc_elbow_l
+    400104: set_pc_forearm_l
+    400106: set_pc_shoulder_l
+    400108: set_pc_wrist_l
+    2300000: prop_weapons_wrench2
+    3300000: prop_weapons_wrench2
+    4300000: prop_weapons_wrench2
+    4300002: obj_pc_gloved
+    7400000: wrench swing
+    9500000: //RootNode
+    13700000: obj_pc_gloved
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: wrench swing
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
