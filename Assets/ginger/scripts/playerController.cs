@@ -10,7 +10,7 @@ public class playerController : MonoBehaviour
 {
     Weapons wep;
     public GameObject pausemenu;
-    float speed = 3f;
+    float speed = 1f;
     public Camera cam;
     public Vector2 move;
     public GameObject healthpk;
@@ -49,26 +49,26 @@ public class playerController : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
 
         {
-            move.y -= Time.deltaTime * speed;
+            move.y += Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            move.x += Time.deltaTime * speed;
+            move.x -= Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            move.y += Time.deltaTime * speed;
+            move.y -= Time.deltaTime * speed;
 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            move.x -= Time.deltaTime * speed;
+            move.x += Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.LeftShift))
         {
             if(move.y > 0)
             {
-                move.y += Time.deltaTime * (speed / 2);
+                move.y += Time.deltaTime * (speed / 3);
             }
             else
             {
@@ -127,7 +127,7 @@ public class playerController : MonoBehaviour
 
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
 
-        Quaternion playerRotation = Quaternion.Euler(0.0f, rotY + 180, 0.0f);
+        Quaternion playerRotation = Quaternion.Euler(0.0f, rotY, 0.0f);
         Quaternion camRotation = Quaternion.Euler(rotX, rotY, 0.0f);
         transform.rotation = playerRotation;
         cam.transform.rotation = camRotation;

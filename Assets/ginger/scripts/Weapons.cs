@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
-    public int modelNumber;
-    public GameObject[] modelArray;
-    public GameObject currentModel;
     public Transform raySpawn;
     public GameObject gun;
     public GameObject wrench;
     public GameObject mop;
     public GameObject scope;
     public GameObject syringe;
-    public ammoCount ammoCT;
+    //public ammoCount ammoCT;
 
-    AudioSource shoot;
-    public AudioClip gunshot;
 
     public playerController player;
 
@@ -41,7 +36,7 @@ public class Weapons : MonoBehaviour
 
      void Start()
     {
-        shoot = GetComponent<AudioSource>();
+        
         laserLine = GetComponent<LineRenderer>();
         Audio = GetComponent<AudioSource>();
 
@@ -50,17 +45,13 @@ public class Weapons : MonoBehaviour
     void Update()
     {
 
-        ammoCT.count = ammo;
+        //ammoCT.count = ammo;
         
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf && Time.time > nextFire) 
         {
                 if (ammo > 0 )
                 {
-                shoot.PlayOneShot(gunshot, 1f);
                     Fire();
-
-                    
-
                 }
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
@@ -84,7 +75,6 @@ public class Weapons : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
          {
-                 currentModel = modelArray[0];
                  gun.SetActive(false);
                  wrench.SetActive(false);
                  mop.SetActive(false);
@@ -93,7 +83,6 @@ public class Weapons : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                currentModel = modelArray[1];
                 gun.SetActive(false);
                  wrench.SetActive(true);
                  mop.SetActive(false);
@@ -102,7 +91,6 @@ public class Weapons : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                     currentModel = modelArray[2];
                      gun.SetActive(true);
                      wrench.SetActive(false);
                      mop.SetActive(false);
@@ -110,7 +98,6 @@ public class Weapons : MonoBehaviour
             }
         if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-                currentModel = modelArray[3];
                 gun.SetActive(false);
                 wrench.SetActive(false);
                 mop.SetActive(true);
@@ -118,7 +105,6 @@ public class Weapons : MonoBehaviour
             }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            currentModel = modelArray[4];
             gun.SetActive(false);
             wrench.SetActive(false);
             mop.SetActive(false);

@@ -11,6 +11,10 @@ TagManager:
   - inv
   - Light
   - Level
+  - wrench
+  - mop
+  - syringe
+  - health
   layers:
   - Default
   - TransparentFX
