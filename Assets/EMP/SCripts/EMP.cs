@@ -5,6 +5,8 @@ using UnityEngine.AI;
 
 public class EMP : MonoBehaviour
 {
+    public Emp_Effect empe;
+    LightRandomFlicker LFT;
     public testAbilityScript tas;
     public powerScript ChargeBar_UI;
     public GameObject EMPTester;
@@ -13,7 +15,9 @@ public class EMP : MonoBehaviour
     public float upforce = .5f;
     public float FreezeTimer;
     public Lights Mylight;
-    public LightRandomFlicker LFT;
+    public Animator anim;
+
+    
 
     void Start()
     {
@@ -96,7 +100,8 @@ public class EMP : MonoBehaviour
         if (time <= 1)
         {
             Mylight.LightSwitchOn();
-           // LFT.on = true;
+            
+
         }
 
 
@@ -112,6 +117,9 @@ public class EMP : MonoBehaviour
                 Mylight.LightShutdown();
                 EMPDetonate();
                 ChargeBar_UI.power -= 25;
+                empe.EMPparticalStart();
+                anim.Play("emp part");
+               
 
             }
         }
@@ -124,7 +132,10 @@ public class EMP : MonoBehaviour
                 EMPDetonate();
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 1;
-                
+                empe.EMPparticalStart();
+                anim.Play("emp 1");
+
+
 
             }
         }
@@ -136,6 +147,9 @@ public class EMP : MonoBehaviour
                 EMPDetonate();
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 2;
+                empe.EMPparticalStart();
+                anim.Play("emp2");
+
 
 
             }
@@ -148,6 +162,9 @@ public class EMP : MonoBehaviour
                 EMPDetonate();
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 3;
+                empe.EMPparticalStart();
+                anim.Play("emp3");
+
 
             }
 
