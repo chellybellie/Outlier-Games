@@ -1,18 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/EMP/Trevor/Scenes/Ship 1/NavMesh.asset.meta
-guid: 4acea54de5773724a9021721b6c46718
-timeCreated: 1521236264
-=======
-guid: cddbbd6767a536a47998e10da86e3fb4
-<<<<<<< HEAD
-timeCreated: 1521137849
-=======
-timeCreated: 1523485879
->>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
->>>>>>> ginger:Assets/Level/SHIP/Ship/NavMesh.asset.meta
-licenseType: Free
+guid: 071f8c1c91b21c04496a9af01bd85660
 NativeFormatImporter:
-  mainObjectFileID: 23800000
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

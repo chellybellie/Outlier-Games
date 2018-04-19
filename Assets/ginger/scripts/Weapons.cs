@@ -4,28 +4,26 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
+    public int modelNumber;
+    public GameObject[] modelArray;
+    public GameObject currentModel;
     public Transform raySpawn;
     public GameObject gun;
     public GameObject wrench;
     public GameObject mop;
     public GameObject scope;
     public GameObject syringe;
-<<<<<<< HEAD
     public ammoCount ammoCT;
-=======
-<<<<<<< HEAD
->>>>>>> ginger
-    playerController player;
+
     AudioSource shoot;
     public AudioClip gunshot;
-=======
+
     public playerController player;
 
     public AudioClip wrenchSwing;
     public AudioClip syringeSound;
     public AudioClip mopSound;
 
->>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
     public Camera cam;
 
     private WaitForSeconds shotDuration = new WaitForSeconds(.07f);
@@ -40,39 +38,30 @@ public class Weapons : MonoBehaviour
     public float hitForce = 100f;
     public Animator anim;
 
-<<<<<<< HEAD
+
      void Start()
     {
         shoot = GetComponent<AudioSource>();
-=======
-    void Start()
-    {
         laserLine = GetComponent<LineRenderer>();
         Audio = GetComponent<AudioSource>();
->>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
+
     }
 
     void Update()
     {
-<<<<<<< HEAD
-        ammoCT.count = ammo;
-=======
->>>>>>> ginger
 
+        ammoCT.count = ammo;
         
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf && Time.time > nextFire)
-            {
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf && Time.time > nextFire) 
+        {
                 if (ammo > 0 )
                 {
                 shoot.PlayOneShot(gunshot, 1f);
                     Fire();
-<<<<<<< HEAD
-            }
-                              
-=======
+
+                    
+
                 }
-                             
->>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
             {
@@ -95,6 +84,7 @@ public class Weapons : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
          {
+                 currentModel = modelArray[0];
                  gun.SetActive(false);
                  wrench.SetActive(false);
                  mop.SetActive(false);
@@ -103,7 +93,8 @@ public class Weapons : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                 gun.SetActive(false);
+                currentModel = modelArray[1];
+                gun.SetActive(false);
                  wrench.SetActive(true);
                  mop.SetActive(false);
                  syringe.SetActive(false);
@@ -111,6 +102,7 @@ public class Weapons : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
             {
+                     currentModel = modelArray[2];
                      gun.SetActive(true);
                      wrench.SetActive(false);
                      mop.SetActive(false);
@@ -118,6 +110,7 @@ public class Weapons : MonoBehaviour
             }
         if (Input.GetKeyDown(KeyCode.Alpha4))
             {
+                currentModel = modelArray[3];
                 gun.SetActive(false);
                 wrench.SetActive(false);
                 mop.SetActive(true);
@@ -125,6 +118,7 @@ public class Weapons : MonoBehaviour
             }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
+            currentModel = modelArray[4];
             gun.SetActive(false);
             wrench.SetActive(false);
             mop.SetActive(false);
@@ -140,20 +134,11 @@ public class Weapons : MonoBehaviour
             {
                 scope.SetActive(false);
                 cam.fieldOfView = 60;            
-            }
-            
+            }       
     }
 	
-
-
 	void Fire()
     {
-<<<<<<< HEAD
-        var bullet = (GameObject)Instantiate(bulletPrefab,
-            bulletSpawn.position, bulletSpawn.rotation);
-            
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 100;
-=======
         anim.Play("gun shoot");
         nextFire = Time.time + fireRate;
         Vector3 rayOrigin = cam.ViewportToWorldPoint(new Vector3(.5f, .5f, .0f));
@@ -161,7 +146,7 @@ public class Weapons : MonoBehaviour
         Debug.DrawRay(lineOrigin, cam.transform.forward * weaponRange, Color.gray);
         RaycastHit hit;
         laserLine.SetPosition(0, raySpawn.position);
->>>>>>> 0b604a08ea0aef14feb424f4892d20abf037c287
+
         ammo--;
         StartCoroutine(ShotEffect());
        if(Physics.Raycast(rayOrigin,cam.transform.forward,out hit,weaponRange))

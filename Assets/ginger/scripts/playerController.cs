@@ -10,60 +10,44 @@ public class playerController : MonoBehaviour
 {
     Weapons wep;
     public GameObject pausemenu;
-    public GameObject buttonpanel;
-    float speed = 2f;
+    float speed = 3f;
     public Camera cam;
     public Vector2 move;
     public GameObject healthpk;
-
+    
     public float mouseSensitivity = 100.0f;
     public float clampAngle = 80.0f;
-
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
-
     public float health = 100;
+
     void Start()
     {
         move = Vector2.zero;
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
-<<<<<<< HEAD
         wep = gameObject.GetComponent<Weapons>();
-=======
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-       
->>>>>>> ginger
     }
     
     public void Pause()
     {
         pausemenu.SetActive(true);
-        buttonpanel.SetActive(true);
         Time.timeScale = 0;
     }
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 
    
-    void Update()
-    {
-        mouseRotate();
 
-        if(Input.GetKey(KeyCode.W))
-=======
+
     void Update()
     {
         mouseRotate();
        
         if (Input.GetKey(KeyCode.W))
->>>>>>> ginger
+
         {
             move.y -= Time.deltaTime * speed;
         }
@@ -95,13 +79,9 @@ public class playerController : MonoBehaviour
 
 
         transform.Translate(move.x, 0, move.y);
-<<<<<<< HEAD
+
        
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Pause();
-=======
 
         
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -110,7 +90,7 @@ public class playerController : MonoBehaviour
             Time.timeScale = 0;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
->>>>>>> ginger
+
         }
         move *= .7f;
 
@@ -125,11 +105,11 @@ public class playerController : MonoBehaviour
         {
             health -= 10;
         }
-        if(col.gameObject.CompareTag("health") && health < 100)
-        {
-            health += 10;
-            Destroy(healthpk);
-        }
+        //if(col.gameObject.CompareTag("healath") && health < 100)
+        //{
+        //    health += 10;
+        //    Destroy(healthpk);
+        //}
         if (col.gameObject.CompareTag("ammo"))
         {
             wep.ammo += 6;
