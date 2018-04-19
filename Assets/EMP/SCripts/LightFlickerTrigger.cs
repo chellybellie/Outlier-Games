@@ -10,6 +10,8 @@ public class LightFlickerTrigger : MonoBehaviour
     GameObject camPos;
     public float lightIntensity;
     public float LightOnSpeed;
+    public EMP emp;
+    Lights Light;
     // Use this for initialization
     void Start()
     {
@@ -25,7 +27,8 @@ public class LightFlickerTrigger : MonoBehaviour
     {
         if (l != null)
         {
-            if (Vector3.Distance(camPos.transform.position, transform.position) < range)
+
+            if (Vector3.Distance(emp., Light.transform.position) < emp.radius)
             {
                 if (l.intensity < lightIntensity)
                 {
@@ -46,8 +49,8 @@ public class LightFlickerTrigger : MonoBehaviour
                 {
                     a.m_Intensity += (lightIntensity / LightOnSpeed);
                 }
-
             }
+
             else
             {
                 if (a.m_Intensity > 0)

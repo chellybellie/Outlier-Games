@@ -10,9 +10,27 @@ public class Weapons : MonoBehaviour
     public GameObject mop;
     public GameObject scope;
     public GameObject syringe;
+<<<<<<< HEAD
     //public ammoCount ammoCT;
 
 
+=======
+<<<<<<< HEAD
+    public ammoCount ammoCT;
+    playerController player;
+    AudioSource shoot;
+    public AudioClip gunshot;
+    public Camera cam;
+
+    public int ammo = 10;
+    
+    public Animator anim;
+
+     void Start()
+    {
+        shoot = GetComponent<AudioSource>();
+=======
+>>>>>>> chelsey
     public playerController player;
 
     public AudioClip wrenchSwing;
@@ -33,17 +51,32 @@ public class Weapons : MonoBehaviour
     public float hitForce = 100f;
     public Animator anim;
 
+<<<<<<< HEAD
 
      void Start()
+=======
+    void Start()
+>>>>>>> chelsey
     {
         
         laserLine = GetComponent<LineRenderer>();
         Audio = GetComponent<AudioSource>();
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
+>>>>>>> chelsey
     }
 
     void Update()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        ammoCT.count = ammo;
+=======
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
+>>>>>>> chelsey
 
         //ammoCT.count = ammo;
         
@@ -51,8 +84,21 @@ public class Weapons : MonoBehaviour
         {
                 if (ammo > 0 )
                 {
+<<<<<<< HEAD
                     Fire();
                 }
+=======
+<<<<<<< HEAD
+                shoot.PlayOneShot(gunshot, 1f);
+                    Fire();
+            }
+                              
+=======
+                    Fire();
+                }
+                             
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
+>>>>>>> chelsey
             }
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && wrench.activeSelf)
             {
@@ -125,6 +171,17 @@ public class Weapons : MonoBehaviour
 	
 	void Fire()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        var bullet = (GameObject)Instantiate(bulletPrefab,
+            bulletSpawn.position, bulletSpawn.rotation);
+            
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 100;
+        ammo--;
+        Destroy(bullet, 2.0f);
+=======
+>>>>>>> chelsey
         anim.Play("gun shoot");
         nextFire = Time.time + fireRate;
         Vector3 rayOrigin = cam.ViewportToWorldPoint(new Vector3(.5f, .5f, .0f));
@@ -132,7 +189,10 @@ public class Weapons : MonoBehaviour
         Debug.DrawRay(lineOrigin, cam.transform.forward * weaponRange, Color.gray);
         RaycastHit hit;
         laserLine.SetPosition(0, raySpawn.position);
+<<<<<<< HEAD
 
+=======
+>>>>>>> chelsey
         ammo--;
         StartCoroutine(ShotEffect());
        if(Physics.Raycast(rayOrigin,cam.transform.forward,out hit,weaponRange))
@@ -162,6 +222,7 @@ public class Weapons : MonoBehaviour
         yield return shotDuration;
         laserLine.enabled = false;
         
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
     }
 }
 

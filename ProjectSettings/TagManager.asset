@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - enemy
   - scan
   - ammo
@@ -15,6 +16,9 @@ TagManager:
   - mop
   - syringe
   - health
+=======
+  - Light
+>>>>>>> chelsey
   layers:
   - Default
   - TransparentFX

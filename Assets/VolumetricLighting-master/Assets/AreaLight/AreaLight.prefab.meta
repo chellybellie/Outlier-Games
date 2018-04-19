@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD:Assets/VolumetricLighting-master/Assets/AreaLight/AreaLight.prefab.meta
 guid: c946fa75949b4b0469e29c6e49bd3577
 timeCreated: 1450870880
@@ -11,6 +12,10 @@ guid: fd10cfc6d2432454c97ad654a5d812b6
 timeCreated: 1521067942
 >>>>>>> ginger
 >>>>>>> master:Assets/ginger/prefabs/Materials/No Name.mat.meta
+=======
+guid: c946fa75949b4b0469e29c6e49bd3577
+timeCreated: 1450870880
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
 licenseType: Pro
 NativeFormatImporter:
   userData: 
