@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-
+    public HPScript hpscript;
     public GameObject pausemenu;
-    float speed = 4f;
+    float speed = 2f;
     public Camera cam;
     public Vector2 move;
 
@@ -33,6 +33,9 @@ public class playerController : MonoBehaviour
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+       
     }
 
 
@@ -41,15 +44,20 @@ public class playerController : MonoBehaviour
     {
         pausemenu.SetActive(true);
 
+<<<<<<< HEAD
+        Time.timeScale = 0; 
+=======
         Time.timeScale = 0;
     }
 
+>>>>>>> chelsey
 
+    } 
 
     void Update()
     {
         mouseRotate();
-
+       
         if (Input.GetKey(KeyCode.W))
         {
             move.y += Time.deltaTime * speed;
@@ -71,17 +79,21 @@ public class playerController : MonoBehaviour
 
         transform.Translate(move.x, 0, move.y);
 
-
+        
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pausemenu.SetActive(true);
-        Time.timeScale = 0;
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
         move *= .7f;
 
         if (health < 10)
         {
             SceneManager.LoadScene(2);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
    
@@ -89,7 +101,7 @@ public class playerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("enemy"))
         {
-            health -= 10;
+            hpscript.TakeHit(1,5,1);
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {

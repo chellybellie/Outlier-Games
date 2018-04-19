@@ -108,6 +108,9 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+--- !u!1 &252233739
+=======
 --- !u!1 &159053895
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +221,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 483713897}
 --- !u!1 &687590844
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: c4abfbff3b9d442f4b435849d2d2124c, type: 3}
@@ -317,8 +321,179 @@ Transform:
   m_Children: []
   m_Father: {fileID: 732169372}
   m_RootOrder: 0
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &341435299
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 927090937}
+    m_Modifications:
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 407.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -289.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -1601.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -732.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224300821977261496, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224588741303984154, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1229418762793532, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0, type: 2}
+  m_IsPrefabParent: 0
+--- !u!224 &341435300 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+--- !u!114 &341435301 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114853635519137114, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &341435302 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114637832121493328, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+  m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &341435303 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114457715519999862, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+  m_Script: {fileID: 853051423, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &341435304 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114586185042449472, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+  m_Script: {fileID: 853051423, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &341435305 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114059067051027032, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+  m_Script: {fileID: 853051423, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &341435306 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114702759223249776, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+  m_Script: {fileID: 853051423, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &341435307 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114781387499066558, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+  m_Script: {fileID: 2109663825, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!1 &341435308 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1229418762793532, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    type: 2}
+  m_PrefabInternal: {fileID: 341435299}
+--- !u!1 &510416154
+=======
   m_LocalEulerAnglesHint: {x: 0, y: -20, z: 0}
 --- !u!1 &732169371
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: c4abfbff3b9d442f4b435849d2d2124c, type: 3}
@@ -354,11 +529,21 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  - component: {fileID: 572664265}
+  - component: {fileID: 572664269}
+  - component: {fileID: 572664268}
+  - component: {fileID: 572664267}
+  - component: {fileID: 572664266}
+  m_Layer: 5
+  m_Name: OptionsButton
+=======
   - component: {fileID: 860688641}
   - component: {fileID: 860688644}
   - component: {fileID: 860688643}
   m_Layer: 0
   m_Name: MotionVectorRenderer
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,6 +557,92 @@ Transform:
   m_GameObject: {fileID: 860688640}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 927090937}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -325}
+  m_SizeDelta: {x: 240, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &572664266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572664264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc257cc947213cd4dacdb70576d0c6c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  op: {fileID: 341435308}
+  fullscreenToggle: {fileID: 341435307}
+  resolutionDropdown: {fileID: 341435306}
+  TextureQualityDropdown: {fileID: 341435303}
+  AADropdown: {fileID: 341435304}
+  vSyncDropdown: {fileID: 341435305}
+  musicSlider: {fileID: 341435302}
+  applyButton: {fileID: 341435301}
+  musicSource: {fileID: 0}
+--- !u!114 &572664267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572664264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 0.7941176, g: 0.7182093, b: 0.7182093, a: 1}
+    m_HighlightedColor: {r: 0.74264705, g: 0.25665006, b: 0.25665006, a: 1}
+    m_PressedColor: {r: 0.30147058, g: 0.30147058, b: 0.30147058, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 572664268}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 572664266}
+        m_MethodName: OpenOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &572664268
+MonoBehaviour:
+=======
   m_LocalScale: {x: 1.01, y: 1.01, z: 1.01}
   m_Children: []
   m_Father: {fileID: 159053896}
@@ -379,12 +650,37 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &860688643
 MeshRenderer:
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: c4abfbff3b9d442f4b435849d2d2124c,
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 860688640}
   m_Enabled: 1
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 87a697f4dde355d4a8840fce525a7815, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &572664269
+CanvasRenderer:
+=======
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -412,6 +708,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!33 &860688644
 MeshFilter:
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: c4abfbff3b9d442f4b435849d2d2124c,
     type: 3}
@@ -472,6 +769,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_Sprite: {fileID: 21300000, guid: 30a5e12ef1464ff42bd57c34a30d48ab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &758338848
+=======
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -487,6 +795,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Debug Texture
 --- !u!222 &902023482
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -571,12 +880,31 @@ Transform:
   m_GameObject: {fileID: 1216344938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 758338846}
+  - {fileID: 1010898317}
+  - {fileID: 572664265}
+  - {fileID: 1228168905}
+  - {fileID: 341435300}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!1 &1010898316
+=======
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1695974773}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.382, z: 0}
 --- !u!1 &1356308501
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: c4abfbff3b9d442f4b435849d2d2124c, type: 3}
@@ -661,10 +989,22 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_Father: {fileID: 927090937}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -210.6}
+  m_SizeDelta: {x: 240, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1010898318
+=======
   m_Father: {fileID: 159053896}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
 --- !u!114 &1356308506
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -731,6 +1071,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_Sprite: {fileID: 21300000, guid: 26582754b881cda4ebb7c9fbfd3c8c38, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1010898321
+=======
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -746,6 +1097,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Regular Motion Vectors
 --- !u!222 &1427819717
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -790,10 +1142,28 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_GameObject: {fileID: 1228168904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 927090937}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -443.4}
+  m_SizeDelta: {x: 240, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1228168906
+MonoBehaviour:
+=======
   m_GameObject: {fileID: 1489478929}
   m_Enabled: 1
 --- !u!20 &1489478933
 Camera:
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -852,6 +1222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+=======
   profile: {fileID: 11400000, guid: d982e879ff67b4d3fb6522d08c3cd5af, type: 2}
 --- !u!1 &1563286491
 GameObject:
@@ -899,6 +1271,7 @@ MonoBehaviour:
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -907,6 +1280,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_Sprite: {fileID: 21300000, guid: 17b89cdf7788bbb4b917b15b893d5a17, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1228168909
+=======
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -922,10 +1306,14 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Custom Motion Vectors
 --- !u!222 &1563286494
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD:Assets/ginger/scenes/gameover.unity
+  m_GameObject: {fileID: 1228168904}
+=======
   m_GameObject: {fileID: 1563286491}
 --- !u!1 &1670569526
 GameObject:
@@ -1250,3 +1638,4 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+>>>>>>> chelsey:Assets/PostProcessing/Utilities/CustomMotionTexture/ExampleScene.unity

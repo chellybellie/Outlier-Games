@@ -1,8 +1,13 @@
 fileFormatVersion: 2
 guid: 44021e8904d04fa4bab45700dd060f65
 folderAsset: yes
+<<<<<<< HEAD:Assets/ginger/prefabs/Materials.meta
+timeCreated: 1520644799
+licenseType: Free
+=======
 timeCreated: 1477748594
 licenseType: Pro
+>>>>>>> chelsey:Assets/VolumetricLighting-master/Assets/Scenes/Materials.meta
 DefaultImporter:
   userData: 
   assetBundleName: 
