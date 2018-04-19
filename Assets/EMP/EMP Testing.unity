@@ -594,6 +594,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01ae89c4c08f92f4fb90537335efa1ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &72198206
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 433067677}
+    m_Modifications:
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.1123254
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.7435057
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.8004686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.05994367
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.005195796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.8299241
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.5546222
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 4.308
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 5.394
+      objectReference: {fileID: 0}
+    - target: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 112.69501
+      objectReference: {fileID: 0}
+    - target: {fileID: 114896712494057756, guid: 6e31c2f76d7499345837e2110e0e59ff,
+        type: 2}
+      propertyPath: fPower
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114896712494057756, guid: 6e31c2f76d7499345837e2110e0e59ff,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 2100000, guid: c8d765a64070967428ecf2bed80e1ca7, type: 2}
+    - target: {fileID: 23256076317024258, guid: 6e31c2f76d7499345837e2110e0e59ff,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c8d765a64070967428ecf2bed80e1ca7, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6e31c2f76d7499345837e2110e0e59ff, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &80177263
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,8 +767,8 @@ MonoBehaviour:
   m_Range: 3.5
   m_Radius: 0.02
   m_Length: 0.48
-  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 3}
+  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2e6fd90941a3e3c458d01f851dca21ed, type: 3}
   m_RenderSource: 1
   m_ShadowPlanes:
@@ -4348,8 +4417,8 @@ MonoBehaviour:
   m_Range: 3.5
   m_Radius: 0.02
   m_Length: 0.38
-  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 3}
+  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2e6fd90941a3e3c458d01f851dca21ed, type: 3}
   m_RenderSource: 1
   m_ShadowPlanes:
@@ -4484,8 +4553,8 @@ MonoBehaviour:
   m_LightNearSize: 4
   m_LightFarSize: 22
   m_ShadowBias: 0.02
-  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
-  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 3}
+  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2b28be3523d190a41910088d1ee68ef7, type: 3}
   m_ShadowmapShader: {fileID: 4800000, guid: 2c4cd42b134f7864fa579350e9cf6896, type: 3}
   m_BlurShadowmapShader: {fileID: 4800000, guid: 701192b62a7678549918bc87434699fe,
@@ -4741,7 +4810,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1700878980
+  randomSeed: -1232074208
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8524,8 +8593,8 @@ MonoBehaviour:
   m_Range: 10
   m_Radius: 0.015
   m_Length: 0.7
-  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 3}
+  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2e6fd90941a3e3c458d01f851dca21ed, type: 3}
   m_RenderSource: 1
   m_ShadowPlanes:
@@ -8967,7 +9036,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 144579277
+  randomSeed: -1505608351
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -20559,6 +20628,7 @@ Transform:
   - {fileID: 1231038563}
   - {fileID: 619386919}
   - {fileID: 203141206}
+  - {fileID: 1063283670}
   m_Father: {fileID: 978562698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20600,6 +20670,7 @@ MonoBehaviour:
   power: 0
   charge: 0
   uses: 0
+  gloveInd: {fileID: 1063283671}
 --- !u!114 &433067680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20636,7 +20707,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   empe: {fileID: 203141207}
-  LFT: {fileID: 0}
   tas: {fileID: 433067680}
   ChargeBar_UI: {fileID: 433067679}
   EMPTester: {fileID: 433067673}
@@ -21910,8 +21980,8 @@ MonoBehaviour:
   m_LightNearSize: 4
   m_LightFarSize: 22
   m_ShadowBias: 0.02
-  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
-  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 3}
+  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2b28be3523d190a41910088d1ee68ef7, type: 3}
   m_ShadowmapShader: {fileID: 4800000, guid: 2c4cd42b134f7864fa579350e9cf6896, type: 3}
   m_BlurShadowmapShader: {fileID: 4800000, guid: 701192b62a7678549918bc87434699fe,
@@ -22584,8 +22654,8 @@ MonoBehaviour:
   m_Range: 3.5
   m_Radius: 0.02
   m_Length: 0.38
-  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 3}
+  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2e6fd90941a3e3c458d01f851dca21ed, type: 3}
   m_RenderSource: 1
   m_ShadowPlanes:
@@ -28220,14 +28290,14 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 978562696}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -0.46000004, z: 8.7}
+  m_LocalRotation: {x: 0.111972176, y: -0, z: -0, w: 0.99371135}
+  m_LocalPosition: {x: -0.13, y: -0.34010625, z: 5.517962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433067677}
   m_Father: {fileID: 1604091864}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.858001, y: 0, z: 0}
 --- !u!114 &978562699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28475,7 +28545,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1333811892
+  randomSeed: -1774132678
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -31882,8 +31952,8 @@ MonoBehaviour:
   m_LightNearSize: 4
   m_LightFarSize: 22
   m_ShadowBias: 0.02
-  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
-  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 3}
+  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2b28be3523d190a41910088d1ee68ef7, type: 3}
   m_ShadowmapShader: {fileID: 4800000, guid: 2c4cd42b134f7864fa579350e9cf6896, type: 3}
   m_BlurShadowmapShader: {fileID: 4800000, guid: 701192b62a7678549918bc87434699fe,
@@ -32049,7 +32119,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1885063241
+  randomSeed: -1035273366
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -35660,6 +35730,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1060262272}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1063283670 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4568311380288898, guid: 6e31c2f76d7499345837e2110e0e59ff,
+    type: 2}
+  m_PrefabInternal: {fileID: 72198206}
+--- !u!114 &1063283671 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114896712494057756, guid: 6e31c2f76d7499345837e2110e0e59ff,
+    type: 2}
+  m_PrefabInternal: {fileID: 72198206}
+  m_Script: {fileID: 11500000, guid: 446dba6dfe68668498634d2da2b8a1ed, type: 3}
 --- !u!1 &1071734193
 GameObject:
   m_ObjectHideFlags: 0
@@ -39868,7 +39949,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1065005696
+  randomSeed: -416729814
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -43904,7 +43985,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1526830325
+  randomSeed: 1151496393
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -47489,8 +47570,8 @@ MonoBehaviour:
   m_LightNearSize: 4
   m_LightFarSize: 22
   m_ShadowBias: 0.02
-  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
-  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Quad: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 3}
+  m_Cube: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2b28be3523d190a41910088d1ee68ef7, type: 3}
   m_ShadowmapShader: {fileID: 4800000, guid: 2c4cd42b134f7864fa579350e9cf6896, type: 3}
   m_BlurShadowmapShader: {fileID: 4800000, guid: 701192b62a7678549918bc87434699fe,
@@ -74004,8 +74085,8 @@ MonoBehaviour:
   m_Range: 3.5
   m_Radius: 0.02
   m_Length: 0.38
-  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 3}
+  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2e6fd90941a3e3c458d01f851dca21ed, type: 3}
   m_RenderSource: 1
   m_ShadowPlanes:
@@ -78144,8 +78225,8 @@ MonoBehaviour:
   m_Range: 10
   m_Radius: 0.015
   m_Length: 0.7
-  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Sphere: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 3}
+  m_Capsule: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 3}
   m_ProxyShader: {fileID: 4800000, guid: 2e6fd90941a3e3c458d01f851dca21ed, type: 3}
   m_RenderSource: 1
   m_ShadowPlanes:
