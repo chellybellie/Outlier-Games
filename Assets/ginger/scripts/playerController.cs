@@ -27,72 +27,23 @@ public class playerController : MonoBehaviour
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
-<<<<<<< HEAD
         wep = gameObject.GetComponent<Weapons>();
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-=======
-<<<<<<< HEAD
-        wep = gameObject.GetComponent<Weapons>();
-=======
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-       
->>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
->>>>>>> chelsey
-    }
+        }
     
     public void Pause()
     {
         pausemenu.SetActive(true);
-<<<<<<< HEAD
+
         Time.timeScale = 0;
+    
     }
-
-   
-
-=======
-<<<<<<< HEAD
-        buttonpanel.SetActive(true);
-        Time.timeScale = 0;
-    }
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-        Time.timeScale = 0; 
-=======
-        Time.timeScale = 0;
-    }
->>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
-
->>>>>>> chelsey
-
-<<<<<<< HEAD
-=======
->>>>>>> master
-=======
-    } 
->>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
->>>>>>> chelsey
-
     void Update()
     {
         mouseRotate();
-<<<<<<< HEAD
-       
         if (Input.GetKey(KeyCode.W))
-
-=======
-<<<<<<< HEAD
-
-        if(Input.GetKey(KeyCode.W))
-=======
-       
-        if (Input.GetKey(KeyCode.W))
->>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
->>>>>>> chelsey
         {
             move.y += Time.deltaTime * speed;
         }
@@ -109,47 +60,24 @@ public class playerController : MonoBehaviour
         {
             move.x += Time.deltaTime * speed;
         }
-        if (Input.GetKey(KeyCode.LeftShift))
+    if (Input.GetKey(KeyCode.LeftShift))
+    {
+        if (move.y > 0)
         {
-            if(move.y > 0)
-            {
-                move.y += Time.deltaTime * (speed / 3);
-            }
-            else
-            {
-                move.y -= Time.deltaTime * (speed / 2);
-            }
-            
+            move.y += Time.deltaTime * (speed / 3);
         }
-
-
-        transform.Translate(move.x, 0, move.y);
-<<<<<<< HEAD
-
-       
-
-=======
-<<<<<<< HEAD
-       
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        else
         {
-            Pause();
-=======
->>>>>>> chelsey
-
-        
+            move.y -= Time.deltaTime * (speed / 2);
+        }
+    }
+        transform.Translate(move.x, 0, move.y);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pausemenu.SetActive(true);
             Time.timeScale = 0;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-<<<<<<< HEAD
-
-=======
->>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28
->>>>>>> chelsey
         }
         move *= .7f;
 
@@ -166,15 +94,21 @@ public class playerController : MonoBehaviour
         {
             health -= 10;
         }
-        //if(col.gameObject.CompareTag("healath") && health < 100)
-        //{
-        //    health += 10;
-        //    Destroy(healthpk);
-        //}
+        if (col.gameObject.CompareTag("health") && health < 100)
+        {
+            health += 10;
+            Destroy(healthpk);
+        }
         if (col.gameObject.CompareTag("ammo"))
         {
-            wep.ammo += 6;
+            //wep.ammo += 6;
             Destroy(col.gameObject);
+        }
+        if (col.gameObject.CompareTag("win"))
+        {
+            SceneManager.LoadScene(3);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 

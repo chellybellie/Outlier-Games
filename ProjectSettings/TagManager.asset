@@ -4,21 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - enemy
-  - scan
-  - ammo
-  - bullet
-  - inv
-  - Light
-  - Level
   - wrench
-  - mop
   - syringe
-  - health
-=======
+  - mop
   - Light
->>>>>>> chelsey
+  - ammo
+  - health
+  - Level
+  - enemy
+  - win
   layers:
   - Default
   - TransparentFX
@@ -28,8 +22,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Target
+  - Level
   - 
   - 
   - 

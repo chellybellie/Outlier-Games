@@ -148,20 +148,12 @@ public class stats : MonoBehaviour
         
 	}
 	
-	// Update is called once per frame
+	
 	void Update ()
     {
-<<<<<<< HEAD
-       
-=======
-<<<<<<< HEAD:Assets/Trevor/Scripts/stats.cs
-        // health.fillAmount = (hp / 100);
-        //crewname.text = crewName;
+
         anim.Play("walking");
-=======
-       
->>>>>>> chelsey:Assets/EMP/Trevor/Scripts/stats.cs
->>>>>>> chelsey
+
         if (hp <= 0)
         {
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
@@ -193,7 +185,7 @@ public class stats : MonoBehaviour
         if (col.gameObject.CompareTag("wrench"))
         {
             anim.Play("wrench hit");
-            sound.PlayOneShot(wrenchHit);
+            //sound.PlayOneShot(wrenchHit);
             hp -= 10;
             Destroy(col.gameObject);
         }
