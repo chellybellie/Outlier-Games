@@ -28,7 +28,7 @@ public class LightFlickerTrigger : MonoBehaviour
         if (l != null)
         {
 
-            if (Vector3.Distance(emp.EMPTester.transform.position, Light.transform.position) < emp.radius)
+            if (Vector3.Distance(emp.EMPTester.transform.position, transform.position) < emp.radius)
             {
                 if (l.intensity < lightIntensity)
                 {

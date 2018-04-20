@@ -1,29 +1,10 @@
 fileFormatVersion: 2
-guid: 05ab7c46078a5044c893af5c0e8773e0
-<<<<<<< HEAD
-timeCreated: 1524155503
-=======
-timeCreated: 1524175970
->>>>>>> chelsey
+guid: c34aa090a08f21e449daf24a815b80dd
+timeCreated: 1524156058
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences:
-  - currentModel: {fileID: 100000, guid: b1b4f4895d73d7f46a394209d0d82985, type: 3}
-  - raySpawn: {instanceID: 0}
-  - gun: {fileID: 100000, guid: 9b8cd096d4cfd614788305e50d9e6122, type: 3}
-  - wrench: {fileID: 100000, guid: 0cdc7009a6780bc4f8f4f80a84453520, type: 3}
-  - mop: {instanceID: 0}
-  - scope: {instanceID: 0}
-  - syringe: {instanceID: 0}
-  - ammoCT: {instanceID: 0}
-  - gunshot: {instanceID: 0}
-  - player: {instanceID: 0}
-  - wrenchSwing: {instanceID: 0}
-  - syringeSound: {instanceID: 0}
-  - mopSound: {instanceID: 0}
-  - cam: {instanceID: 0}
-  - anim: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
