@@ -13,6 +13,7 @@ TagManager:
   - Level
   - enemy
   - win
+  - scan
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - 
   - Target
   - Level
-  - 
+  - PPE
   - 
   - 
   - 

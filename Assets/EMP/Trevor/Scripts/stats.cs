@@ -148,11 +148,15 @@ public class stats : MonoBehaviour
         
 	}
 	
-	
+	// Update is called once per frame
 	void Update ()
     {
 
+        // health.fillAmount = (hp / 100);
+        //crewname.text = crewName;
         anim.Play("walking");
+
+       
 
         if (hp <= 0)
         {
@@ -185,7 +189,7 @@ public class stats : MonoBehaviour
         if (col.gameObject.CompareTag("wrench"))
         {
             anim.Play("wrench hit");
-            //sound.PlayOneShot(wrenchHit);
+            sound.PlayOneShot(wrenchHit);
             hp -= 10;
             Destroy(col.gameObject);
         }

@@ -8,18 +8,24 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-    Weapons wep;
+    public HPScript hpscript;
     public GameObject pausemenu;
-    float speed = 1f;
+    float speed = 2f;
     public Camera cam;
     public Vector2 move;
+
+    public float health = 100;
+
+
+
     public GameObject healthpk;
-    
+
     public float mouseSensitivity = 100.0f;
     public float clampAngle = 80.0f;
+
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
-    public float health = 100;
+
 
     void Start()
     {
@@ -27,22 +33,29 @@ public class playerController : MonoBehaviour
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
-        wep = gameObject.GetComponent<Weapons>();
-
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        }
-    
+
+    }
+
+
+
     public void Pause()
     {
         pausemenu.SetActive(true);
 
         Time.timeScale = 0;
-    
+
+        Time.timeScale = 0;
     }
+
+
+
+
     void Update()
     {
         mouseRotate();
+
         if (Input.GetKey(KeyCode.W))
         {
             move.y += Time.deltaTime * speed;
@@ -60,18 +73,11 @@ public class playerController : MonoBehaviour
         {
             move.x += Time.deltaTime * speed;
         }
-    if (Input.GetKey(KeyCode.LeftShift))
-    {
-        if (move.y > 0)
-        {
-            move.y += Time.deltaTime * (speed / 3);
-        }
-        else
-        {
-            move.y -= Time.deltaTime * (speed / 2);
-        }
-    }
+
+
         transform.Translate(move.x, 0, move.y);
+
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pausemenu.SetActive(true);
@@ -88,21 +94,17 @@ public class playerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
+
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.CompareTag("enemy"))
+        if (col.gameObject.CompareTag("enemy"))
         {
-            health -= 10;
+            hpscript.TakeHit(1, 5, 1);
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
             Destroy(healthpk);
-        }
-        if (col.gameObject.CompareTag("ammo"))
-        {
-            //wep.ammo += 6;
-            Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("win"))
         {
@@ -110,6 +112,7 @@ public class playerController : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+
     }
 
     public void mouseRotate()

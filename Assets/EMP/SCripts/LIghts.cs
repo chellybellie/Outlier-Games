@@ -5,7 +5,7 @@ using UnityEngine;
 public class Lights : MonoBehaviour
 {
     public EMP emp;
-
+   
 
     public void LightShutdown()
     {
@@ -14,7 +14,7 @@ public class Lights : MonoBehaviour
 
         foreach (GameObject tgo in LightSource)
         {
-            Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
+            //Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
 
             if (Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) < emp.radius)
             {
@@ -40,7 +40,7 @@ public class Lights : MonoBehaviour
 
                     Ps.Clear();
                 }
-
+                 
 
 
                 AreaLight tmpLight2 = tgo.GetComponent<AreaLight>();
@@ -111,7 +111,7 @@ public class Lights : MonoBehaviour
             LightRandomFlicker lft = tgo.GetComponent<LightRandomFlicker>();
             ParticleSystem Ps = tgo.GetComponent<ParticleSystem>();
             if (tmpLight != null)
-                tmpLight.enabled = true;
+                 tmpLight.enabled = true;
             if (tempMR != null)
                 tempMR.enabled = true;
             if (tempFL != null)
@@ -135,7 +135,7 @@ public class Lights : MonoBehaviour
             ParticleSystem Ps2 = tgo.GetComponent<ParticleSystem>();
 
             if (tmpLight2 != null)
-                tmpLight2.enabled = true;
+               tmpLight2.enabled = true;
             if (tempMR2 != null)
                 tempMR2.enabled = true;
             if (tempFL2 != null)
@@ -159,7 +159,7 @@ public class Lights : MonoBehaviour
             ParticleSystem Ps3 = tgo.GetComponent<ParticleSystem>();
 
             if (tmpLight3 != null)
-                tmpLight3.enabled = true;
+               tmpLight3.enabled = true;
             if (tempMR2 != null)
                 tempMR3.enabled = true;
             if (tempFL3 != null)

@@ -6,6 +6,8 @@ using UnityEngine.Rendering.PostProcessing;
 
 public class ExamplePPScript : MonoBehaviour {
     public PostProcessVolume ppv;
+
+
     void OnTriggerEnter(Collider col)
     {
         if (col.tag == "Player")
