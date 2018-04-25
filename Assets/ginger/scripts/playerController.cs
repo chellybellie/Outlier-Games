@@ -44,15 +44,13 @@ public class playerController : MonoBehaviour
     {
         pausemenu.SetActive(true);
 
-<<<<<<< HEAD
         Time.timeScale = 0; 
-=======
+
         Time.timeScale = 0;
     }
 
->>>>>>> chelsey
 
-    } 
+    
 
     void Update()
     {

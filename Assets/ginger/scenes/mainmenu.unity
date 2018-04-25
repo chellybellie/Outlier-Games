@@ -278,7 +278,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: bcca4690d8b5ac14bb1ed91ccf773461, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d0b3b26754cae614b86157f325d6f1b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 194386871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e30db0ce5a6ccc448bc6aca652de6a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 783072e84183b2c49ab0869cfe0f9dc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &494979367
@@ -411,7 +411,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 87a697f4dde355d4a8840fce525a7815, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01e9db7c4e9ce0448b6389386b8ffd3d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -433,7 +433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 494979367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc257cc947213cd4dacdb70576d0c6c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 14a8548efe345c44193e763d84548e54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   op: {fileID: 2082229966}
@@ -558,7 +558,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 758064497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558bebaaac290b842923359ebc0835b1, type: 3}
+  m_Script: {fileID: 11500000, guid: a80b93b5ce4bbd54bb3416ccc78abcc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &758064500
@@ -632,7 +632,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 17b89cdf7788bbb4b917b15b893d5a17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd13a518e79e0a44094666e4df1d1701, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -694,7 +694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14983ea18a148bb429f1dc5fd54c095a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
 --- !u!114 &1134102369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -766,7 +765,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 78f9562fca8b25e41942a62ee7ae69a7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 25dcb8d33d7e31648847d65016b44555, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1235,7 +1234,7 @@ Prefab:
     - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 772
+      value: 760
       objectReference: {fileID: 0}
     - target: {fileID: 224456315268644696, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
         type: 2}
@@ -1282,19 +1281,47 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224790755488847260, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+    - target: {fileID: 114086800131216532, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
         type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: -44.544006
-      objectReference: {fileID: 0}
-    - target: {fileID: 224790755488847260, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 494979372}
+    - target: {fileID: 114853635519137114, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
         type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -31.500977
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 494979372}
     - target: {fileID: 1229418762793532, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114426208371558902, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d27faa118b84a28429e5f32b63f54a9c,
+        type: 3}
+    - target: {fileID: 114086175512452630, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ac7ecac3537ffcd4280ad784c34242ca,
+        type: 3}
+    - target: {fileID: 114850138118747496, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d904e99cff2bbf42b00886c89da1d3f,
+        type: 3}
+    - target: {fileID: 224073484222905206, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 224073484222905206, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 216
       objectReference: {fileID: 0}
     - target: {fileID: 224300821977261496, guid: 3cdfb8bbd1ab00d4db9b467aaa643dc0,
         type: 2}
