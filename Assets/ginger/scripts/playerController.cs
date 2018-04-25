@@ -104,6 +104,7 @@ public class playerController : MonoBehaviour
         {
             wep.ammo += 6;
             Destroy(col.gameObject);
+            
         }
     }
 

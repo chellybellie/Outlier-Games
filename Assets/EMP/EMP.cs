@@ -114,7 +114,7 @@ public class EMP : MonoBehaviour
 
        public void RunThrough()
     {
-        if (tas.abilitySelect == 0 && ChargeBar_UI.uses < 1 && ChargeBar_UI.power < 99 && ChargeBar_UI.power > 25) 
+        if (tas.abilitySelect == 0 && ChargeBar_UI.power < 99 && ChargeBar_UI.power > 25) 
         {
             FreezeTimer = 1;
             EMPDetonate();
@@ -122,14 +122,14 @@ public class EMP : MonoBehaviour
             ChargeBar_UI.power -= 25;
         }
 
-        if (tas.abilitySelect == 1 && ChargeBar_UI.uses == 1)
+        if (tas.abilitySelect == 1 && ChargeBar_UI.uses >= 1)
         {
             FreezeTimer = 5;
             EMPDetonate();
             // LightShutdown();
             ChargeBar_UI.uses -= 1;
         }
-        if (tas.abilitySelect == 2 && ChargeBar_UI.uses == 2 )
+        if (tas.abilitySelect == 2 && ChargeBar_UI.uses >= 2 )
         {
             FreezeTimer = 10;
             EMPDetonate();

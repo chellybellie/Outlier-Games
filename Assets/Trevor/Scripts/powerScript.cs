@@ -55,7 +55,7 @@ public class powerScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (uses > 0)
+            if (uses > 0 || power > 25)
             {
                 //zap.PlayOneShot(zappity, 1f);
                 note.text = "! SURGE !";
