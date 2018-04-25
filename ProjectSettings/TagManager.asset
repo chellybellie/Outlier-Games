@@ -4,20 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - inv
-  - Points
-  - health
-  - enemy
-  - bullet
-<<<<<<< HEAD
-  - scan
   - wrench
   - syringe
   - mop
-=======
   - Light
-  - PostEffect
->>>>>>> chelsey
+  - ammo
+  - health
+  - Level
+  - enemy
+  - win
+  - scan
   layers:
   - Default
   - TransparentFX
@@ -29,7 +25,7 @@ TagManager:
   - 
   - Target
   - Level
-  - Effects
+  - PPE
   - 
   - 
   - 

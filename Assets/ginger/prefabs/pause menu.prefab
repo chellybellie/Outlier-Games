@@ -379,25 +379,43 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+--- !u!1 &1363157582069672
+=======
 --- !u!1 &1316789845277396
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  - component: {fileID: 224226387766593666}
+  - component: {fileID: 222685521115246574}
+  - component: {fileID: 114153655300533508}
+  - component: {fileID: 114882682887202906}
+  m_Layer: 5
+  m_Name: Template
+=======
   - component: {fileID: 224633411650375348}
   - component: {fileID: 222850548115936562}
   - component: {fileID: 114382738400245198}
   - component: {fileID: 114767494273001424}
   m_Layer: 5
   m_Name: V sync Dropdown
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_IsActive: 0
+--- !u!1 &1367325963832208
+=======
   m_IsActive: 1
 --- !u!1 &1330880570072088
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -689,25 +707,43 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+--- !u!1 &1584806116938942
+=======
 --- !u!1 &1541296159704920
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  - component: {fileID: 224086188867460566}
+  - component: {fileID: 222307805252992330}
+  - component: {fileID: 114140574838957872}
+  - component: {fileID: 114101242758241046}
+  m_Layer: 5
+  m_Name: Template
+=======
   - component: {fileID: 224345550908682984}
   - component: {fileID: 222089501207438590}
   - component: {fileID: 114026005115313798}
   - component: {fileID: 114544963778815510}
   m_Layer: 5
   m_Name: Scrollbar
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_IsActive: 0
+--- !u!1 &1594004215882052
+=======
   m_IsActive: 1
 --- !u!1 &1543966845725272
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1197,7 +1233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &114011173408073928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2251,6 +2287,23 @@ MonoBehaviour:
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+      m_Calls:
+      - m_Target: {fileID: 114810667750230902}
+        m_MethodName: CloseOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114386275654145922
+=======
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -2269,6 +2322,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Option A
 --- !u!114 &114521903247481646
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2295,11 +2349,74 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+--- !u!114 &114390284236027056
+=======
 --- !u!114 &114522943005232678
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_GameObject: {fileID: 1584709942070364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 853051423, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 114139113277399476}
+  m_Template: {fileID: 224086188867460566}
+  m_CaptionText: {fileID: 0}
+  m_CaptionImage: {fileID: 0}
+  m_ItemText: {fileID: 114211948293930178}
+  m_ItemImage: {fileID: 0}
+  m_Value: 0
+  m_Options:
+    m_Options: []
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Dropdown+DropdownEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114392952616077634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1492085450470616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
+--- !u!114 &114395517731933836
+=======
   m_GameObject: {fileID: 1595668664705776}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2323,6 +2440,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!114 &114523612883670116
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -3174,6 +3292,9 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+--- !u!114 &114825579994403676
+=======
 --- !u!114 &114745681328868054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3186,6 +3307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114746999702949740
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -3245,11 +3367,71 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+--- !u!114 &114878841727099756
+=======
 --- !u!114 &114767494273001424
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_GameObject: {fileID: 1991527017136956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Option A
+--- !u!114 &114882682887202906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1363157582069672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 224159922380513664}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 224912493345507004}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 114837264112117164}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 2
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: -3
+=======
   m_GameObject: {fileID: 1316789845277396}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3295,6 +3477,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Every Second V blank
       m_Image: {fileID: 0}
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -4038,6 +4221,10 @@ CanvasRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_GameObject: {fileID: 1249417303899938}
+--- !u!222 &222455673054249328
+=======
   m_GameObject: {fileID: 1206999534026196}
 --- !u!222 &222261334380344722
 CanvasRenderer:
@@ -4052,6 +4239,7 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1851419359518626}
 --- !u!222 &222327762429129982
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 CanvasRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -4264,6 +4452,56 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_Children: []
+  m_Father: {fileID: 224265485880830982}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: -3.000023, y: -187}
+=======
+  m_AnchoredPosition: {x: 0, y: -244}
+>>>>>>> ginger
+  m_SizeDelta: {x: 260, y: 140}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224051288107192190
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1885222283652366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224801474167018890}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224066527458086992
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1465918854775438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224431181401346828}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+=======
   m_Children:
   - {fileID: 224162393283526642}
   - {fileID: 224637675062154940}
@@ -4275,6 +4513,7 @@ RectTransform:
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 7.0129395, y: -119.00012}
   m_SizeDelta: {x: 160, y: 20}
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224050036529601448
 RectTransform:
@@ -4291,8 +4530,35 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: -3, y: 79}
+=======
+  m_AnchoredPosition: {x: 0, y: 35}
+>>>>>>> ginger
+  m_SizeDelta: {x: 260, y: 140}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224083581509214410
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1183777158761190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224874659532224256}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 10, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+=======
   m_AnchoredPosition: {x: 0, y: -250}
   m_SizeDelta: {x: 250, y: 125}
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224067067116435474
 RectTransform:
@@ -4359,6 +4625,38 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_Children: []
+  m_Father: {fileID: 224090928265827246}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -44.544, y: -31.501}
+  m_SizeDelta: {x: 89.187, y: 63}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224191999008365422
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414675145263276}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.00000007942492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224265485880830982}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: -3, y: -320}
+=======
+  m_AnchoredPosition: {x: 0, y: -386}
+>>>>>>> ginger
+  m_SizeDelta: {x: 260, y: 140}
+=======
   m_Children:
   - {fileID: 224735497200479530}
   - {fileID: 224617592159041484}
@@ -4370,6 +4668,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224136493932976980
 RectTransform:
@@ -4516,9 +4815,19 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  - {fileID: 224157846704925824}
+  - {fileID: 224078556919389318}
+  - {fileID: 224999711992805718}
+  - {fileID: 224040495277563352}
+  - {fileID: 224191999008365422}
+  m_Father: {fileID: 224557467563537898}
+  m_RootOrder: 0
+=======
   - {fileID: 224718399163676714}
   m_Father: {fileID: 224190810279085894}
   m_RootOrder: 1
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -5037,7 +5346,11 @@ RectTransform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_GameObject: {fileID: 1624181331231638}
+=======
   m_GameObject: {fileID: 1173418620146448}
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -5047,6 +5360,14 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: -0.00024414061, y: 0}
+=======
+  m_AnchoredPosition: {x: 0, y: 0}
+>>>>>>> ginger
+  m_SizeDelta: {x: 100, y: 100}
+=======
   m_AnchoredPosition: {x: 0.0000038146973, y: 0}
   m_SizeDelta: {x: 250, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5067,6 +5388,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 10, y: 0}
   m_SizeDelta: {x: 20, y: 20}
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224626094453726398
 RectTransform:
@@ -5237,6 +5559,9 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: -10}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+--- !u!224 &224793198970546562
+=======
 --- !u!224 &224718487529204038
 RectTransform:
   m_ObjectHideFlags: 1
@@ -5259,6 +5584,7 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224735497200479530
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab
 RectTransform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5579,8 +5905,16 @@ RectTransform:
   m_Father: {fileID: 224427481822142928}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/ginger/prefabs/PauseMenu.prefab
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -105}
+  m_SizeDelta: {x: 260, y: 140}
+  m_Pivot: {x: 0.5, y: 0.5}
+=======
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 0, y: 150}
   m_Pivot: {x: 0.5, y: 1}
+>>>>>>> dd8dfaef0e9daff8a170e1076208b8dfc96cab28:Assets/ginger/prefabs/pause menu.prefab

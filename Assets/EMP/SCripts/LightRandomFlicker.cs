@@ -20,13 +20,16 @@ public class LightRandomFlicker : MonoBehaviour
         l = gameObject.GetComponent<Light>();
         al = gameObject.GetComponent<AreaLight>();
         tl = gameObject.GetComponent<TubeLight>();
-        s = gameObject.GetComponent<Renderer>();
+        s = gameObject.GetComponent<MeshRenderer>();
+
         if(l != null)
         l.intensity = 0;
         if(al != null)
         al.m_Intensity = 0;
         if (tl != null)
         tl.m_Intensity = 0;
+        if (s != null)
+            s.enabled = false;
         
             
 
@@ -43,9 +46,10 @@ public class LightRandomFlicker : MonoBehaviour
         //{
         //    on = true;
         //}
-
-        if ( l != null)
+        //////LIGHTS//////
+        if (l != null)
         {
+
             flickerTime += Time.deltaTime;
             fs -= Time.deltaTime;
             if ((flickerTime < 1.5f) && fs <= 0)
@@ -72,15 +76,17 @@ public class LightRandomFlicker : MonoBehaviour
             }
         }
 
-    
 
 
-            if ( al != null)
+        //////AREA LIGHT/////
+        if (al != null)
         {
+
             flickerTime += Time.deltaTime;
             fs -= Time.deltaTime;
-            if ((flickerTime< 1.5f) && fs <= 0)
+            if ((flickerTime < 1.5f) && fs <= 0)
             {
+
                 if (al.m_Intensity == 0)
                 {
                     al.m_Intensity = intense;
@@ -97,21 +103,23 @@ public class LightRandomFlicker : MonoBehaviour
                 al.m_Intensity = intense;
                 on = true;
             }
-            if(on == true)
+            if (on == true)
             {
                 flickerTime = 3;
             }
         }
 
-            
 
 
+        ////TUBE LIGHT/////
         if (tl != null)
         {
+
             flickerTime += Time.deltaTime;
             fs -= Time.deltaTime;
             if ((flickerTime < 1.5f) && fs <= 0)
             {
+
                 if (tl.m_Intensity == 0)
                 {
                     tl.m_Intensity = intense;
@@ -134,26 +142,30 @@ public class LightRandomFlicker : MonoBehaviour
             }
         }
 
+
+        /////EMISSION RENDERER//////
+
         if (s != null)
         {
             flickerTime += Time.deltaTime;
             fs -= Time.deltaTime;
             if ((flickerTime < 1.5f) && fs <= 0)
             {
-                if (s)
+                
+                if (s.enabled == false)
                 {
-                    s.m_Intensity = intense;
+                    s.enabled = true;
                 }
                 else
                 {
-                    s.m_Intensity = 0;
+                    s.enabled = false;
                 }
 
                 fs = Random.Range(.05f, .25f);
             }
             if (flickerTime > 2)
             {
-                s.m_Intensity = intense;
+                s.enabled = true;
                 on = true;
             }
             if (on == true)
@@ -161,8 +173,15 @@ public class LightRandomFlicker : MonoBehaviour
                 flickerTime = 3;
             }
         }
-
+        if (flickerTime >= 3)
+        {
+            Reset();
+        }
+    }
+    public void Reset()
+    {
+       on = false;
+       this.enabled = false;
     }
     }
-
 

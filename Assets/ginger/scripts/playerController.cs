@@ -14,9 +14,9 @@ public class playerController : MonoBehaviour
     public Camera cam;
     public Vector2 move;
 
-     public float health = 100;
+    public float health = 100;
 
-   
+
 
     public GameObject healthpk;
 
@@ -35,7 +35,7 @@ public class playerController : MonoBehaviour
         rotX = rot.x;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-       
+
     }
 
 
@@ -44,20 +44,18 @@ public class playerController : MonoBehaviour
     {
         pausemenu.SetActive(true);
 
-<<<<<<< HEAD
-        Time.timeScale = 0; 
-=======
+        Time.timeScale = 0;
+
         Time.timeScale = 0;
     }
 
->>>>>>> chelsey
 
-    } 
+
 
     void Update()
     {
         mouseRotate();
-       
+
         if (Input.GetKey(KeyCode.W))
         {
             move.y += Time.deltaTime * speed;
@@ -79,7 +77,7 @@ public class playerController : MonoBehaviour
 
         transform.Translate(move.x, 0, move.y);
 
-        
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pausemenu.SetActive(true);
@@ -96,17 +94,23 @@ public class playerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
     }
-   
+
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.CompareTag("enemy"))
         {
-            hpscript.TakeHit(1,5,1);
+            hpscript.TakeHit(1, 5, 1);
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
             Destroy(healthpk);
+        }
+        if (col.gameObject.CompareTag("win"))
+        {
+            SceneManager.LoadScene(3);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
 
     }
