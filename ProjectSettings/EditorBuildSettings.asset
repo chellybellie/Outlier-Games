@@ -4,4 +4,22 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: fc8f47562d3f4c841a3fe72671edeb4e
+  - enabled: 1
+    path: Assets/ginger/scenes/mainmenu.unity
+    guid: eb0d623f9f8170148bf5216253a8558b
+  - enabled: 1
+    path: Assets/Trevor/Scenes/MAIN SCENE DONT TOUCH PLZ.unity
+    guid: 7705438b0568e044eabf6319cccc0176
+  - enabled: 1
+    path: Assets/ginger/scenes/gameover.unity
+    guid: 8d9d086d5641fbd48a482690267bc760
+  - enabled: 1
+    path: Assets/ginger/scenes/win.unity
+    guid: 5856e155aa9580f46b3f333be900444b
+  - enabled: 1
+    path: Assets/ginger/scenes/credits.unity
+    guid: bc489b9f76bd6c8428d66df759b818ed
