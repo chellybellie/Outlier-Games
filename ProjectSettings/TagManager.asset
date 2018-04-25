@@ -4,13 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - inv
-  - Points
-  - health
-  - enemy
-  - scan
-  - bullet
+  - wrench
+  - syringe
+  - mop
+  - Light
   - ammo
+  - health
+  - Level
+  - enemy
+  - win
+  - scan
   layers:
   - Default
   - TransparentFX
@@ -22,7 +25,7 @@ TagManager:
   - 
   - Target
   - Level
-  - 
+  - PPE
   - 
   - 
   - 
