@@ -8,12 +8,16 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-    Weapons wep;
+    public HPScript hpscript;
     public GameObject pausemenu;
-    public GameObject buttonpanel;
     float speed = 2f;
     public Camera cam;
     public Vector2 move;
+
+    public float health = 100;
+
+
+
     public GameObject healthpk;
 
     public float mouseSensitivity = 100.0f;
@@ -22,89 +26,93 @@ public class playerController : MonoBehaviour
     private float rotY = 0.0f; // rotation around the up/y axis
     private float rotX = 0.0f; // rotation around the right/x axis
 
-    public float health = 100;
+
     void Start()
     {
         move = Vector2.zero;
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
         rotX = rot.x;
-        wep = gameObject.GetComponent<Weapons>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
     }
-    
+
+
+
     public void Pause()
     {
         pausemenu.SetActive(true);
-        buttonpanel.SetActive(true);
+
+        Time.timeScale = 0;
+
         Time.timeScale = 0;
     }
 
-   
+
+
+
     void Update()
     {
         mouseRotate();
 
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            move.y -= Time.deltaTime * speed;
+            move.y += Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            move.x += Time.deltaTime * speed;
+            move.x -= Time.deltaTime * speed;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            move.y += Time.deltaTime * speed;
+            move.y -= Time.deltaTime * speed;
 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            move.x -= Time.deltaTime * speed;
-        }
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            if(move.y > 0)
-            {
-                move.y += Time.deltaTime * (speed / 2);
-            }
-            else
-            {
-                move.y -= Time.deltaTime * (speed / 2);
-            }
-            
+            move.x += Time.deltaTime * speed;
         }
 
 
         transform.Translate(move.x, 0, move.y);
-       
+
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Pause();
+            pausemenu.SetActive(true);
+            Time.timeScale = 0;
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
         move *= .7f;
 
         if (health < 10)
         {
             SceneManager.LoadScene(2);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
+
     void OnTriggerEnter(Collider col)
     {
-        if(col.gameObject.CompareTag("enemy"))
+        if (col.gameObject.CompareTag("enemy"))
         {
-            health -= 10;
+            hpscript.TakeHit(1, 5, 1);
         }
-        if(col.gameObject.CompareTag("health") && health < 100)
+        if (col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
             Destroy(healthpk);
         }
-        if (col.gameObject.CompareTag("ammo"))
+        if (col.gameObject.CompareTag("win"))
         {
-            wep.ammo += 6;
-            Destroy(col.gameObject);
+            SceneManager.LoadScene(3);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
+
     }
 
     public void mouseRotate()
@@ -117,7 +125,7 @@ public class playerController : MonoBehaviour
 
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
 
-        Quaternion playerRotation = Quaternion.Euler(0.0f, rotY + 180, 0.0f);
+        Quaternion playerRotation = Quaternion.Euler(0.0f, rotY, 0.0f);
         Quaternion camRotation = Quaternion.Euler(rotX, rotY, 0.0f);
         transform.rotation = playerRotation;
         cam.transform.rotation = camRotation;

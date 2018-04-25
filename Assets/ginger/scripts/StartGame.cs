@@ -9,4 +9,8 @@ public class StartGame : MonoBehaviour {
     {
         SceneManager.LoadScene(1);
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene(4);
+    }
 }

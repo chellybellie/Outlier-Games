@@ -10,14 +10,14 @@ public class DoomPatrol : MonoBehaviour {
     private NavMeshAgent agent;
     public  Transform Target;
     public bool isChasingPlayer = false;
-   
+    Animator anim;
 
     void Start()
     {
        
         float result = Vector3.Dot(new Vector3(1, 1, 1).normalized, new Vector3(1, 2, 1).normalized);
         agent = GetComponent<NavMeshAgent>();
-       
+        anim = GetComponent<Animator>();
         agent.autoBraking = false;
         GotoNextPoint();
     }
@@ -41,11 +41,13 @@ public class DoomPatrol : MonoBehaviour {
         if(Target != null)
         {
             agent.SetDestination(Target.transform.position);
+            anim.Play("walking");
         }
 
         if(Target == null)
         {
             GotoNextPoint();
+            anim.Play("walking");
         }
     }
 
