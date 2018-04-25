@@ -15,6 +15,7 @@ public class powerScript : MonoBehaviour
     public float power;
     public float charge;
     public int uses;
+    public GloveIndicators gloveInd;
     EMP empScript;
     void Start()
     {
@@ -33,6 +34,9 @@ public class powerScript : MonoBehaviour
         if (power < 100)
         {
             power += (charge * Time.deltaTime);
+
+            gloveInd.SetPowerTo((int)power, new Color32(71, 244, 254, 255),new Color32(39,20,97,255));
+                
             if (power >= 100)
             {
                 if (uses < 3)
@@ -51,6 +55,8 @@ public class powerScript : MonoBehaviour
         {
             uses++;
             power = 0;
+            
+
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -84,23 +90,35 @@ public class powerScript : MonoBehaviour
         {
             case 0:
                 pipOne.enabled = false;
+                gloveInd.SwitchPipOff(0);
                 pipTwo.enabled = false;
+                gloveInd.SwitchPipOff(1);
                 pipThree.enabled = false;
+                gloveInd.SwitchPipOff(2);
                 break;
             case 1:
                 pipOne.enabled = true;
+                gloveInd.SwitchPipOn(0);
                 pipTwo.enabled = false;
+                gloveInd.SwitchPipOff(1);
                 pipThree.enabled = false;
+                gloveInd.SwitchPipOff(2);
                 break;
             case 2:
                 pipOne.enabled = true;
+                gloveInd.SwitchPipOn(0);
                 pipTwo.enabled = true;
+                gloveInd.SwitchPipOn(1);
                 pipThree.enabled = false;
+                gloveInd.SwitchPipOff(2);
                 break;
             case 3:
                 pipOne.enabled = true;
+                gloveInd.SwitchPipOn(0);
                 pipTwo.enabled = true;
+                gloveInd.SwitchPipOn(1);
                 pipThree.enabled = true;
+                gloveInd.SwitchPipOn(2);
                 break;
             default:
                 break;

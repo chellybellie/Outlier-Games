@@ -154,7 +154,14 @@ public class stats : MonoBehaviour
 
         // health.fillAmount = (hp / 100);
         //crewname.text = crewName;
+<<<<<<< HEAD
  
+=======
+        anim.Play("walking");
+
+       
+
+>>>>>>> 827137cdd6958d129e58adb87fc0d8b1e7326ede
         if (hp <= 0)
         {
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");

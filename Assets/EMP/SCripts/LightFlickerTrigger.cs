@@ -11,7 +11,7 @@ public class LightFlickerTrigger : MonoBehaviour
     public float lightIntensity;
     public float LightOnSpeed;
     public EMP emp;
-    public Lights Light;
+    Lights Light;
     // Use this for initialization
     void Start()
     {
@@ -28,7 +28,7 @@ public class LightFlickerTrigger : MonoBehaviour
         if (l != null)
         {
 
-            if (Vector3.Distance(emp.EMPTester.transform.position, Light.transform.position) < emp.radius)
+            if (Vector3.Distance(emp.EMPTester.transform.position, transform.position) < emp.radius)
             {
                 if (l.intensity < lightIntensity)
                 {

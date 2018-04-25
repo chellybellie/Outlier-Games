@@ -5,7 +5,11 @@ using UnityEngine;
 public class Lights : MonoBehaviour
 {
     public EMP emp;
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> 827137cdd6958d129e58adb87fc0d8b1e7326ede
 
     public void LightShutdown()
     {
@@ -14,7 +18,11 @@ public class Lights : MonoBehaviour
 
         foreach (GameObject tgo in LightSource)
         {
+<<<<<<< HEAD
             Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
+=======
+            //Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
+>>>>>>> 827137cdd6958d129e58adb87fc0d8b1e7326ede
 
             if (Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) < emp.radius)
             {
@@ -40,7 +48,11 @@ public class Lights : MonoBehaviour
 
                     Ps.Clear();
                 }
+<<<<<<< HEAD
 
+=======
+                 
+>>>>>>> 827137cdd6958d129e58adb87fc0d8b1e7326ede
 
 
                 AreaLight tmpLight2 = tgo.GetComponent<AreaLight>();
@@ -111,7 +123,11 @@ public class Lights : MonoBehaviour
             LightRandomFlicker lft = tgo.GetComponent<LightRandomFlicker>();
             ParticleSystem Ps = tgo.GetComponent<ParticleSystem>();
             if (tmpLight != null)
+<<<<<<< HEAD
                 tmpLight.enabled = true;
+=======
+                 tmpLight.enabled = true;
+>>>>>>> 827137cdd6958d129e58adb87fc0d8b1e7326ede
             if (tempMR != null)
                 tempMR.enabled = true;
             if (tempFL != null)
