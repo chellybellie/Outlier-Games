@@ -70,7 +70,7 @@ public class GloveIndicators : MonoBehaviour {
         for (int x = f; x > 1; x--)
         {
             powerTexture.SetPixels(x, 0, 1, 10, colorOffArray);
-            Debug.Log(x);
+            //Debug.Log(x);
         }
 
         powerTexture.Apply();
@@ -97,7 +97,7 @@ public class GloveIndicators : MonoBehaviour {
         for (int x = f; x > 1; x--)
         {
             HealthTexture.SetPixels(x, 0, 1, 10, colorOffArray);
-            Debug.Log(x);
+            //Debug.Log(x);
         }
 
         HealthTexture.Apply();
