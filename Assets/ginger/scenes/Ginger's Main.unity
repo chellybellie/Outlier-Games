@@ -107,7 +107,7 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 1
-  m_NavMeshData: {fileID: 23800000, guid: 22266eb05a7a7df4b9c6d64c03770b4a, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &24616148
 GameObject:
   m_ObjectHideFlags: 0
@@ -6089,15 +6089,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4199422140697378, guid: 61e59416df9078c4f99e5aa444f00026, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.37
+      value: -0.652
       objectReference: {fileID: 0}
     - target: {fileID: 4199422140697378, guid: 61e59416df9078c4f99e5aa444f00026, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.85
+      value: 0.321
       objectReference: {fileID: 0}
     - target: {fileID: 4199422140697378, guid: 61e59416df9078c4f99e5aa444f00026, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 19.77
+      value: 18.569
       objectReference: {fileID: 0}
     - target: {fileID: 4199422140697378, guid: 61e59416df9078c4f99e5aa444f00026, type: 2}
       propertyPath: m_LocalRotation.x
@@ -38825,15 +38825,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: fd2ba8a4403700d4e8c040441f09cb84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.54
+      value: 2.943
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fd2ba8a4403700d4e8c040441f09cb84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.83
+      value: 0.302
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fd2ba8a4403700d4e8c040441f09cb84, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.59
+      value: 18.897
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fd2ba8a4403700d4e8c040441f09cb84, type: 3}
       propertyPath: m_LocalRotation.x
@@ -39133,7 +39133,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077551714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.60394263, y: 9.944315, z: 17.94}
+  m_LocalPosition: {x: 0.534, y: 2.541, z: 20.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43652,7 +43652,7 @@ GameObject:
   - component: {fileID: 1273418291}
   - component: {fileID: 1273418290}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ship sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
