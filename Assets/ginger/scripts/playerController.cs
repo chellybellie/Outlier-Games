@@ -36,7 +36,7 @@ public class playerController : MonoBehaviour
         rotX = rot.x;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        gloveInd.SetHealthTo((int)health, new Color32(0, 255, 255, 0), new Color32(0, 255, 155, 0));
+        gloveInd.SetHealthTo((int)health, new Color32(255, 0, 0, 255), new Color32(120, 0, 0, 255));
 
     }
 
@@ -102,12 +102,12 @@ public class playerController : MonoBehaviour
         if (col.gameObject.CompareTag("enemy"))
         {
             health -= 1f;
-            gloveInd.SetHealthTo((int)health, new Color32(0, 255, 255, 0), new Color32(0, 255, 155, 0));
+            gloveInd.SetHealthTo((int)health, new Color32(255, 0, 0, 255), new Color32(120, 0, 0, 255));
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
-            gloveInd.SetHealthTo((int)health, new Color32(0, 255, 255, 0), new Color32(0, 255, 155, 0));
+            gloveInd.SetHealthTo((int)health, new Color32(255, 0, 0, 255), new Color32(120, 0, 0, 255));
             Destroy(healthpk);
         }
         if (col.gameObject.CompareTag("win"))

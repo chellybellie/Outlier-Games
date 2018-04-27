@@ -8,7 +8,7 @@ public class HPScript : MonoBehaviour {
     public Image hpBar;
     public Image bleedBar;
     public Text hpText;
-
+   public  GloveIndicators gloveInd;
     public playerController player;
     public float bleedHP;
     public float hit;
@@ -46,6 +46,7 @@ public class HPScript : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.Keypad1))
         {
             hit = 20;
+          
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
@@ -92,5 +93,6 @@ public class HPScript : MonoBehaviour {
     void Bleed()
     {
         player.health -= (bleedSeverity * Time.deltaTime);
+        gloveInd.SetHealthTo((int)player.health, new Color32(255, 0, 0,255), new Color32(120, 0, 0, 255));
     }
 }
