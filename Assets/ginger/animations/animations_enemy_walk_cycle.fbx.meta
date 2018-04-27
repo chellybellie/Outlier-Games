@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: 5bb7d59224aa5b04fa448202eab17288
+timeCreated: 1524857328
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: joint_enemy_ankle_l
+    100004: joint_enemy_ankle_r
+    100006: joint_enemy_chest
+    100008: joint_enemy_clavicle_l
+    100010: joint_enemy_clavicle_r
+    100012: joint_enemy_diaphragm
+    100014: joint_enemy_elbow_l
+    100016: joint_enemy_elbow_r
+    100018: joint_enemy_forearm_l
+    100020: joint_enemy_forearm_r
+    100022: joint_enemy_hand_end_r
+    100024: joint_enemy_head_end
+    100026: joint_enemy_heel_l
+    100028: joint_enemy_heel_r
+    100030: joint_enemy_hip_l
+    100032: joint_enemy_hip_r
+    100034: joint_enemy_knee_l
+    100036: joint_enemy_knee_r
+    100038: joint_enemy_mid_1_l
+    100040: joint_enemy_mid_2_l
+    100042: joint_enemy_mid_3_l
+    100044: joint_enemy_mid_end_l
+    100046: joint_enemy_neck_base
+    100048: joint_enemy_neck_top
+    100050: joint_enemy_pinky_1_l
+    100052: joint_enemy_pinky_2_l
+    100054: joint_enemy_pinky_3_l
+    100056: joint_enemy_pinky_end_l
+    100058: joint_enemy_point_1_l
+    100060: joint_enemy_point_2_l
+    100062: joint_enemy_point_3_l
+    100064: joint_enemy_point_end_l
+    100066: joint_enemy_ring_1_l
+    100068: joint_enemy_ring_2_l
+    100070: joint_enemy_ring_3_l
+    100072: joint_enemy_ring_end_l
+    100074: joint_enemy_root
+    100076: joint_enemy_shoulder_l
+    100078: joint_enemy_shoulder_r
+    100080: joint_enemy_stomach
+    100082: joint_enemy_thumb_1_l
+    100084: joint_enemy_thumb_2_l
+    100086: joint_enemy_thumb_3_l
+    100088: joint_enemy_thumb_end_l
+    100090: joint_enemy_toe_end_l
+    100092: joint_enemy_toe_end_r
+    100094: joint_enemy_toes_l
+    100096: joint_enemy_toes_r
+    100098: joint_enemy_wrist_l
+    100100: joint_enemy_wrist_r
+    100102: OBJ_char_enemy_UVd
+    400000: //RootNode
+    400002: joint_enemy_ankle_l
+    400004: joint_enemy_ankle_r
+    400006: joint_enemy_chest
+    400008: joint_enemy_clavicle_l
+    400010: joint_enemy_clavicle_r
+    400012: joint_enemy_diaphragm
+    400014: joint_enemy_elbow_l
+    400016: joint_enemy_elbow_r
+    400018: joint_enemy_forearm_l
+    400020: joint_enemy_forearm_r
+    400022: joint_enemy_hand_end_r
+    400024: joint_enemy_head_end
+    400026: joint_enemy_heel_l
+    400028: joint_enemy_heel_r
+    400030: joint_enemy_hip_l
+    400032: joint_enemy_hip_r
+    400034: joint_enemy_knee_l
+    400036: joint_enemy_knee_r
+    400038: joint_enemy_mid_1_l
+    400040: joint_enemy_mid_2_l
+    400042: joint_enemy_mid_3_l
+    400044: joint_enemy_mid_end_l
+    400046: joint_enemy_neck_base
+    400048: joint_enemy_neck_top
+    400050: joint_enemy_pinky_1_l
+    400052: joint_enemy_pinky_2_l
+    400054: joint_enemy_pinky_3_l
+    400056: joint_enemy_pinky_end_l
+    400058: joint_enemy_point_1_l
+    400060: joint_enemy_point_2_l
+    400062: joint_enemy_point_3_l
+    400064: joint_enemy_point_end_l
+    400066: joint_enemy_ring_1_l
+    400068: joint_enemy_ring_2_l
+    400070: joint_enemy_ring_3_l
+    400072: joint_enemy_ring_end_l
+    400074: joint_enemy_root
+    400076: joint_enemy_shoulder_l
+    400078: joint_enemy_shoulder_r
+    400080: joint_enemy_stomach
+    400082: joint_enemy_thumb_1_l
+    400084: joint_enemy_thumb_2_l
+    400086: joint_enemy_thumb_3_l
+    400088: joint_enemy_thumb_end_l
+    400090: joint_enemy_toe_end_l
+    400092: joint_enemy_toe_end_r
+    400094: joint_enemy_toes_l
+    400096: joint_enemy_toes_r
+    400098: joint_enemy_wrist_l
+    400100: joint_enemy_wrist_r
+    400102: OBJ_char_enemy_UVd
+    4300000: OBJ_char_enemy_UVd
+    7400000: ENEMY WALK
+    9500000: //RootNode
+    13700000: OBJ_char_enemy_UVd
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ENEMY WALK
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
