@@ -9,10 +9,10 @@ public class testAbilityScript : MonoBehaviour {
     public float selection = 0;
     float zeroPunch = 25;
 
-    public Image aZero;
-    public Image aOne;
-    public Image aTwo;
-    public Image aThree;
+    //public Image aZero;
+    //public Image aOne;
+    //public Image aTwo;
+    //public Image aThree;
 
     public Image RaZero;
     public Image RaOne;
@@ -105,37 +105,37 @@ public class testAbilityScript : MonoBehaviour {
             Three = new Vector2(1, 1);
         }
 
-        switch(abilitySelect)
+        switch (abilitySelect)
         {
             case 0:
-                aZero.enabled = true;
-                aOne.enabled = false;
-                aTwo.enabled = false;
-                aThree.enabled = false;
+                //aZero.enabled = true;
+                //aOne.enabled = false;
+                //aTwo.enabled = false;
+                //aThree.enabled = false;
 
                 Zero *= 1.2f;
                 break;
             case 1:
-                aZero.enabled = true;
-                aOne.enabled = true;
-                aTwo.enabled = false;
-                aThree.enabled = false;
+                //aZero.enabled = true;
+                //aOne.enabled = true;
+                //aTwo.enabled = false;
+                //aThree.enabled = false;
 
                 One *= 1.2f;
                 break;
             case 2:
-                aZero.enabled = true;
-                aOne.enabled = true;
-                aTwo.enabled = true;
-                aThree.enabled = false;
+                //aZero.enabled = true;
+                //aOne.enabled = true;
+                //aTwo.enabled = true;
+                //aThree.enabled = false;
 
                 Two *= 1.2f;
                 break;
             case 3:
-                aZero.enabled = true;
-                aOne.enabled = true;
-                aTwo.enabled = true;
-                aThree.enabled = true;
+                //aZero.enabled = true;
+                //aOne.enabled = true;
+                //aTwo.enabled = true;
+                //aThree.enabled = true;
 
 
                 Three *= 1.2f;

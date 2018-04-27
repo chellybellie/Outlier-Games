@@ -51,7 +51,8 @@ public class GloveIndicators : MonoBehaviour
 
     void Update()
     {
-
+        if(Input.GetKeyUp(KeyCode.Keypad0))
+            SetHealthTo(50, new Color32(230, 0, 0, 255), new Color32(110, 0, 0, 255));
     }
 
     public void SetPowerTo(int f, Color colorOn, Color colorOff)
@@ -69,7 +70,7 @@ public class GloveIndicators : MonoBehaviour
         for (int x = 99; x > f; x--)
             powerTexture.SetPixels(x, 0, 1, 10, colorOnArray);
 
-        for (int x = f; x > 1; x--)
+        for (int x = f; x >= 0; x--)
         {
             powerTexture.SetPixels(x, 0, 1, 10, colorOffArray);
             //Debug.Log(x);
@@ -83,8 +84,11 @@ public class GloveIndicators : MonoBehaviour
 
     public void SetHealthTo(int f, Color colorOn, Color colorOff)
     {
+      
+
         Color[] colorOnArray = new Color[10];
         Color[] colorOffArray = new Color[10];
+
         for (int i = 0; i < 10; i++)
         {
             colorOnArray[i] = colorOn;
@@ -96,7 +100,7 @@ public class GloveIndicators : MonoBehaviour
         for (int x = 99; x > f; x--)
             HealthTexture.SetPixels(x, 0, 1, 10, colorOnArray);
 
-        for (int x = f; x > 1; x--)
+        for (int x = f; x >=0; x--)
         {
             HealthTexture.SetPixels(x, 0, 1, 10, colorOffArray);
             //Debug.Log(x);

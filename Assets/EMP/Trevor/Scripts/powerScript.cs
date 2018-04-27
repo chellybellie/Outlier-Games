@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class powerScript : MonoBehaviour
 {
-    public Text amount;
-    public Image bar;
-    public Image pipOne, pipTwo, pipThree;
-    public Text note;
+  //  public Text amount;
+    public GameObject bar;
+    public GameObject pipOne, pipTwo, pipThree;
+   
     //AudioSource zap;
     //public AudioClip zappity;
-    public float noteTime;
+ //   public float noteTime;
     public float power;
     public float charge;
     public int uses;
@@ -21,16 +21,15 @@ public class powerScript : MonoBehaviour
     {
         power = 0;
         charge = 10;
-        pipOne.enabled = false;
-        pipTwo.enabled = false;
-        pipThree.enabled = false;
+ 
+
         empScript = gameObject.GetComponent<EMP>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        bar.fillAmount = (power / 100);
+       
         if (power < 100)
         {
             power += (charge * Time.deltaTime);
@@ -64,60 +63,50 @@ public class powerScript : MonoBehaviour
             if (uses > 0 || power > 25)
             {
                 //zap.PlayOneShot(zappity, 1f);
-                note.text = "! SURGE !";
-                noteTime = 0;
+
                 empScript.RunThrough();
             }
             else
             {
-                note.text = "! No Charges !";
-                noteTime = 0;
+               
+
             }
         }
 
-        if (noteTime > 3)
-        {
-            note.text = "";
-        }
-        else
-        {
-            noteTime += Time.deltaTime;
-        }
-
-        amount.text = ((int)power).ToString();
+      //  amount.text = ((int)power).ToString();
 
         switch (uses)
         {
             case 0:
-                pipOne.enabled = false;
+               //pipOne.enabled = false;
                 gloveInd.SwitchPipOff(0);
-                pipTwo.enabled = false;
+               // pipTwo.enabled = false;
                 gloveInd.SwitchPipOff(1);
-                pipThree.enabled = false;
+               // pipThree.enabled = false;
                 gloveInd.SwitchPipOff(2);
                 break;
             case 1:
-                pipOne.enabled = true;
+              //  pipOne.enabled = true;
                 gloveInd.SwitchPipOn(0);
-                pipTwo.enabled = false;
+               // pipTwo.enabled = false;
                 gloveInd.SwitchPipOff(1);
-                pipThree.enabled = false;
+               // pipThree.enabled = false;
                 gloveInd.SwitchPipOff(2);
                 break;
             case 2:
-                pipOne.enabled = true;
+               // pipOne.enabled = true;
                 gloveInd.SwitchPipOn(0);
-                pipTwo.enabled = true;
+               // pipTwo.enabled = true;
                 gloveInd.SwitchPipOn(1);
-                pipThree.enabled = false;
+               // pipThree.enabled = false;
                 gloveInd.SwitchPipOff(2);
                 break;
             case 3:
-                pipOne.enabled = true;
+               // pipOne.enabled = true;
                 gloveInd.SwitchPipOn(0);
-                pipTwo.enabled = true;
+               // pipTwo.enabled = true;
                 gloveInd.SwitchPipOn(1);
-                pipThree.enabled = true;
+               // pipThree.enabled = true;
                 gloveInd.SwitchPipOn(2);
                 break;
             default:

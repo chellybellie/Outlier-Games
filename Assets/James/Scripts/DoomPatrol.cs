@@ -11,6 +11,7 @@ public class DoomPatrol : MonoBehaviour {
     public  Transform Target;
     public bool isChasingPlayer = false;
     Animator anim;
+    
 
     void Start()
     {
