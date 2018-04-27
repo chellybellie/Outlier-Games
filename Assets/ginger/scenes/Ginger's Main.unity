@@ -12484,7 +12484,7 @@ Prefab:
     - target: {fileID: 2300008, guid: f90c8558f5c3cc04faaba9edd36ad947, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 2fc6e3ce01a604b429a3f5298410066e, type: 2}
+      objectReference: {fileID: 2100000, guid: 1310ce78e5756914f9053f15afb57239, type: 2}
     - target: {fileID: 2300004, guid: f90c8558f5c3cc04faaba9edd36ad947, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -58641,7 +58641,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -954267754
+  randomSeed: -1443401829
   InitialModule:
     serializedVersion: 3
     enabled: 1
