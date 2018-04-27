@@ -2622,7 +2622,6 @@ GameObject:
   - component: {fileID: 54448269916978792}
   - component: {fileID: 114420847785615954}
   - component: {fileID: 114653364468009358}
-  - component: {fileID: 114182341634236202}
   m_Layer: 10
   m_Name: Sphere
   m_TagString: Player
@@ -18028,27 +18027,6 @@ MonoBehaviour:
     type: 3}
   m_CopyShadowParamsShader: {fileID: 4800000, guid: 33fc45db43408764c8dd7647b877e561,
     type: 3}
---- !u!114 &114182341634236202
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1632102742424014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e6b2e3f9e286e949be7477786998099, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  empe: {fileID: 114089221376543660}
-  tas: {fileID: 114653364468009358}
-  ChargeBar_UI: {fileID: 114420847785615954}
-  EMPTester: {fileID: 1632102742424014}
-  power: 1
-  radius: 10
-  upforce: 0.5
-  FreezeTimer: 0
-  Mylight: {fileID: 114331253389365452}
-  anim: {fileID: 0}
 --- !u!114 &114195032790841980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18459,7 +18437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf84a6b6ec8d3ac4e94f1beafe541e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emp: {fileID: 114182341634236202}
+  emp: {fileID: 0}
 --- !u!114 &114342240611497020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18586,7 +18564,7 @@ MonoBehaviour:
   range: 6
   lightIntensity: 50
   LightOnSpeed: 2
-  emp: {fileID: 114182341634236202}
+  emp: {fileID: 0}
 --- !u!114 &114401932894205830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18835,20 +18813,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1632102742424014}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de240cfbd06ddcc40b8ba80109efedf2, type: 3}
+  m_Script: {fileID: 11500000, guid: bf84a6b6ec8d3ac4e94f1beafe541e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilitySelect: 0
-  selection: 0
-  aZero: {fileID: 114016763032834198}
-  aOne: {fileID: 114016763032834198}
-  aTwo: {fileID: 114016763032834198}
-  aThree: {fileID: 114016763032834198}
-  RaZero: {fileID: 114016763032834198}
-  RaOne: {fileID: 114016763032834198}
-  RaTwo: {fileID: 114016763032834198}
-  RaThree: {fileID: 114016763032834198}
-  hideTime: 0
+  emp: {fileID: 0}
 --- !u!114 &114662275042438266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18917,7 +18885,7 @@ MonoBehaviour:
   range: 10
   lightIntensity: 35
   LightOnSpeed: 20
-  emp: {fileID: 114182341634236202}
+  emp: {fileID: 0}
 --- !u!114 &114695429915874966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18998,7 +18966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf84a6b6ec8d3ac4e94f1beafe541e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emp: {fileID: 114182341634236202}
+  emp: {fileID: 0}
 --- !u!114 &114765442843559180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19118,7 +19086,7 @@ MonoBehaviour:
   range: 10
   lightIntensity: 35
   LightOnSpeed: 20
-  emp: {fileID: 114182341634236202}
+  emp: {fileID: 0}
 --- !u!114 &114940089795841654
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,6 +11,7 @@ public class DoomPatrol : MonoBehaviour {
     public  Transform Target;
     public bool isChasingPlayer = false;
     Animator anim;
+    
 
     void Start()
     {
@@ -35,7 +36,7 @@ public class DoomPatrol : MonoBehaviour {
 
     void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f && !isChasingPlayer)
+        if (!agent.pathPending && agent.remainingDistance < 0.5 && !isChasingPlayer)
             GotoNextPoint();
 
         if(Target != null)

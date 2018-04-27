@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
         pausemenu.SetActive(false);
         Time.timeScale = 1 - Time.timeScale;
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void MainMenu()
