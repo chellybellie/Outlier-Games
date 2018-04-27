@@ -7,7 +7,7 @@ public class Weapons : MonoBehaviour
     public Transform raySpawn;
     public GameObject gun;
     public GameObject wrench;
-    public GameObject mop;
+    public GameObject broom;
     public GameObject scope;
     public GameObject syringe;
     public playerController player;
@@ -62,16 +62,17 @@ public class Weapons : MonoBehaviour
 
         }
 
-        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && mop.activeSelf)
+        if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && broom.activeSelf)
         {
-            Audio.PlayOneShot(mopSound);
+            anim.Play("wrench swing");
+            Audio.PlayOneShot(wrenchSwing);
         }
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
          {
                  gun.SetActive(false);
                  wrench.SetActive(false);
-                 mop.SetActive(false);
+                 broom.SetActive(false);
                  syringe.SetActive(false);
          }    
 
@@ -79,29 +80,29 @@ public class Weapons : MonoBehaviour
             {
                  gun.SetActive(false);
                  wrench.SetActive(true);
-                 mop.SetActive(false);
+                 broom.SetActive(false);
                  syringe.SetActive(false);
             }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                     gun.SetActive(true);
-                     wrench.SetActive(false);
-                     mop.SetActive(false);
-                     syringe.SetActive(false);
+                 gun.SetActive(true);
+                 wrench.SetActive(false);
+                 broom.SetActive(false);
+                 syringe.SetActive(false);    
             }
         if (Input.GetKeyDown(KeyCode.Alpha4))
             {
                 gun.SetActive(false);
                 wrench.SetActive(false);
-                mop.SetActive(true);
+                broom.SetActive(true);
                 syringe.SetActive(false);
             }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             gun.SetActive(false);
             wrench.SetActive(false);
-            mop.SetActive(false);
+            broom.SetActive(false);
             syringe.SetActive(true);
         }
 
