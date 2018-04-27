@@ -30082,7 +30082,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf84a6b6ec8d3ac4e94f1beafe541e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emp: {fileID: 1864694588}
 --- !u!1 &795853387
 GameObject:
   m_ObjectHideFlags: 0
@@ -52668,7 +52667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf84a6b6ec8d3ac4e94f1beafe541e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emp: {fileID: 0}
 --- !u!114 &1187543179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65779,20 +65777,20 @@ GameObject:
   - component: {fileID: 1609273129}
   - component: {fileID: 1609273128}
   - component: {fileID: 1609273127}
-  - component: {fileID: 1609273132}
   - component: {fileID: 1609273131}
   - component: {fileID: 1609273126}
   - component: {fileID: 1609273133}
   - component: {fileID: 1609273134}
   - component: {fileID: 1609273135}
   - component: {fileID: 1609273136}
+  - component: {fileID: 1609273132}
   m_Layer: 0
   m_Name: AI
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1609273126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65869,7 +65867,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609273125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.601, y: 8.641, z: 31.49}
+  m_LocalPosition: {x: -0.601, y: 8.588, z: 31.49}
   m_LocalScale: {x: 0.0077453046, y: 0.0077453, z: 0.0077453}
   m_Children:
   - {fileID: 1585850650}
@@ -65899,7 +65897,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1609273125}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 81.2
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -65908,8 +65906,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
+  m_Height: 240
+  m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1609273133
@@ -78855,7 +78853,7 @@ MonoBehaviour:
   radius: 10
   upforce: 0.5
   FreezeTimer: 0
-  Mylight: {fileID: 792297705}
+  Mylight: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &1864694589
 MonoBehaviour:
