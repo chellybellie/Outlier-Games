@@ -22,8 +22,7 @@ public class Weapons : MonoBehaviour
     private LineRenderer laserLine;
     private float nextFire;
     private AudioSource Audio;
-
-    public int ammo = 10;
+    
     public int gunDamage = 30;
     public float fireRate = .2f;
     public float weaponRange = 50f;
@@ -34,6 +33,10 @@ public class Weapons : MonoBehaviour
     {
         laserLine = GetComponent<LineRenderer>();
         Audio = GetComponent<AudioSource>();
+        gun.SetActive(false);
+        wrench.SetActive(false);
+        mop.SetActive(false);
+        syringe.SetActive(false);
     }
 
     void Update()
@@ -42,7 +45,7 @@ public class Weapons : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf && Time.time > nextFire)
             {
-                if (ammo > 0 )
+                if (player.ammoCount > 0 )
                 {
                     Fire();
                 }
@@ -129,7 +132,7 @@ public class Weapons : MonoBehaviour
         Debug.DrawRay(lineOrigin, cam.transform.forward * weaponRange, Color.gray);
         RaycastHit hit;
         laserLine.SetPosition(0, raySpawn.position);
-        ammo--;
+        player.ammoCount--;
         StartCoroutine(ShotEffect());
        if(Physics.Raycast(rayOrigin,cam.transform.forward,out hit,weaponRange))
         {

@@ -12,16 +12,15 @@ public class HPScript : MonoBehaviour {
     public playerController player;
     public float bleedHP;
     public float hit;
-    public float bleed;
     public float bleedSeverity;
 
     public string bleedState;
 	void Start () {
-        bleedSeverity = 1;
-        bleed = 0;
+        bleedSeverity = 0;
+        bleedHP = 100;
         hit = 0;
         player.health = 100;
-        bleedHP = 100;
+        player.bleed = 100;
         bleedState = "OK";
 	}
 	
@@ -30,13 +29,13 @@ public class HPScript : MonoBehaviour {
         hpText.text = bleedState + " - " + ((int)player.health).ToString();
         hpBar.fillAmount = (player.health / 100);
         bleedBar.fillAmount = (bleedHP / 100);
-        if(hit > 0||bleed > 0)
+        if(hit > 0 || player.bleed > 0)
         {
-            TakeHit(hit, bleed, bleedSeverity);
+            TakeHit(hit, player.bleed, bleedSeverity);
         }
         if(bleedHP < player.health)
         {
-            Bleed();
+            //Bleed();
         }
         else
         {
@@ -50,28 +49,28 @@ public class HPScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
             hit = 10;
-            bleed = 10;
+           // player.bleed = 10;
             bleedSeverity = 1;
             bleedState = "Bleed 1";
         }
         if (Input.GetKeyDown(KeyCode.Keypad3))
         {
             hit = 0;
-            bleed = 20;
+            //player.bleed = 20;
             bleedSeverity = 3;
             bleedState = "Bleed 2";
         }
         if (Input.GetKeyDown(KeyCode.Keypad4))
         {
             hit = 0;
-            bleed = 40;
+           // player.bleed = 40;
             bleedSeverity = 5;
             bleedState = "Bleed 3";
         }
         if (Input.GetKeyDown(KeyCode.Keypad0))
         {
             hit = 0;
-            bleed = 0;
+            //player.bleed = 0;
             bleedSeverity = 1;
             player.health = 100;
             bleedHP = 100;
@@ -86,7 +85,7 @@ public class HPScript : MonoBehaviour {
         bleedHP -= b;
         bleedSeverity = s;
         hit = 0;
-        bleed = 0;
+        player.bleed = 0;
     }
 
     void Bleed()

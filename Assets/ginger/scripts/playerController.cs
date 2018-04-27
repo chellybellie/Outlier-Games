@@ -17,6 +17,7 @@ public class playerController : MonoBehaviour
     public float keyLevel;
 
     public float health = 100;
+    public float bleed = 100;
 
 
     public float ammoCount = 10;
@@ -102,10 +103,12 @@ public class playerController : MonoBehaviour
         if (col.gameObject.CompareTag("enemy"))
         {
             health -= 10;
+            bleed -= 15;
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
+            bleed += 10;
             Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("win"))
@@ -118,10 +121,6 @@ public class playerController : MonoBehaviour
         {
             ammoCount += 10;
             Destroy(col.gameObject);
-        }
-        if (col.gameObject.CompareTag("holoScan"))
-        {
-            return;
         }
         if (col.gameObject.CompareTag("keyOne"))
         {
@@ -154,6 +153,11 @@ public class playerController : MonoBehaviour
                 keyLevel = 4;
                 Destroy(col.gameObject);
             }
+        }
+
+        if (col.gameObject.CompareTag("holoScan"))
+        {
+            return;
         }
     }
 
