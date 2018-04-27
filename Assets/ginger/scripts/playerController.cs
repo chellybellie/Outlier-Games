@@ -14,11 +14,12 @@ public class playerController : MonoBehaviour
     public Camera cam;
     public Vector2 move;
 
+    public float keyLevel;
+
     public float health = 100;
 
 
-
-    public GameObject healthpk;
+    public float ammoCount = 10;
 
     public float mouseSensitivity = 100.0f;
     public float clampAngle = 80.0f;
@@ -29,6 +30,7 @@ public class playerController : MonoBehaviour
 
     void Start()
     {
+        keyLevel = 0;
         move = Vector2.zero;
         Vector3 rot = transform.localRotation.eulerAngles;
         rotY = rot.y;
@@ -99,12 +101,12 @@ public class playerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("enemy"))
         {
-            hpscript.TakeHit(1, 5, 1);
+            health -= 10;
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
-            Destroy(healthpk);
+            Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("win"))
         {
@@ -112,7 +114,47 @@ public class playerController : MonoBehaviour
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
-
+        if (col.gameObject.CompareTag("ammo"))
+        {
+            ammoCount += 10;
+            Destroy(col.gameObject);
+        }
+        if (col.gameObject.CompareTag("holoScan"))
+        {
+            return;
+        }
+        if (col.gameObject.CompareTag("keyOne"))
+        {
+            if (keyLevel < 1)
+            {
+                keyLevel = 1;
+                Destroy(col.gameObject);
+            }
+        }
+        if (col.gameObject.CompareTag("keyTwo"))
+        {
+            if (keyLevel < 2)
+            {
+                keyLevel = 2;
+                Destroy(col.gameObject);
+            }
+        }
+        if (col.gameObject.CompareTag("keyThree"))
+        {
+            if (keyLevel < 3)
+            {
+                keyLevel = 3;
+                Destroy(col.gameObject);
+            }
+        }
+        if (col.gameObject.CompareTag("keyFour"))
+        {
+            if (keyLevel < 4)
+            {
+                keyLevel = 4;
+                Destroy(col.gameObject);
+            }
+        }
     }
 
     public void mouseRotate()

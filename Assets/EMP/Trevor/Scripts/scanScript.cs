@@ -33,6 +33,11 @@ public class scanScript : MonoBehaviour {
             scanHP = other.gameObject.GetComponent<stats>().hp;
             scanName = other.gameObject.GetComponent<stats>().crewName;
         }
+
+        if (other.gameObject.tag == "Player")
+        {
+            return;
+        }
     }
 
     private void OnTriggerExit(Collider other)
