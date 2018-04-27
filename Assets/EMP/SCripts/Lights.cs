@@ -14,7 +14,7 @@ public class Lights : MonoBehaviour
 
         foreach (GameObject tgo in LightSource)
         {
-            //Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
+          //  Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
 
             if (Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) < emp.radius)
             {
