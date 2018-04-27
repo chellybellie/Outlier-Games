@@ -66,18 +66,17 @@ public class EMP : MonoBehaviour
         while (time > 0)
         {
 
-            //GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-            //if (Vector3.Distance(EMPTester.transform.position, transform.position) < radius)
-            //{
-            //    foreach (GameObject enemy in enemies)
-            //    {
-            //        NavMeshAgent agent = enemy.GetComponent<NavMeshAgent>();
-            //        if (!agent)
-            //            continue;
-            //        agent.isStopped = true;
-            //        agent.Stop();
-            //    }
-            //}
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
+            if (Vector3.Distance(EMPTester.transform.position, transform.position) < radius)
+            {
+                foreach (GameObject enemy in enemies)
+                {
+                    NavMeshAgent agent = enemy.GetComponent<NavMeshAgent>();
+                    if (!agent)
+                        continue;
+                    agent.isStopped = true;
+                }
+            }
 
             time -= 1;
 
@@ -85,14 +84,14 @@ public class EMP : MonoBehaviour
 
             yield return new WaitForSeconds(1);
         }
-        //GameObject[] enemiestwo = GameObject.FindGameObjectsWithTag("enemy");
-        //foreach (GameObject enemytwo in enemiestwo)
-        //{
-        //    NavMeshAgent agent = enemytwo.GetComponent<NavMeshAgent>();
-        //    if (!agent)
-        //        continue;
-        //    agent.isStopped = false;
-        //}
+        GameObject[] enemiestwo = GameObject.FindGameObjectsWithTag("enemy");
+        foreach (GameObject enemytwo in enemiestwo)
+        {
+            NavMeshAgent agent = enemytwo.GetComponent<NavMeshAgent>();
+            if (!agent)
+                continue;
+            agent.isStopped = false;
+        }
 
         rb.constraints = RigidbodyConstraints.None;
         rb.angularDrag = originalAngularDrag;
