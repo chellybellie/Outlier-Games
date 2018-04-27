@@ -9,7 +9,7 @@ public class Lights : MonoBehaviour
 
     public void LightShutdown()
     {
-        //float empDistancedChk = Vector3.Distance(emp.EMPTester.transform.position, transform.position);
+       // float empDistancedChk = Vector3.Distance(emp.EMPTester.transform.position, transform.position);
         GameObject[] LightSource = GameObject.FindGameObjectsWithTag("Light");
 
         foreach (GameObject tgo in LightSource)

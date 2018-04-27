@@ -8,8 +8,9 @@ using UnityEngine.SceneManagement;
 [Serializable]
 public class playerController : MonoBehaviour
 {
-    public HPScript hpscript;
+ 
     public GameObject pausemenu;
+    public GloveIndicators gloveInd;
     float speed = 2f;
     public Camera cam;
     public Vector2 move;
@@ -35,6 +36,7 @@ public class playerController : MonoBehaviour
         rotX = rot.x;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        gloveInd.SetHealthTo((int)health, new Color32(71, 244, 254, 255), new Color32(39, 20, 97, 255));
 
     }
 
@@ -99,11 +101,13 @@ public class playerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("enemy"))
         {
-            hpscript.TakeHit(1, 5, 1);
+            health -= 1f;
+            gloveInd.SetHealthTo((int)health, new Color32(71, 244, 254, 255), new Color32(39, 20, 97, 255));
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
             health += 10;
+            gloveInd.SetHealthTo((int)health, new Color32(71, 244, 254, 255), new Color32(39, 20, 97, 255));
             Destroy(healthpk);
         }
         if (col.gameObject.CompareTag("win"))
