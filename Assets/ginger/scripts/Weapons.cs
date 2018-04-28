@@ -35,7 +35,7 @@ public class Weapons : MonoBehaviour
         Audio = GetComponent<AudioSource>();
         gun.SetActive(false);
         wrench.SetActive(false);
-        mop.SetActive(false);
+        broom.SetActive(false);
         syringe.SetActive(false);
     }
 

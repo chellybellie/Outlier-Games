@@ -14,6 +14,11 @@ TagManager:
   - enemy
   - win
   - scan
+  - keyTwo
+  - holoScan
+  - keyOne
+  - keyThree
+  - keyFour
   layers:
   - Default
   - TransparentFX

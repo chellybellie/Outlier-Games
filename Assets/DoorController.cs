@@ -8,8 +8,9 @@ public class DoorController : MonoBehaviour {
     public NavMeshObstacle navMeshObstacle;
     bool doorOpen;
     bool doorClosed;
+    public float doorLevel;
 
-	void Start ()
+    void Start ()
     {
         navMeshObstacle = GetComponent<NavMeshObstacle>();
         doorOpen = false;
@@ -17,12 +18,16 @@ public class DoorController : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("Player")) 
+        if (col.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.Space)) 
         {
-          navMeshObstacle.carving = false;
-            doorOpen = true;
-            doorClosed = false;
-            anim.Play("DoorOpen");
+
+            if (col.gameObject.GetComponent<playerController>().keyLevel >= doorLevel)
+            {
+                navMeshObstacle.carving = false;
+                doorOpen = true;
+                doorClosed = false;
+                anim.Play("DoorOpen");
+            }
         }
         if (col.gameObject.CompareTag("enemy"))
         {
@@ -37,17 +42,23 @@ public class DoorController : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            if (doorOpen)
+            {
+                anim.Play("DoorClose");
+            }
             navMeshObstacle.carving = true;
             doorClosed = true;
             doorOpen = false;
-            anim.Play("DoorClose");
         }
         if (col.gameObject.CompareTag("enemy"))
         {
             //gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+            if (doorOpen)
+            {
+                anim.Play("DoorClose");
+            }
             doorOpen = false;
             doorClosed = true;
-            anim.Play("DoorClose");
         }
     }
 
