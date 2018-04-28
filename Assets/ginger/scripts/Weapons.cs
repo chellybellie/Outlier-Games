@@ -34,6 +34,10 @@ public class Weapons : MonoBehaviour
     {
         laserLine = GetComponent<LineRenderer>();
         Audio = GetComponent<AudioSource>();
+        gun.SetActive(false);
+        wrench.SetActive(false);
+        broom.SetActive(false);
+        syringe.SetActive(false);
     }
 
     void Update()

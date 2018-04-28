@@ -117,7 +117,7 @@ public class EMP : MonoBehaviour
                 EMPDetonate();
                 ChargeBar_UI.power -= 25;
                 empe.EMPparticalStart();
-                //anim.Play("emp part");
+                anim.Play("emp part");
                
 
             }
@@ -132,7 +132,7 @@ public class EMP : MonoBehaviour
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 1;
                 empe.EMPparticalStart();
-                //anim.Play("emp 1");
+                anim.Play("emp 1");
 
 
 
@@ -147,7 +147,7 @@ public class EMP : MonoBehaviour
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 2;
                 empe.EMPparticalStart();
-                //anim.Play("emp2");
+                anim.Play("emp2");
 
 
 
@@ -162,7 +162,7 @@ public class EMP : MonoBehaviour
                 Mylight.LightShutdown();
                 ChargeBar_UI.uses -= 3;
                 empe.EMPparticalStart();
-                //anim.Play("emp3");
+                anim.Play("emp3");
 
 
             }

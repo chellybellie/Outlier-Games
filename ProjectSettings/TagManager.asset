@@ -14,6 +14,7 @@ TagManager:
   - enemy
   - win
   - scan
+  - holoscan
   layers:
   - Default
   - TransparentFX
