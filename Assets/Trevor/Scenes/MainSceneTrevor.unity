@@ -36275,7 +36275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 908247793}
   navMeshObstacle: {fileID: 908247790}
-  doorLevel: 0
+  doorLevel: 1
 --- !u!65 &908247792
 BoxCollider:
   m_ObjectHideFlags: 0

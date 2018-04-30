@@ -16,13 +16,14 @@ public class DoorController : MonoBehaviour {
         doorOpen = false;
 	}
 
-    void OnTriggerEnter(Collider col)
+    void OnTriggerStay(Collider col)
     {
         if (col.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.Space)) 
         {
-
+            Debug.Log("DoorTry");
             if (col.gameObject.GetComponent<playerController>().keyLevel >= doorLevel)
-            {
+            { 
+                Debug.Log("OpenDoorPlease");
                 navMeshObstacle.carving = false;
                 doorOpen = true;
                 doorClosed = false;
