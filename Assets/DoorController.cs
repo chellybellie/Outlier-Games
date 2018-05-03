@@ -41,17 +41,23 @@ public class DoorController : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Player"))
         {
+            if (doorOpen)
+            {
+                anim.Play("DoorClose");
+            }
             navMeshObstacle.carving = true;
             doorClosed = true;
             doorOpen = false;
-            anim.Play("DoorClose");
         }
         if (col.gameObject.CompareTag("enemy"))
         {
             //gameObject.GetComponent<NavMeshObstacle>().enabled = false;
+            if (doorOpen)
+            {
+                anim.Play("DoorClose");
+            }
             doorOpen = false;
             doorClosed = true;
-            anim.Play("DoorClose");
         }
     }
 
