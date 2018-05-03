@@ -10,6 +10,7 @@ public class stats : MonoBehaviour
     public Text crewname;
     public Image health;
     public Animator anim;
+    public Animator enemyanim;
 
     private AudioSource sound;
     public AudioClip wrenchHit;
@@ -176,7 +177,8 @@ public class stats : MonoBehaviour
     public void Damage (int damageAmount)
     {
         hp -= damageAmount;
-       
+        enemyanim.Play("take hit");
+
     }
 
     void OnTriggerEnter(Collider col)
@@ -185,13 +187,14 @@ public class stats : MonoBehaviour
         {
             anim.Play("syringe hit");
             hp -= 10;
+            enemyanim.Play("take hit");
         }
         if (col.gameObject.CompareTag("wrench"))
         {
             anim.Play("wrench hit");
             sound.PlayOneShot(wrenchHit);
             hp -= 10;
-            Destroy(col.gameObject);
+            enemyanim.Play("take hit");
         }
     }
 }

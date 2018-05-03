@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -54926,6 +54926,7 @@ MonoBehaviour:
   crewname: {fileID: 93849594}
   health: {fileID: 1425830448}
   anim: {fileID: 1609273129}
+  enemyanim: {fileID: 1609273129}
   wrenchHit: {fileID: 8300000, guid: 2cd33efb898d01541a19e0810c1e0e2c, type: 3}
   hp: 0
   crewName: 
