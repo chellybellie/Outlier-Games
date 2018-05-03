@@ -13,6 +13,7 @@ public class playerController : MonoBehaviour
     float speed = 2f;
     public Camera cam;
     public Vector2 move;
+    stats enemy;
 
     public float keyLevel;
 
@@ -48,7 +49,6 @@ public class playerController : MonoBehaviour
 
         Time.timeScale = 0;
 
-        Time.timeScale = 0;
     }
 
 
@@ -102,6 +102,7 @@ public class playerController : MonoBehaviour
         if (col.gameObject.CompareTag("enemy"))
         {
             health -= 10;
+            enemy.enemyanim.Play("attack");
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {

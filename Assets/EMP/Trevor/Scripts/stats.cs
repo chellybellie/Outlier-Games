@@ -155,9 +155,9 @@ public class stats : MonoBehaviour
 
         // health.fillAmount = (hp / 100);
         //crewname.text = crewName;
-        anim.Play("walking");
-
        
+       
+
 
         if (hp <= 0)
         {
@@ -170,14 +170,14 @@ public class stats : MonoBehaviour
                 agent.isStopped = true;
 
             }
-        }
-        
+        } 
         
 	}
     public void Damage (int damageAmount)
     {
         hp -= damageAmount;
-        enemyanim.Play("take hit");
+
+        StartCoroutine(ANIMPLAY());
 
     }
 
@@ -187,14 +187,21 @@ public class stats : MonoBehaviour
         {
             anim.Play("syringe hit");
             hp -= 10;
-            enemyanim.Play("take hit");
+            StartCoroutine(ANIMPLAY());
         }
         if (col.gameObject.CompareTag("wrench"))
         {
             anim.Play("wrench hit");
             sound.PlayOneShot(wrenchHit);
             hp -= 10;
-            enemyanim.Play("take hit");
+            StartCoroutine(ANIMPLAY());
         }
     }
+
+    IEnumerator ANIMPLAY()
+    {
+        enemyanim.Play("take hit");
+        yield return new WaitForSeconds(2f);
+    }
+
 }

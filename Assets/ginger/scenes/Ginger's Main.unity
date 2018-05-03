@@ -96,14 +96,14 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.01
-    agentHeight: 0.23
-    agentSlope: 28.7
-    agentClimb: 0.2
+    agentHeight: 0.77
+    agentSlope: 28.6
+    agentClimb: 0.7
     ledgeDropHeight: 0
-    maxJumpAcrossDistance: 0
+    maxJumpAcrossDistance: 0.02
     minRegionArea: 2
     manualCellSize: 1
-    cellSize: 0.02
+    cellSize: 0.01
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 1
@@ -42276,6 +42276,38 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7322c56c09b6b0d47b065a1726721ab9, type: 2}
+    - target: {fileID: 100016, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e72cd5e01d930fd4ca0f7e8edcac2518, type: 3}
   m_IsPrefabParent: 0
@@ -42534,7 +42566,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4350726208377886, guid: 1aef739c930a85246a3d5ebc5c28dc05, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.305
+      value: 0.638
       objectReference: {fileID: 0}
     - target: {fileID: 4350726208377886, guid: 1aef739c930a85246a3d5ebc5c28dc05, type: 2}
       propertyPath: m_LocalPosition.z
@@ -42570,6 +42602,44 @@ Prefab:
       propertyPath: Mylight
       value: 
       objectReference: {fileID: 1137042562}
+    - target: {fileID: 4521380504959000, guid: 1aef739c930a85246a3d5ebc5c28dc05, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.943
+      objectReference: {fileID: 0}
+    - target: {fileID: 4233768733569514, guid: 1aef739c930a85246a3d5ebc5c28dc05, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 114966847623921280, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 69be6ec770431584292e06f6680d45e8,
+        type: 3}
+    - target: {fileID: 114976854908626844, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0589dee054de09543b4eb1a5aa9a73d7,
+        type: 3}
+    - target: {fileID: 114423701991695808, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3cc78131bbafb494f8026f3e886c8cb9,
+        type: 3}
+    - target: {fileID: 114303481221921056, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1073c1b6ab39d4a4fbe0de2923922f12,
+        type: 3}
+    - target: {fileID: 114724054459713154, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4cbe2031a7a2c5448612c66f05e257d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1aef739c930a85246a3d5ebc5c28dc05, type: 2}
   m_IsPrefabParent: 0
