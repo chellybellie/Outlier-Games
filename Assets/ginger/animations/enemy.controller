@@ -142,7 +142,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.7115385
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -392,7 +392,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Dying
+  m_Name: die
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -405,7 +405,7 @@ AnimatorState:
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b3f00743b836d474997ab3b29b407a27, type: 3}
+  m_Motion: {fileID: 7400000, guid: cd8e692b76ff49c48be53932d48db6f0, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

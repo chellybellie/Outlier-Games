@@ -168,7 +168,7 @@ public class stats : MonoBehaviour
                 if (!agent)
                     continue;
                 agent.isStopped = true;
-
+                enemyanim.Play("die");
             }
         } 
         
