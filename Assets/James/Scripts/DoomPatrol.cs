@@ -42,13 +42,13 @@ public class DoomPatrol : MonoBehaviour {
         if(Target != null)
         {
             agent.SetDestination(Target.transform.position);
-            anim.Play("walking");
+           
         }
 
         if(Target == null)
         {
             GotoNextPoint();
-            anim.Play("walking");
+           
         }
     }
 

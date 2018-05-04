@@ -42640,6 +42640,21 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: a4cbe2031a7a2c5448612c66f05e257d,
         type: 3}
+    - target: {fileID: 120256523226916256, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.77205884
+      objectReference: {fileID: 0}
+    - target: {fileID: 120256523226916256, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.77205884
+      objectReference: {fileID: 0}
+    - target: {fileID: 120256523226916256, guid: 1aef739c930a85246a3d5ebc5c28dc05,
+        type: 2}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.77205884
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1aef739c930a85246a3d5ebc5c28dc05, type: 2}
   m_IsPrefabParent: 0
