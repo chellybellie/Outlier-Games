@@ -28,8 +28,8 @@ public class HPScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
      //   hpText.text = bleedState + " - " + ((int)player.health).ToString();
-        hpBar.fillAmount = (player.health / 100);
-        bleedBar.fillAmount = (bleedHP / 100);
+        //hpBar.fillAmount = (player.health / 100);
+      //  bleedBar.fillAmount = (bleedHP / 100);
         if(hit > 0||bleed > 0)
         {
             TakeHit(hit, bleed, bleedSeverity);
