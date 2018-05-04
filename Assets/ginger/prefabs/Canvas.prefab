@@ -774,7 +774,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f71690633f84acc47834c69e89b5708e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a173547412cd53f48b50fc8102092647, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -968,7 +968,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3e0d41298d214dd45bf11b9bdac3b291, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c572065af5741334493a7c91f58153a3, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1155,15 +1155,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilitySelect: 0
   selection: 0
-  aZero: {fileID: 114803142700391522}
-  aOne: {fileID: 114761592884461530}
-  aTwo: {fileID: 114340499328001878}
-  aThree: {fileID: 114358534071708120}
   RaZero: {fileID: 114558592312929162}
   RaOne: {fileID: 114043035119856026}
   RaTwo: {fileID: 114656451342128632}
   RaThree: {fileID: 114830742495030982}
+  zeroReset: {x: 0, y: 0, z: 0}
+  oneReset: {x: 0, y: 0, z: 0}
+  twoReset: {x: 0, y: 0, z: 0}
+  threeReset: {x: 0, y: 0, z: 0}
+  zeroSelect: {x: 0, y: 0, z: 0}
+  oneSelect: {x: 0, y: 0, z: 0}
+  twoSelect: {x: 0, y: 0, z: 0}
+  threeSelect: {x: 0, y: 0, z: 0}
   hideTime: 0
+  shrinkTarget: {x: 0, y: 0}
 --- !u!222 &222005571653021664
 CanvasRenderer:
   m_ObjectHideFlags: 1
