@@ -9,12 +9,12 @@ public class Lights : MonoBehaviour
 
     public void LightShutdown()
     {
-       // float empDistancedChk = Vector3.Distance(emp.EMPTester.transform.position, transform.position);
+        float empDistancedChk = Vector3.Distance(emp.EMPTester.transform.position, transform.position);
         GameObject[] LightSource = GameObject.FindGameObjectsWithTag("Light");
 
         foreach (GameObject tgo in LightSource)
         {
-          //  Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
+           Debug.Log("Checking GO:" + tgo.name + " has a disance of " + Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) + " comparing with " + emp.radius);
 
             if (Vector3.Distance(emp.EMPTester.transform.position, tgo.transform.position) < emp.radius)
             {

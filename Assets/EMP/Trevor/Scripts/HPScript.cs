@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class HPScript : MonoBehaviour {
 
-    public Image hpBar;
-    public Image bleedBar;
-    public Text hpText;
+    private Image hpBar;
+    private Image bleedBar;
+    private Text hpText;
    public  GloveIndicators gloveInd;
     public playerController player;
     public float bleedHP;
@@ -27,7 +27,7 @@ public class HPScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hpText.text = bleedState + " - " + ((int)player.health).ToString();
+     //   hpText.text = bleedState + " - " + ((int)player.health).ToString();
         hpBar.fillAmount = (player.health / 100);
         bleedBar.fillAmount = (bleedHP / 100);
         if(hit > 0||bleed > 0)

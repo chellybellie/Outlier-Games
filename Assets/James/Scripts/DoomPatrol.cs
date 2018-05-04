@@ -10,7 +10,7 @@ public class DoomPatrol : MonoBehaviour {
     private NavMeshAgent agent;
     public  Transform Target;
     public bool isChasingPlayer = false;
-    Animator anim;
+    public Animator anim;
     
 
     void Start()
