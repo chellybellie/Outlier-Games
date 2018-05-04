@@ -42,7 +42,7 @@ public class animationSnapScript : MonoBehaviour
         anim.SetFloat("velx", velocity.x);
         anim.SetFloat("vely", velocity.y);
 
-        GetComponent<LookAtScript>().lookAtTargetPosition = agent.steeringTarget + transform.forward;
+        //GetComponent<LookAtScript>().lookAtTargetPosition = agent.steeringTarget + transform.forward;
     }
 
     void OnAnimatorMove()

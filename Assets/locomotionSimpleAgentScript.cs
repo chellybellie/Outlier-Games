@@ -43,16 +43,20 @@ public class locomotionSimpleAgentScript : MonoBehaviour
         anim.SetFloat("vely", velocity.y);
 
         LookAtScript lookAt = GetComponent<LookAtScript>();
-        if (lookAt)
-            lookAt.lookAtTargetPosition = agent.steeringTarget + transform.forward;
+        //if (lookAt)
+        //    lookAt.lookAtTargetPosition = agent.steeringTarget + transform.forward;
 
         // Pull character towards agent
         if (worldDeltaPosition.magnitude > agent.radius) 
             transform.position = agent.nextPosition - 0.9f * worldDeltaPosition;
 
-        // Pull agent towards character
-        if (worldDeltaPosition.magnitude > agent.radius)
-            agent.nextPosition = transform.position + 0.9f * worldDeltaPosition;
+        //// Pull agent towards character
+        //if (worldDeltaPosition.magnitude > agent.radius)
+        //    agent.nextPosition = transform.position + 0.9f * worldDeltaPosition;
+
+        LookAtScript lookAtScript = GetComponent<LookAtScript>();
+        //if (lookAt)
+        //    lookAt.lookAtTargetPosition = agent.steeringTarget + transform.forward;
     }
 
    void OnAnimatorMove()
