@@ -38188,7 +38188,7 @@ GameObject:
   - component: {fileID: 699151967}
   m_Layer: 0
   m_Name: Point light (1)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43832,7 +43832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf84a6b6ec8d3ac4e94f1beafe541e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emp: {fileID: 0}
+  emp: {fileID: 14517156}
 --- !u!1 &795853387
 GameObject:
   m_ObjectHideFlags: 0
@@ -48044,7 +48044,7 @@ GameObject:
   - component: {fileID: 938426220}
   m_Layer: 0
   m_Name: Spotlight (7)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50241,7 +50241,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1093240520}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.72, y: 0.475, z: -23.76}
+  m_LocalPosition: {x: 1.72, y: 0.475, z: -27.25}
   m_LocalScale: {x: 0.87240475, y: 0.9656065, z: 0.872405}
   m_Children:
   - {fileID: 1851956516}
@@ -95919,7 +95919,7 @@ GameObject:
   - component: {fileID: 1926126582}
   m_Layer: 0
   m_Name: Point light (2)
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
