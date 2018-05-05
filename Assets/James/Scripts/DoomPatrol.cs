@@ -42,7 +42,8 @@ public class DoomPatrol : MonoBehaviour {
         if(Target != null)
         {
             agent.SetDestination(Target.transform.position);
-            anim.Play("walking");
+            anim.SetBool("Walking", true);
+            
         }
 
         if(Target == null)
@@ -59,6 +60,8 @@ public class DoomPatrol : MonoBehaviour {
         {
             Target = other.gameObject.transform;
             isChasingPlayer = true;
+            anim.SetBool("Walking", false);
+            anim.SetBool("Attacking", true);
         }
         
      
@@ -71,6 +74,8 @@ public class DoomPatrol : MonoBehaviour {
         {
             GotoNextPoint();
             isChasingPlayer = false;
+            anim.SetBool("Walking", true);
+            anim.SetBool("Attacking", false);
         }
     
     }

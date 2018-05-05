@@ -32,7 +32,12 @@ public class LookAtScript : MonoBehaviour
         if (LastPosition == null)
             LastPosition = CurrentPosition - transform.forward;
         Vector3 dir = CurrentPosition - LastPosition;
+        dir.y = 0.0f;
         transform.LookAt(CurrentPosition + dir);
+        //Vector3 rotationInEuler = transform.rotation.eulerAngles;
+        //rotationInEuler.x = 0.0f;
+        //rotationInEuler.z = 0.0f;
+        //transform.rotation = Quaternion.Euler(rotationInEuler);
         LastPosition = CurrentPosition;
 
 

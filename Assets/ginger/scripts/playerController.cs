@@ -14,14 +14,13 @@ public class playerController : MonoBehaviour
     public Camera cam;
     public Vector2 move;
     public stats enemy;
-
+    public Weapons wep;
     public float keyLevel;
     public bool hasKeyOne, hasKeyTwo, hasKeyThree, hasKeyFour = false;
     public GameObject keyOne, keyTwo, keyThree, keyFour;
     public float health = 100;
 
-
-    public float ammoCount = 10;
+    
 
     public float mouseSensitivity = 100.0f;
     public float clampAngle = 80.0f;
@@ -122,7 +121,7 @@ public class playerController : MonoBehaviour
         }
         if (col.gameObject.CompareTag("ammo"))
         {
-            ammoCount += 10;
+            wep.ammo += 10;
             Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("holoScan"))

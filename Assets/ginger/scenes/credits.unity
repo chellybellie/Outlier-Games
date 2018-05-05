@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -176,54 +176,55 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 227699466}
---- !u!1 &262616560
+--- !u!1 &934534784
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 262616561}
-  - component: {fileID: 262616563}
-  - component: {fileID: 262616562}
+  - component: {fileID: 934534785}
+  - component: {fileID: 934534787}
+  - component: {fileID: 934534786}
+  - component: {fileID: 934534788}
   m_Layer: 5
-  m_Name: ART
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &262616561
+--- !u!224 &934534785
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 262616560}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 934534784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1301363252}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 429, y: -9}
-  m_SizeDelta: {x: 485.1, y: 855.1}
+  m_AnchoredPosition: {x: 25, y: -2101}
+  m_SizeDelta: {x: 1153.2, y: 859.22}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &262616562
+--- !u!114 &934534786
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 262616560}
+  m_GameObject: {fileID: 934534784}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9191176, g: 0.35818556, b: 0.35818556, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -232,24 +233,52 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 31
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "ARTISTS\n\n\tGus\n\n\tKayleigh\n\n\tMaxanova\n\n\tSavanna"
---- !u!222 &262616563
+  m_Text: "CREDITS\r\n\r\nProducer\t\t\t\t\t\nMaxanova Pantano\r\n\nArt Director\t\t\t\t\nSavanna
+    Pilkington\r\n\nTechnical Director\t\t\nTrevor Liloia\r\n\nBuild Master\t\t\t\t\nJames
+    Lyle\r\n\r\n\r\nCharacter Modeling\t\t\t\nKayleigh Wynn\r\nAugust Mears\r\n\r\nEnvironment
+    Modeling\t\t\t\nSavanna Pilkington\r\n\r\nEnvironment Prop Modeling\t\t\nSavanna
+    Pilkington\r\t\t\nMaxanova Pantano\r\t\t\nKayleigh Wynn\r\nAugust Mears\r\nAlexis
+    Mosley \r\n\r\nWeapons Modeling\nSavanna Pilkington\r\nMaxanova Pantano\r\n\r\nCharacter
+    Textures\nKayleigh Wynn\r\nAugust Mears\r\n\r\nEnvironment Textures\t\nSavanna
+    Pilkington\r\n\r\nEnvironment Prop Textures\nKayleigh Wynn\r\nAugust Mears\r\nAlexis
+    Mosley\r\n\r\nWeapon Textures\nKayleigh Wynn\r\nAugust Mears\r\n\r\nCharacter
+    Rigging\nMaxanova Pantano\r\n\r\nCharacter Animation\nMaxanova Pantano\r\n\r\nUI
+    Art\nMaxanova Pantano\r\nKayleigh Wynn\r\n\r\nMenu Art\nMaxanova Pantano\r\n\r\n\r\nSound
+    Design\nJames Lyle\r\nGinger Farrar\r\nTrevor Liloia\r\n\r\n\r\nAI & Navigation\nJames
+    Lyle\r\n\r\nLevel Design\nTrevor Liloia\r\nChelsey Lotts\r\nJames Lyle\r\n\r\nUI
+    Programming\nTrevor Liloia\r\nChelsey Lotts\r\n\r\nMenu Programming \nGinger Farrar\r\n\r\nPlayer
+    Controller\nTrevor Liloia\r\nGinger Farrar\r\n\r\nWeapon Programming\nGinger Farrar\r\nChelsey
+    Lotts\r\n\r\nInteractable Objects\nTrevor Liloia\r\nJames Lyle\r\n\r\nAnimation
+    Programming\nGinger Farrar\r\n\r\nLighting\nChelsey Lotts\r\n\r\nCamera Effects\nChelsey
+    Lotts\r\n\r\nParticle Effects\nChelsey Lotts\r\n\r"
+--- !u!222 &934534787
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 262616560}
+  m_GameObject: {fileID: 934534784}
+--- !u!114 &934534788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 934534784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e02a8668e003f940a19d817742e2b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1226215474
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +387,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1301363252}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -537,8 +566,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 227699467}
-  - {fileID: 1723610360}
-  - {fileID: 262616561}
+  - {fileID: 934534785}
   - {fileID: 1256509535}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -560,80 +588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausemenu: {fileID: 0}
---- !u!1 &1723610359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1723610360}
-  - component: {fileID: 1723610362}
-  - component: {fileID: 1723610361}
-  m_Layer: 5
-  m_Name: PROG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1723610360
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1723610359}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1301363252}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -463.55, y: -1.6}
-  m_SizeDelta: {x: 671.1, y: 846.2}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1723610361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1723610359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9191176, g: 0.35818556, b: 0.35818556, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 100
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "PROGRAMMERS\n\n\tChelsey\n\n\tGinger\n\n\tJames\n\n\tTrevor"
---- !u!222 &1723610362
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1723610359}
 --- !u!1 &1827727020
 GameObject:
   m_ObjectHideFlags: 0
