@@ -14,11 +14,7 @@ public class GloveIndicators : MonoBehaviour
     public int fPower = 0;
     public Texture2D powerTexture;
     public Texture2D HealthTexture;
-
-    //public Material pipsOnMaterial;
-    //public Material pipsOffMaterial;
-    //public Texture2D pipsOnTexture;
-    //public Texture2D pipsOffTexture;
+    
 
     public Material[] pips;
     public Texture2D PipOn;
@@ -51,10 +47,35 @@ public class GloveIndicators : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Keypad0))
             SetHealthTo(50, new Color32(230, 0, 0, 255), new Color32(110, 0, 0, 255));
     }
 
+    //Health Bar Coloring 
+    public void SetHealthTo(int f, Color colorOn, Color colorOff)
+    {
+        Color[] colorOnArray = new Color[10];
+        Color[] colorOffArray = new Color[10];
+        for (int i = 0; i < 10; i++)
+        {
+            colorOnArray[i] = colorOn;
+            colorOffArray[i] = colorOff;
+        }
+
+        f = 99 - f;
+
+        for (int x = 99; x > f; x--)
+            HealthTexture.SetPixels(x, 0, 1, 10, colorOnArray);
+
+        for (int x = f; x >= 0; x--)
+        {
+            HealthTexture.SetPixels(x, 0, 1, 10, colorOffArray);
+            //Debug.Log(x);
+        }
+
+        HealthTexture.Apply();
+
+    }
+    //Glove Pips Coloring
     public void SetPowerTo(int f, Color colorOn, Color colorOff)
     {
         Color[] colorOnArray = new Color[10];
@@ -79,37 +100,6 @@ public class GloveIndicators : MonoBehaviour
         powerTexture.Apply();
 
     }
-
-
-
-    public void SetHealthTo(int f, Color colorOn, Color colorOff)
-    {
-      
-
-        Color[] colorOnArray = new Color[10];
-        Color[] colorOffArray = new Color[10];
-
-        for (int i = 0; i < 10; i++)
-        {
-            colorOnArray[i] = colorOn;
-            colorOffArray[i] = colorOff;
-        }
-
-        f = 99 - f;
-
-        for (int x = 99; x > f; x--)
-            HealthTexture.SetPixels(x, 0, 1, 10, colorOnArray);
-
-        for (int x = f; x >=0; x--)
-        {
-            HealthTexture.SetPixels(x, 0, 1, 10, colorOffArray);
-            //Debug.Log(x);
-        }
-
-        HealthTexture.Apply();
-
-    }
-
     public void SwitchPipOn(int pipNo)
     {
         pips[pipNo].SetTexture("_MainTex", PipOn);
@@ -120,7 +110,4 @@ public class GloveIndicators : MonoBehaviour
         pips[pipNo].SetTexture("_MainTex", PipOff);
         //pipsOffMaterial.SetTexture("_MainTex", pipsOffTexture);
     }
-
-
-
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 [Serializable]
@@ -19,6 +20,8 @@ public class playerController : MonoBehaviour
     public bool hasKeyOne, hasKeyTwo, hasKeyThree, hasKeyFour = false;
     public GameObject keyOne, keyTwo, keyThree, keyFour;
     public float health = 100;
+ 
+
 
     
 
@@ -105,8 +108,14 @@ public class playerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("enemy"))
         {
+            hpscript.bleed = 10;
+            hpscript.hit = 10;
+            hpscript.bleedSeverity = 1;
+            hpscript.bleedState = "Bleed 1";
             health -= 10;
             enemy.enemyanim.Play("attack");
+            hpscript.hpBar.fillAmount = (health / 100);
+            hpscript.bleedBar.fillAmount = (hpscript.bleedHP / 100);
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {

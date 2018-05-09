@@ -6,20 +6,21 @@ using UnityEngine.AI;
 public class DoomPatrol : MonoBehaviour {
 
     public Transform[] points;
-    private int destPoint = 0;
-    private NavMeshAgent agent;
+    public int destPoint = 0;
+    public NavMeshAgent agent;
     public  Transform Target;
-    public bool isChasingPlayer = false;
+    public bool isChasingPlayer;
     public Animator anim;
     
 
     void Start()
     {
        
-        float result = Vector3.Dot(new Vector3(1, 1, 1).normalized, new Vector3(1, 2, 1).normalized);
-        agent = GetComponent<NavMeshAgent>();
+        //float result = Vector3.Dot(new Vector3(1, 1, 1).normalized, new Vector3(1, 2, 1).normalized);
+        //agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         agent.autoBraking = false;
+        isChasingPlayer = false;
         GotoNextPoint();
     }
 
@@ -31,13 +32,19 @@ public class DoomPatrol : MonoBehaviour {
         
         Target  = points[destPoint];
         destPoint = (destPoint + 1) % points.Length;
+        Debug.Log("Going To Next Point");
     }
 
 
     void Update()
     {
-        if (!agent.pathPending && agent.remainingDistance < 0.5 && !isChasingPlayer)
+        Debug.Log(Vector3.Distance(gameObject.transform.position, Target.transform.position));
+        
+        if (Vector3.Distance(gameObject.transform.position, Target.transform.position) < 1 && !isChasingPlayer)
+        {
             GotoNextPoint();
+            Debug.Log("remaining Distance");
+        }
 
         if(Target != null)
         {

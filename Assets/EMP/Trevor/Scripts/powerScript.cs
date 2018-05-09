@@ -6,12 +6,9 @@ using UnityEngine.UI;
 public class powerScript : MonoBehaviour
 {
   //  public Text amount;
-    public GameObject bar;
+    public GameObject healthBar;
     public GameObject pipOne, pipTwo, pipThree;
    
-    //AudioSource zap;
-    //public AudioClip zappity;
- //   public float noteTime;
     public float power;
     public float charge;
     public int uses;
