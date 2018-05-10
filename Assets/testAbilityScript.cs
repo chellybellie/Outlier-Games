@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class testAbilityScript : MonoBehaviour {
+public class testAbilityScript : MonoBehaviour
+{
 
     public int abilitySelect = 0;
     public float selection = 0;
@@ -32,7 +33,8 @@ public class testAbilityScript : MonoBehaviour {
 
     public Vector2 shrinkTarget;
 
-    void Start () {
+    void Start()
+    {
         abilitySelect = 0;
         selection = 0;
         zeroPunch = 25;
@@ -49,28 +51,29 @@ public class testAbilityScript : MonoBehaviour {
         threeSelect = threeReset + new Vector3(0, -.08f, 0);
 
         shrinkTarget = new Vector2(.2f, .2f);
-}
-	
-	// I call this one the THREE S's
+    }
+
+    // I call this one the THREE S's
     //Ready? Begin!
-	void Update () {
+    void Update()
+    {
         Scroll();//Step one, manage inputs
         Select();//Step two, handle that data
         Show();//Step three, display it!
-	}
+    }
 
     public void Scroll()
     {
-        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             selection += .3f;
-            if(selection >= 4)
+            if (selection >= 4)
             {
                 selection = 0;
             }
             hideTime = 2;
         }
-        else if(Input.GetAxis("Mouse ScrollWheel") < 0)
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             selection -= .3f;
             if (selection < 0)
@@ -79,7 +82,7 @@ public class testAbilityScript : MonoBehaviour {
             }
             hideTime = 2;
         }
-        else if(Input.GetAxis("Mouse ScrollWheel") == 0)
+        else if (Input.GetAxis("Mouse ScrollWheel") == 0)
         {
             hideTime -= Time.deltaTime;
         }
@@ -112,17 +115,17 @@ public class testAbilityScript : MonoBehaviour {
         RectTransform One = RaOne.rectTransform;
         RectTransform Two = RaTwo.rectTransform;
         RectTransform Three = RaThree.rectTransform;
-       
-        if(hideTime < 0)
+
+        if (hideTime < 0)
         {
-            if(Zero.localScale.x > .4f)
+            if (Zero.localScale.x > .4f)
             {
                 Zero.localScale = new Vector3(Zero.localScale.x - (Time.deltaTime * .4f), Zero.localScale.y - (Time.deltaTime * .4f), 1);
                 One.localScale = new Vector3(One.localScale.x - (Time.deltaTime * .4f), One.localScale.y - (Time.deltaTime * .4f), 1);
                 Two.localScale = new Vector3(Two.localScale.x - (Time.deltaTime * .4f), Two.localScale.y - (Time.deltaTime * .4f), 1);
                 Three.localScale = new Vector3(Three.localScale.x - (Time.deltaTime * .4f), Three.localScale.y - (Time.deltaTime * .4f), 1);
             }
-           
+
         }
         else
         {
@@ -140,7 +143,7 @@ public class testAbilityScript : MonoBehaviour {
                 Two.localScale = new Vector3(1, 1, 1);
                 Three.localScale = new Vector3(1, 1, 1);
             }
-   
+
         }
 
         switch (abilitySelect)
@@ -154,13 +157,13 @@ public class testAbilityScript : MonoBehaviour {
                 {
                     Zero.localScale = new Vector3(1, 1, 1);
                 }
-                else if(hideTime > .2f)
+                else if (hideTime > .2f)
                 {
                     Zero.localScale *= 1.2f;
                 }
 
 
-                  
+
                 Zero.localPosition = zeroSelect;
                 One.localPosition = oneReset;
                 Two.localPosition = twoReset;
@@ -180,7 +183,7 @@ public class testAbilityScript : MonoBehaviour {
                 {
                     One.localScale *= 1.2f;
                 }
-                
+
                 One.localPosition = oneSelect;
                 Zero.localPosition = zeroReset;
                 Two.localPosition = twoReset;
@@ -199,7 +202,7 @@ public class testAbilityScript : MonoBehaviour {
                 {
                     Two.localScale *= 1.2f;
                 }
-             
+
                 Two.localPosition = twoSelect;
                 Zero.localPosition = zeroReset;
                 One.localPosition = oneReset;
@@ -219,7 +222,7 @@ public class testAbilityScript : MonoBehaviour {
                     Three.localScale *= 1.2f;
                 }
 
-                
+
                 Three.localPosition = threeSelect;
                 Zero.localPosition = zeroReset;
                 One.localPosition = oneReset;

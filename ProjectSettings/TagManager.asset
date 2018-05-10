@@ -14,9 +14,9 @@ TagManager:
   - enemy
   - win
   - scan
-  - keyTwo
   - holoScan
   - keyOne
+  - keyTwo
   - keyThree
   - keyFour
   layers:

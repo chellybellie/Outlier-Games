@@ -10,6 +10,7 @@ public class stats : MonoBehaviour
     public Text crewname;
     public Image health;
     public Animator anim;
+    public Animator enemyanim;
 
     private AudioSource sound;
     public AudioClip wrenchHit;
@@ -185,13 +186,21 @@ public class stats : MonoBehaviour
         {
             anim.Play("syringe hit");
             hp -= 10;
+            StartCoroutine(ANIMPLAY());
         }
         if (col.gameObject.CompareTag("wrench"))
         {
             anim.Play("wrench hit");
             sound.PlayOneShot(wrenchHit);
             hp -= 10;
+            StartCoroutine(ANIMPLAY());
             Destroy(col.gameObject);
         }
+    }
+
+    IEnumerator ANIMPLAY()
+    {
+        enemyanim.Play("take hit");
+        yield return new WaitForSeconds(2f);
     }
 }

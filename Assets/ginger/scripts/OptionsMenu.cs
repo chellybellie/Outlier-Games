@@ -15,7 +15,7 @@ public class OptionsMenu : MonoBehaviour
     public Slider musicSlider;
     public Button applyButton;
 
-    public  AudioSource musicSource;
+    //public  AudioSource musicSource;
     public Resolution[] resolutions;
 
     public GameSettings gameSettings;
@@ -77,7 +77,7 @@ public class OptionsMenu : MonoBehaviour
 
     public void OnMusicChange()
     {
-        musicSource.volume = gameSettings.musicVolume = musicSlider.value;
+        //musicSource.volume = gameSettings.musicVolume = musicSlider.value;
     }
 
     public void OnApply()

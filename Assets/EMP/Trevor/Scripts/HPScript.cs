@@ -5,10 +5,9 @@ using UnityEngine.UI;
 
 public class HPScript : MonoBehaviour {
 
-    public Image hpBar;
     public Image bleedBar;
-    public Text hpText;
-   public  GloveIndicators gloveInd;
+    public Image hpBar;
+    public GloveIndicators gloveInd;
     public playerController player;
     public float bleedHP;
     public float hit;
@@ -26,7 +25,7 @@ public class HPScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        hpText.text = bleedState + " - " + ((int)player.health).ToString();
+   
         hpBar.fillAmount = (player.health / 100);
         bleedBar.fillAmount = (bleedHP / 100);
         if(hit > 0 || player.bleed > 0)
@@ -41,11 +40,13 @@ public class HPScript : MonoBehaviour {
         {
             bleedState = "OK"; 
         }
-
-        if(Input.GetKeyDown(KeyCode.Keypad1))
+        
+        /* 
+        KeyPad Hacks
+            if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             hit = 20;
-          
+
         }
         if (Input.GetKeyDown(KeyCode.Keypad2))
         {
@@ -77,6 +78,7 @@ public class HPScript : MonoBehaviour {
             bleedHP = 100;
             bleedState = "OK";
         }
+        */
     }
 
     public void TakeHit(float h, float b, float s)
