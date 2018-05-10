@@ -15,13 +15,14 @@ public class DoomPatrol : MonoBehaviour {
 
     void Start()
     {
-       
+       anim.SetBool("Walking", true);
         //float result = Vector3.Dot(new Vector3(1, 1, 1).normalized, new Vector3(1, 2, 1).normalized);
         //agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         agent.autoBraking = false;
         isChasingPlayer = false;
         GotoNextPoint();
+        
     }
 
 
@@ -29,7 +30,7 @@ public class DoomPatrol : MonoBehaviour {
     {
         if (points.Length == 0)
             return;
-        
+        anim.Play("walking");
         Target  = points[destPoint];
         destPoint = (destPoint + 1) % points.Length;
         Debug.Log("Going To Next Point");
@@ -50,10 +51,9 @@ public class DoomPatrol : MonoBehaviour {
         {
             agent.SetDestination(Target.transform.position);
             anim.SetBool("Walking", true);
-            
         }
 
-        if(Target == null)
+        if (Target == null)
         {
             GotoNextPoint();
             anim.Play("walking");
@@ -67,11 +67,11 @@ public class DoomPatrol : MonoBehaviour {
         {
             Target = other.gameObject.transform;
             isChasingPlayer = true;
-            anim.SetBool("Walking", false);
+            //anim.SetBool("Walking", false);
             anim.SetBool("Attacking", true);
         }
-        
-     
+
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -84,6 +84,6 @@ public class DoomPatrol : MonoBehaviour {
             anim.SetBool("Walking", true);
             anim.SetBool("Attacking", false);
         }
-    
+
     }
 }
