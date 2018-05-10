@@ -15,6 +15,7 @@ public class Weapons : MonoBehaviour
     public AudioClip wrenchSwing;
     public AudioClip syringeSound;
     public AudioClip mopSound;
+    public AudioClip gunShot;
 
     public Camera cam;
 
@@ -159,7 +160,7 @@ public class Weapons : MonoBehaviour
 
     private IEnumerator ShotEffect()
     {
-        Audio.Play();
+        Audio.PlayOneShot(gunShot);
         laserLine.enabled = true;
         yield return shotDuration;
         laserLine.enabled = false;
