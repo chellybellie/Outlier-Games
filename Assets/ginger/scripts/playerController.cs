@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 [Serializable]
@@ -13,14 +14,16 @@ public class playerController : MonoBehaviour
     float speed = 2f;
     public Camera cam;
     public Vector2 move;
-    stats enemy;
-
+    public stats enemy;
+    public Weapons wep;
     public float keyLevel;
-
+    public bool hasKeyOne, hasKeyTwo, hasKeyThree, hasKeyFour = false;
+    public GameObject keyOne, keyTwo, keyThree, keyFour;
     public float health = 100;
+ 
 
 
-    public float ammoCount = 10;
+    
 
     public float mouseSensitivity = 100.0f;
     public float clampAngle = 80.0f;
@@ -38,7 +41,10 @@ public class playerController : MonoBehaviour
         rotX = rot.x;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
+        keyOne.SetActive(false);
+        keyTwo.SetActive(false);
+        keyThree.SetActive(false);
+        keyFour.SetActive(false);
     }
 
 
@@ -49,6 +55,7 @@ public class playerController : MonoBehaviour
 
         Time.timeScale = 0;
 
+        Time.timeScale = 0;
     }
 
 
@@ -101,8 +108,14 @@ public class playerController : MonoBehaviour
     {
         if (col.gameObject.CompareTag("enemy"))
         {
+            hpscript.bleed = 10;
+            hpscript.hit = 10;
+            hpscript.bleedSeverity = 1;
+            hpscript.bleedState = "Bleed 1";
             health -= 10;
             enemy.enemyanim.Play("attack");
+            hpscript.hpBar.fillAmount = (health / 100);
+            hpscript.bleedBar.fillAmount = (hpscript.bleedHP / 100);
         }
         if (col.gameObject.CompareTag("health") && health < 100)
         {
@@ -117,7 +130,7 @@ public class playerController : MonoBehaviour
         }
         if (col.gameObject.CompareTag("ammo"))
         {
-            ammoCount += 10;
+            wep.ammo += 10;
             Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("holoScan"))
@@ -126,35 +139,43 @@ public class playerController : MonoBehaviour
         }
         if (col.gameObject.CompareTag("keyOne"))
         {
+            hasKeyOne = true;
+            keyOne.SetActive(true);
             if (keyLevel < 1)
             {
                 keyLevel = 1;
-                Destroy(col.gameObject);
             }
+             Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("keyTwo"))
         {
+            hasKeyTwo = true;
+            keyTwo.SetActive(true);
             if (keyLevel < 2)
             {
                 keyLevel = 2;
-                Destroy(col.gameObject);
             }
+            Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("keyThree"))
         {
+            hasKeyThree = true;
+            keyThree.SetActive(true);
             if (keyLevel < 3)
             {
                 keyLevel = 3;
-                Destroy(col.gameObject);
             }
+            Destroy(col.gameObject);
         }
         if (col.gameObject.CompareTag("keyFour"))
         {
+            hasKeyFour = true;
+            keyFour.SetActive(true);
             if (keyLevel < 4)
             {
                 keyLevel = 4;
-                Destroy(col.gameObject);
             }
+            Destroy(col.gameObject);
         }
     }
 

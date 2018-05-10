@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: fd1383aa1ee94084db0d7bc880a388a7
-timeCreated: 1525306453
+guid: 9f3a7dd127b9a634089f265de5b35d0e
+timeCreated: 1525473722
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -110,7 +110,7 @@ ModelImporter:
     400100: joint_enemy_wrist_r
     400102: OBJ_char_enemy_UVd
     4300000: OBJ_char_enemy_UVd
-    7400000: take hit
+    7400000: EnemyHit
     9500000: //RootNode
     13700000: OBJ_char_enemy_UVd
   materials:
@@ -138,7 +138,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: take hit
+      name: EnemyHit
       takeName: Take 001
       firstFrame: 133
       lastFrame: 168

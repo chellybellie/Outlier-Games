@@ -29,6 +29,7 @@ public class Weapons : MonoBehaviour
     public float weaponRange = 50f;
     public float hitForce = 100f;
     public Animator anim;
+    public ammoCount ammoCT;
 
     void Start()
     {
@@ -42,7 +43,7 @@ public class Weapons : MonoBehaviour
 
     void Update()
     {
-
+        ammoCT.count = ammo;
         
         if (Input.GetMouseButtonDown(0) && Time.timeScale == 1 && gun.activeSelf && Time.time > nextFire)
             {

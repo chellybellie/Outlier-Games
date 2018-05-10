@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cd8e692b76ff49c48be53932d48db6f0
-timeCreated: 1525374585
+guid: 6cfdb179577aea24fbbf39d5c68c179e
+timeCreated: 1525473719
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -110,7 +110,7 @@ ModelImporter:
     400100: joint_enemy_wrist_r
     400102: OBJ_char_enemy_UVd
     4300000: OBJ_char_enemy_UVd
-    7400000: die
+    7400000: Dying
     9500000: //RootNode
     13700000: OBJ_char_enemy_UVd
   materials:
@@ -138,7 +138,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: die
+      name: Dying
       takeName: Take 001
       firstFrame: 199
       lastFrame: 230

@@ -155,9 +155,9 @@ public class stats : MonoBehaviour
 
         // health.fillAmount = (hp / 100);
         //crewname.text = crewName;
-       
-       
+        anim.Play("walking");
 
+       
 
         if (hp <= 0)
         {
@@ -168,17 +168,16 @@ public class stats : MonoBehaviour
                 if (!agent)
                     continue;
                 agent.isStopped = true;
-                enemyanim.Play("die");
+
             }
-        } 
+        }
+        
         
 	}
     public void Damage (int damageAmount)
     {
         hp -= damageAmount;
-
-        StartCoroutine(ANIMPLAY());
-
+       
     }
 
     void OnTriggerEnter(Collider col)
@@ -195,6 +194,7 @@ public class stats : MonoBehaviour
             sound.PlayOneShot(wrenchHit);
             hp -= 10;
             StartCoroutine(ANIMPLAY());
+            Destroy(col.gameObject);
         }
     }
 
@@ -203,5 +203,4 @@ public class stats : MonoBehaviour
         enemyanim.Play("take hit");
         yield return new WaitForSeconds(2f);
     }
-
 }
